@@ -1,0 +1,17 @@
+.control {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 99999;
+}
+
+.control:hover {
+  background-color: #777;
+}
+
+#resetZoom {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+}

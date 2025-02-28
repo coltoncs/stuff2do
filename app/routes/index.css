@@ -1,0 +1,9 @@
+.event-popup {
+  color: #333;
+}
+
+.event-popup > .mapboxgl-popup-content {
+  font-size: large;
+  padding: 25px;
+  background-color: blanchedalmond;
+}

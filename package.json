@@ -9,12 +9,22 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@react-router/node": "^7.1.5",
     "@react-router/serve": "^7.1.5",
+    "@redux-devtools/extension": "^3.3.0",
+    "@types/mapbox-gl": "^3.4.1",
+    "geojson": "^0.5.0",
+    "gsap": "^3.12.7",
     "isbot": "^5.1.17",
+    "mapbox-gl": "^3.10.0",
     "react": "^19.0.0",
+    "react-datepicker": "^8.1.0",
     "react-dom": "^19.0.0",
-    "react-router": "^7.1.5"
+    "react-icons": "^5.5.0",
+    "react-map-gl": "^8.0.1",
+    "react-router": "^7.1.5",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@react-router/dev": "^7.1.5",
