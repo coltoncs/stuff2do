@@ -1,0 +1,41 @@
+.event-item {
+  cursor: pointer;
+  margin: 3px 0;
+  padding: 5px;
+  background-color: #49483a;
+  border-radius: 4px;
+}
+
+#menu {
+  z-index: 9999;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 300px;
+  height: 500px;
+  background-color: #333;
+  border-radius: 6px;
+  border: 1px solid #777;
+  overflow-y: scroll;
+}
+
+#title-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu-title {
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
+#menu-events {
+  padding: 0 15px;
+  list-style: none;
+}
+
+#close-menu {
+  padding: 10px;
+}

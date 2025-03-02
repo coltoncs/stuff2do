@@ -15,7 +15,18 @@
   align-items: center;
 }
 
+.eventViewer a {
+  display: flex;
+  gap: 5px;
+}
+
 .eventViewer h2 {
   font-weight: 800;
   text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .eventViewer {
+    bottom: 120px;
+  }
 }

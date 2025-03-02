@@ -5,17 +5,21 @@ import { MdFormatListBulleted, MdOutlineClose, MdOutlineZoomOutMap } from "react
 import useMapStore from "~/store";
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
+import EventList from "../EventList/EventList";
+import { PiSecurityCameraDuotone } from "react-icons/pi";
+import { FaRotate } from "react-icons/fa6";
+import { TbRotate360 } from "react-icons/tb";
+import { LuRotate3D } from "react-icons/lu";
+import { BsArrows, BsArrowsVertical } from "react-icons/bs";
 
 export function ControlPanel() {
-  const menuRef = useRef<HTMLDivElement>(null);
   const [showMenu, setShowMenu] = useState(false);
+  const pitchRef = useRef<HTMLButtonElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
   const { contextSafe } = useGSAP({ scope: menuRef });
   const { current: map } = useMap();
-  const zoom = useMapStore((state) => state.zoom);
-  const setZoom = useMapStore((state) => state.setZoom);
   const date = useMapStore((state) => state.date);
   const setDate = useMapStore((state) => state.setDate);
-  const events = useMapStore((state) => state.events);
   const handleResetZoom = () => {
     map?.easeTo({
       center: [-78.6382, 35.7796],
@@ -23,13 +27,15 @@ export function ControlPanel() {
       duration: 2000
     });
   }
-  const handleRangeChange = (e) => {
-    setZoom(e.target.value);
+  const handleChangePitch = (e: React.MouseEvent<HTMLButtonElement>) => {
     map?.easeTo({
-      center: [-78.6382, 35.7796],
-      zoom: e.target.value,
-      duration: 1000
-    });
+      pitch: map?.getPitch() !== 45 ? 45 : 0,
+    })
+  }
+  const handleChangeBearing = (e: React.MouseEvent<HTMLButtonElement>) => {
+    map?.easeTo({
+      bearing: map?.getBearing() !== -45 ? -45 : 0,
+    })
   }
   const handleDateChange = (e: ChangeEvent<HTMLInputElement>) => {
     const selectedDate = new Date(e.target.value);
@@ -37,28 +43,19 @@ export function ControlPanel() {
     setDate(selectedDate);
   }
   const handleMenuToggle = contextSafe(() => {
-    const menu = menuRef.current;
     setShowMenu(!showMenu);
-    gsap.to(menu, { y: showMenu ? 600 : 0, duration: 1, ease: 'power2.inOut' });
+    gsap.to(menuRef.current, { y: showMenu ? 600 : 0, duration: 1, ease: 'power2.inOut' });
   });
   return (
     <>
-      <div style={{translate: '0 520px'}} ref={menuRef} id="menu">
-        <div id='title-bar'>
-          <h2 id='menu-title'>Events</h2>
-          <button className="control" id="close-menu" onClick={handleMenuToggle}><MdOutlineClose size='30px' /></button>
-        </div>
-        <div id='menu-events'>
-          { events.map(event => <li>{event.name}</li>) }
-        </div>
-      </div>
+      <EventList ref={menuRef} toggle={handleMenuToggle} />
       <div className="controls">
         <div id="bottom-controls">
-          {
-            navigator.userAgentData.mobile ? 
-            <button className="control" onClick={handleResetZoom}><MdOutlineZoomOutMap size="50px" /></button> :
-            <input type="range" value={zoom} min={9} max={19} onChange={handleRangeChange} />
-          }
+          <div style={{ display: 'flex', gap: '15px' }}>
+            <button className="control" onClick={handleResetZoom}><MdOutlineZoomOutMap size="50px" /></button>
+            <button className="control" onClick={handleChangePitch}><BsArrowsVertical size="50px" /></button>
+            <button className="control" onClick={handleChangeBearing}><BsArrows size="50px" /></button>
+          </div>
           <button className="control" onClick={handleMenuToggle}><MdFormatListBulleted size="50px" /></button>
         </div>
         <div id="date-container">

@@ -1,5 +1,5 @@
 import type { Route } from "./+types/index";
-import Map, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
+import Map, { Source, Layer, GeolocateControl, useMap } from 'react-map-gl/mapbox';
 import { type GeoJsonProperties, type Feature, type FeatureCollection } from "geojson";
 import { useState, useRef, useEffect } from "react";
 import type { MapRef } from 'react-map-gl/mapbox';
@@ -72,16 +72,15 @@ const unclusteredLayerStyle: CircleLayerSpecification = {
 
 export default function Index() {
   const [showSource, setShowSource] = useState(false);
-  const setZoom = useMapStore((state) => state.setZoom)
   const events = useMapStore((state) => state.events);
-  const setDate = useMapStore((state) => state.setDate);
+  const setEvent = useMapStore((state) => state.setEvent);
+  const setEventsForGeolocation = useMapStore((state) => state.setEventsForGeolocation);
   const mapRef = useRef<MapRef>(null);
   const [viewState, setViewState] = useState({
     longitude: -78.6382,
     latitude: 35.7796,
     zoom: 10
   });
-  const [selectedEvent, setSelectedEvent] = useState<GeoJsonProperties>(null);
 
   const eventsGeoJson: FeatureCollection = {
     type: 'FeatureCollection',
@@ -113,7 +112,7 @@ export default function Index() {
           break;
         case 'unclustered-point':
           const { properties } = feature;
-          setSelectedEvent(properties);
+          setEvent(properties);
           mapRef.current?.easeTo({
             center: JSON.parse(properties?.coordinates).reverse(),
             zoom: 16,
@@ -124,7 +123,7 @@ export default function Index() {
           break;
       }
     } else {
-      setSelectedEvent(null)
+      setEvent(null)
     }
   }
 
@@ -175,10 +174,44 @@ export default function Index() {
     }
   }
 
-  const handleStyleLoad = () => {
+  const handleGeolocation = (e) => {
+    setEventsForGeolocation(e.coords);
+  }
+
+  const handleStyleLoad = async () => {
     const map = mapRef.current;
-    map?.setConfigProperty('basemap', 'lightPreset', 'night');
+    map?.setConfigProperty('basemap', 'lightPreset', 'night').setConfigProperty('basemap', 'font', 'Inter');
     setShowSource(true);
+    // const zoomBasedReveal = (value: number) => {
+    //   return ['interpolate',['linear'],['zoom'],11,0.0,13,value];
+    // };
+    // const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${viewState.latitude}&lon=${viewState.longitude}&appid=034ef13cb756af71f67a34aac85ebb66`);
+    // const data = await res.json();
+    // if (data.cod !== 401 && data.cod === 200) {
+    //   if (data.weather.main === 'Rain') {
+    //     map?.setRain({
+    //       density: zoomBasedReveal(0.5),
+    //       intensity: 1.0,
+    //       color: '#a8adbc',
+    //       opacity: 0.7,
+    //       vignette: zoomBasedReveal(1.0),
+    //       "vignette-color": '#464646',
+    //       direction: [0, 80],
+    //     });
+    //   } else if (data.weather.main === 'Snow') {
+    //     map?.setSnow({
+    //       density: zoomBasedReveal(0.85),
+    //       intensity: 1.0,
+    //       'center-thinning': 0.1,
+    //       direction: [0, 50],
+    //       opacity: 1.0,
+    //       color: `#ffffff`,
+    //       'flake-size': 0.71,
+    //       vignette: zoomBasedReveal(0.3),
+    //       'vignette-color': `#ffffff`
+    //     });
+    //   }
+    // }
   }
 
   return (
@@ -188,10 +221,7 @@ export default function Index() {
         mapboxAccessToken='pk.eyJ1IjoiY2Nzd2VlbmV5IiwiYSI6ImNsdXVtem5zcDBiZ3AyanNmZGwzamt4d2oifQ.j98Apz4tCtnO2SnlgpntJw'
         {...viewState}
         antialias={true}
-        onMove={({ viewState }) => {
-          setZoom(viewState.zoom)
-          setViewState(viewState);
-        }}
+        onMove={({ viewState }) => setViewState(viewState)}
         style={{ width: "100%", height: "100%" }}
         mapStyle="mapbox://styles/mapbox/standard"
         onClick={onClick}
@@ -200,16 +230,16 @@ export default function Index() {
         interactiveLayerIds={['clusters', 'unclustered-point']}
         onLoad={handleStyleLoad}
       >
-        { showSource && 
+        {showSource &&
           <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50}>
             <Layer {...clustersLayerStyle} />
             <Layer {...clusterCountLayerStyle} />
             <Layer {...unclusteredLayerStyle} />
-          </Source> 
+          </Source>
         }
-        <GeolocateControl position="top-left" />
+        <GeolocateControl onGeolocate={handleGeolocation} position="top-left" />
         <ControlPanel />
-        <EventViewer event={selectedEvent} />
+        <EventViewer />
       </Map>
     </main>
   );
