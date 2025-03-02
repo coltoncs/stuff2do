@@ -37,7 +37,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="overflow-clip">
+      <body>
         <Navbar />
         {children}
         <ScrollRestoration />

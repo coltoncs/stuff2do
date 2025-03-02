@@ -1,9 +1,9 @@
 import type { Route } from "./+types/index";
-import Map, { Source, Layer, Marker, GeolocateControl, Popup } from 'react-map-gl/mapbox';
+import Map, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
 import { type GeoJsonProperties, type Feature, type FeatureCollection } from "geojson";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import type { MapRef } from 'react-map-gl/mapbox';
-import type { CircleLayerSpecification, SymbolLayerSpecification, GeoJSONSource, MapMouseEvent } from "mapbox-gl";
+import type { CircleLayerSpecification, SymbolLayerSpecification, FillExtrusionLayerSpecification, GeoJSONSource, MapMouseEvent, Map } from "mapbox-gl";
 import './index.css';
 import { ControlPanel } from "~/components/ControlPanel/ControlPanel";
 import { EventViewer } from "~/components/EventViewer/EventViewer";
@@ -22,6 +22,7 @@ const clustersLayerStyle: CircleLayerSpecification = {
   source: 'events',
   filter: ['has', 'point_count'],
   paint: {
+    "circle-emissive-strength": 1,
     'circle-color': [
       'step',
       ['get', 'point_count'],
@@ -62,6 +63,7 @@ const unclusteredLayerStyle: CircleLayerSpecification = {
   filter: ['!', ['has', 'point_count']],
   paint: {
     'circle-color': '#7ccf00',
+    "circle-emissive-strength": 1,
     'circle-radius': 8,
     'circle-stroke-width': 1,
     'circle-stroke-color': '#fff'
@@ -69,6 +71,8 @@ const unclusteredLayerStyle: CircleLayerSpecification = {
 };
 
 export default function Index() {
+  const [showSource, setShowSource] = useState(false);
+  const setZoom = useMapStore((state) => state.setZoom)
   const events = useMapStore((state) => state.events);
   const setDate = useMapStore((state) => state.setDate);
   const mapRef = useRef<MapRef>(null);
@@ -78,7 +82,7 @@ export default function Index() {
     zoom: 10
   });
   const [selectedEvent, setSelectedEvent] = useState<GeoJsonProperties>(null);
-  
+
   const eventsGeoJson: FeatureCollection = {
     type: 'FeatureCollection',
     features: events.map((event) => ({
@@ -171,25 +175,38 @@ export default function Index() {
     }
   }
 
+  const handleStyleLoad = () => {
+    const map = mapRef.current;
+    map?.setConfigProperty('basemap', 'lightPreset', 'night');
+    setShowSource(true);
+  }
+
   return (
     <main className="w-[100vw] h-[100vh]">
       <Map
         ref={mapRef}
         mapboxAccessToken='pk.eyJ1IjoiY2Nzd2VlbmV5IiwiYSI6ImNsdXVtem5zcDBiZ3AyanNmZGwzamt4d2oifQ.j98Apz4tCtnO2SnlgpntJw'
         {...viewState}
-        onMove={({ viewState }) => setViewState(viewState)}
+        antialias={true}
+        onMove={({ viewState }) => {
+          setZoom(viewState.zoom)
+          setViewState(viewState);
+        }}
         style={{ width: "100%", height: "100%" }}
-        mapStyle="mapbox://styles/mapbox/dark-v11"
+        mapStyle="mapbox://styles/mapbox/standard"
         onClick={onClick}
         onMouseEnter={handleMapEnter}
         onMouseLeave={handleMapLeave}
         interactiveLayerIds={['clusters', 'unclustered-point']}
+        onLoad={handleStyleLoad}
       >
-        <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50}>
-          <Layer {...clustersLayerStyle} />
-          <Layer {...clusterCountLayerStyle} />
-          <Layer {...unclusteredLayerStyle} />
-        </Source>
+        { showSource && 
+          <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50}>
+            <Layer {...clustersLayerStyle} />
+            <Layer {...clusterCountLayerStyle} />
+            <Layer {...unclusteredLayerStyle} />
+          </Source> 
+        }
         <GeolocateControl position="top-left" />
         <ControlPanel />
         <EventViewer event={selectedEvent} />
