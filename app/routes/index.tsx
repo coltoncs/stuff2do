@@ -178,40 +178,10 @@ export default function Index() {
     setEventsForGeolocation(e.coords);
   }
 
-  const handleStyleLoad = async () => {
+  const handleStyleLoad = () => {
     const map = mapRef.current;
     map?.setConfigProperty('basemap', 'lightPreset', 'night').setConfigProperty('basemap', 'font', 'Inter');
     setShowSource(true);
-    // const zoomBasedReveal = (value: number) => {
-    //   return ['interpolate',['linear'],['zoom'],11,0.0,13,value];
-    // };
-    // const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${viewState.latitude}&lon=${viewState.longitude}&appid=034ef13cb756af71f67a34aac85ebb66`);
-    // const data = await res.json();
-    // if (data.cod !== 401 && data.cod === 200) {
-    //   if (data.weather.main === 'Rain') {
-    //     map?.setRain({
-    //       density: zoomBasedReveal(0.5),
-    //       intensity: 1.0,
-    //       color: '#a8adbc',
-    //       opacity: 0.7,
-    //       vignette: zoomBasedReveal(1.0),
-    //       "vignette-color": '#464646',
-    //       direction: [0, 80],
-    //     });
-    //   } else if (data.weather.main === 'Snow') {
-    //     map?.setSnow({
-    //       density: zoomBasedReveal(0.85),
-    //       intensity: 1.0,
-    //       'center-thinning': 0.1,
-    //       direction: [0, 50],
-    //       opacity: 1.0,
-    //       color: `#ffffff`,
-    //       'flake-size': 0.71,
-    //       vignette: zoomBasedReveal(0.3),
-    //       'vignette-color': `#ffffff`
-    //     });
-    //   }
-    // }
   }
 
   return (
