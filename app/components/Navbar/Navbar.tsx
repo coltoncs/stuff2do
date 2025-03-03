@@ -15,13 +15,14 @@ export function Navbar() {
     const cogIcon = toggle.firstChild;
     gsap.to(cogIcon, { 
       rotate: element.tagName === 'BUTTON' ? "+=360" : '-=360', 
-      duration: 2, 
+      duration: 3, 
       ease: 'expo.out' 
     });
     gsap.to(navRef.current, {
       y: element.tagName === 'BUTTON' ? 0 : '-105vh',
+      delay: 0.5,
       position: 'fixed',
-      ease: 'power3.inOut'
+      ease: 'power2.inOut'
     });
   });
   return (

@@ -5,7 +5,7 @@ import { MdFormatListBulleted, MdOutlineClose, MdOutlineZoomOutMap } from "react
 import useMapStore from "~/store";
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
-import EventList from "../EventList/EventList";
+import EventList from "../EventList";
 import { PiSecurityCameraDuotone } from "react-icons/pi";
 import { FaRotate } from "react-icons/fa6";
 import { TbRotate360 } from "react-icons/tb";

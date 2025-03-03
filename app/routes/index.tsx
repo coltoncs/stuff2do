@@ -6,7 +6,7 @@ import type { MapRef } from 'react-map-gl/mapbox';
 import type { CircleLayerSpecification, SymbolLayerSpecification, FillExtrusionLayerSpecification, GeoJSONSource, MapMouseEvent, Map } from "mapbox-gl";
 import './index.css';
 import { ControlPanel } from "~/components/ControlPanel/ControlPanel";
-import { EventViewer } from "~/components/EventViewer/EventViewer";
+import { EventViewer } from "~/components/EventViewer";
 import useMapStore from "~/store";
 
 export function meta({ }: Route.MetaArgs) {
@@ -62,11 +62,11 @@ const unclusteredLayerStyle: CircleLayerSpecification = {
   source: 'events',
   filter: ['!', ['has', 'point_count']],
   paint: {
-    'circle-color': '#ff5733',
+    'circle-color': '#00c950',
     "circle-emissive-strength": 1,
-    'circle-radius': 10,
-    'circle-stroke-width': 4,
-    'circle-stroke-color': 'rgba(51, 161, 255, 0.75)',
+    'circle-radius': 11,
+    'circle-stroke-width': 3,
+    'circle-stroke-color': '#ddd6ff',
   }
 };
 
