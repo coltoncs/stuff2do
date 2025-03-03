@@ -20,6 +20,7 @@ export function ControlPanel() {
   const { current: map } = useMap();
   const date = useMapStore((state) => state.date);
   const setDate = useMapStore((state) => state.setDate);
+  const setEvent = useMapStore((state) => state.setEvent);
   const handleResetZoom = () => {
     map?.easeTo({
       center: [-78.6382, 35.7796],
@@ -41,6 +42,7 @@ export function ControlPanel() {
     const selectedDate = new Date(e.target.value);
     selectedDate.setUTCHours(8)
     setDate(selectedDate);
+    setEvent(null);
   }
   const handleMenuToggle = contextSafe(() => {
     setShowMenu(!showMenu);

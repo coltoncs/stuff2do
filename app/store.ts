@@ -20,9 +20,10 @@ interface MapState {
   event: Event | null;
   events: any[];
   date: Date;
+  geolocation: GeolocationCoordinates | null;
   setEventsForGeolocation: (coords: GeolocationCoordinates) => void;
   setDate: (date: Date) => void;
-  setEvent: (event: Event) => void;
+  setEvent: (event: Event | null) => void;
 }
 
 const matchesTodaysDate = (event) => {
@@ -36,6 +37,7 @@ const useMapStore = create<MapState>()((set) => ({
   event: null,
   events: jsonEvents.filter(matchesTodaysDate),
   date: new Date(),
+  geolocation: null,
   setEventsForGeolocation: (coords) => {
     const filteredEvents = jsonEvents
       .filter(matchesTodaysDate)
@@ -43,16 +45,31 @@ const useMapStore = create<MapState>()((set) => ({
         (event1, event2) => 
           haversineDistanceKM(event1.coordinates, [coords.latitude, coords.longitude]) - haversineDistanceKM(event2.coordinates, [coords.latitude, coords.longitude])
       );
-    set({ events: filteredEvents })
+    set({ events: filteredEvents, geolocation: coords })
   },
   setDate: (date) => {
-    const filteredEvents = jsonEvents.filter((event) => {
+    let filteredEvents = jsonEvents.filter((event) => {
       const eventDate = new Date(event.date);
       return eventDate.toDateString() === date.toDateString();
     });
-    set({ date: date, events: filteredEvents });
+    set(state => { 
+      if (state.geolocation) {
+        // we have the users coordinates, sort the events by proximity
+        filteredEvents = filteredEvents.sort(
+          (event1, event2) => 
+            haversineDistanceKM(
+              event1.coordinates, 
+              [state.geolocation!.latitude, state.geolocation!.longitude]
+            ) - haversineDistanceKM(
+              event2.coordinates, 
+              [state.geolocation!.latitude, state.geolocation!.longitude]
+            )
+        )
+      }
+      return { date: date, events: filteredEvents }
+     });
   },
-  setEvent: (event: Event) => {
+  setEvent: (event: Event | null) => {
     set({ event });
   }
 }));
