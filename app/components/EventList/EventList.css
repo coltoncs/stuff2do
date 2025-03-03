@@ -6,6 +6,10 @@
   border-radius: 4px;
 }
 
+.event-item:hover {
+  background-color: #777;
+}
+
 #menu {
   z-index: 9999;
   position: fixed;

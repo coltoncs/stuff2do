@@ -1,14 +1,17 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { events } from '~/events';
 
 function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] }) {
+  useEffect(() => {
+    gsap.fromTo('.listItem', { opacity: 0, x: -100 }, { opacity: 1, x: 0, stagger: 0.025 });
+  }, [])
   return (
     <div className='weeksEvents'>
       <h2>{dateRange}</h2>
       <li className='eventsList'>
-        {events.map(event => <li key={event.id}>{event.name}</li>)}
+        {events.map(event => <li className='listItem' key={event.id}>{event.name}</li>)}
       </li>
     </div>
   )
@@ -24,9 +27,6 @@ export default function List() {
     return acc;
   }, {} as Record<string, any[]>);
 
-  console.log('weeklyEvents', weeklyEvents);
-  
-  
   return (
     <main className="flex flex-col items-center justify-center pt-16 pb-4">
       { Object.entries(weeklyEvents).map(week => <WeeklyEvents dateRange={week[0]} events={week[1]} />) }

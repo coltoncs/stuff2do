@@ -62,11 +62,11 @@ const unclusteredLayerStyle: CircleLayerSpecification = {
   source: 'events',
   filter: ['!', ['has', 'point_count']],
   paint: {
-    'circle-color': '#7ccf00',
+    'circle-color': '#ff5733',
     "circle-emissive-strength": 1,
-    'circle-radius': 8,
-    'circle-stroke-width': 1,
-    'circle-stroke-color': '#fff'
+    'circle-radius': 10,
+    'circle-stroke-width': 4,
+    'circle-stroke-color': 'rgba(51, 161, 255, 0.75)',
   }
 };
 
