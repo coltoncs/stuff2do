@@ -14,20 +14,42 @@ function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] 
   })
   
   return (
-    <div ref={accordionRef} className='weeksEvents w-5xl brounded mb-5 bg-slate-800'>
+    <div ref={accordionRef} className='w-full md:w-4xl rounded mb-5 bg-slate-800'>
       <button className='flex items-center justify-between w-full py-4 cursor-pointer shadow-lg shadow-slate-900 bg-slate-800 hover:bg-slate-700' onClick={handleAccordionClick} aria-expanded={isOpen}>
         <h2 className='text-orange-400 text-center font-bold p-5'>{dateRange}</h2>
       </button>
-      <ol className={`olist ${isOpen ? 'block' : 'hidden'} p-10 list-disc`}>
-        {events.map(event => (
-          <a href={event.url}>
-            <li className='listItem text-slate-200 rounded px-5 py-1 hover:bg-slate-600' key={event.id}>
-              <p className='flex gap-2 justify items-center'>
-                {event.name} <span key={event.id} className='text-xs text-slate-400'>@ {event.location} ({Intl.DateTimeFormat('en-US', { dateStyle: 'short' }).format(new Date(event.date))})</span><FiExternalLink size="15px" className='text-blue-400' />
-              </p>
-            </li>
-          </a>
-        ))}
+      <ol className={`${isOpen ? 'block' : 'hidden'} p-10 list-disc`}>
+        {events.map(event => {
+          const formatter = Intl.DateTimeFormat('en-US', { dateStyle: 'short' });
+          const todaysDate = new Date(formatter.format(new Date()));
+          const eventsDate = new Date(formatter.format(new Date(event.date)));
+          console.log(eventsDate)
+          return (
+            <a href={event.url}>
+              <li 
+                className={`
+                  listItem 
+                  rounded 
+                  px-5 
+                  py-1 
+                  hover:bg-slate-600 
+                  hover:text-slate-100
+                  ${eventsDate < todaysDate && ' line-through'}
+                  ${eventsDate === todaysDate ? ' text-green-500' : ' text-slate-300'}
+                  `} 
+                key={event.id}>
+                <p className='flex gap-2 justify items-center'>
+                  {event.name} 
+                  <span key={event.id} className='text-xs text-slate-400'>
+                    {' @ '} 
+                    {event.location} ({formatter.format(eventsDate)})
+                  </span>
+                  <FiExternalLink size="15px" className='text-blue-400' />
+                </p>
+              </li>
+            </a>
+          );
+        })}
       </ol>
     </div>
   )

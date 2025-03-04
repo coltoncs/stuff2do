@@ -61,7 +61,7 @@ export function ControlPanel() {
           <button className="control" onClick={handleMenuToggle}><MdFormatListBulleted size="50px" /></button>
         </div>
         <div id="date-container">
-          <input defaultValue={date.toISOString().split('T')[0]} className="control" onChange={handleDateChange} id="datePicker" type="date"></input>
+          <input defaultValue={date.toISOString().split('T')[0]} className="w-3xs bg-slate-600 rounded px-5 py-3 border border-blue-200 text-slate-200" onChange={handleDateChange} id="datePicker" type="date"></input>
         </div>
       </div>
     </>
