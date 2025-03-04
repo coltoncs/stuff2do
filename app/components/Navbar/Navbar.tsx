@@ -27,10 +27,15 @@ export function Navbar() {
   });
   return (
     <>
-      <button ref={toggleRef} onClick={onClick} className="navtoggle"><IoSettingsSharp className="icon" size={28} /></button>
-      <nav ref={navRef} className="navbar">
-        <NavLink className='navlink' to="/" onClick={onClick} end>Map</NavLink>
-        <NavLink className='navlink' to="/list" onClick={onClick} end>List</NavLink>
+      <button 
+        ref={toggleRef} 
+        onClick={onClick} 
+        className="fixed top-5 right-5 z-[9999] bg-slate-600 p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md">
+          <IoSettingsSharp className="pointer-events-none" size={28} />
+      </button>
+      <nav ref={navRef} className="fixed w-full h-full -translate-y-full z-[9999] bg-slate-600 flex flex-col">
+        <NavLink className='text-center h-1/2 w-full font-bold leading-100 hover:font-semibold hover:underline' to="/" onClick={onClick} end>Map</NavLink>
+        <NavLink className='text-center h-1/2 w-full font-bold leading-100 hover:font-semibold hover:underline' to="/list" onClick={onClick} end>List</NavLink>
       </nav>
     </>
   );

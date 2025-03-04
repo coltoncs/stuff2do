@@ -5,7 +5,7 @@ import { FiExternalLink } from 'react-icons/fi';
 import { events } from '~/events';
 
 function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const accordionRef = useRef(null);
   const { contextSafe } = useGSAP({ scope: accordionRef });
   const handleAccordionClick = contextSafe(() => {
@@ -32,10 +32,10 @@ function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] 
                   rounded 
                   px-5 
                   py-1 
+                  text-slate-300
                   hover:bg-slate-600 
                   hover:text-slate-100
                   ${eventsDate < todaysDate && ' line-through'}
-                  ${eventsDate === todaysDate ? ' text-green-500' : ' text-slate-300'}
                   `} 
                 key={event.id}>
                 <p className='flex gap-2 justify items-center'>

@@ -1,11 +1,10 @@
 import type { Route } from "./+types/index";
-import Map, { Source, Layer, GeolocateControl, useMap } from 'react-map-gl/mapbox';
-import { type GeoJsonProperties, type Feature, type FeatureCollection } from "geojson";
-import { useState, useRef, useEffect } from "react";
+import Map, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
+import { type Feature, type FeatureCollection } from "geojson";
+import { useState, useRef, useCallback, useMemo } from "react";
 import type { MapRef } from 'react-map-gl/mapbox';
-import type { CircleLayerSpecification, SymbolLayerSpecification, FillExtrusionLayerSpecification, GeoJSONSource, MapMouseEvent, Map } from "mapbox-gl";
-import './index.css';
-import { ControlPanel } from "~/components/ControlPanel/ControlPanel";
+import type { CircleLayerSpecification, SymbolLayerSpecification, GeoJSONSource, MapMouseEvent, Map } from "mapbox-gl";
+import { ControlPanel } from "~/components/ControlPanel";
 import { EventViewer } from "~/components/EventViewer";
 import useMapStore from "~/store";
 
@@ -62,11 +61,11 @@ const unclusteredLayerStyle: CircleLayerSpecification = {
   source: 'events',
   filter: ['!', ['has', 'point_count']],
   paint: {
-    'circle-color': '#00c950',
-    "circle-emissive-strength": 1,
-    'circle-radius': 11,
-    'circle-stroke-width': 3,
-    'circle-stroke-color': '#ddd6ff',
+    'circle-color': '#22c55e',
+    'circle-radius': 12,
+    'circle-stroke-color': '#bbf7d0',
+    'circle-stroke-width': 4,
+    'circle-emissive-strength': 1,
   }
 };
 
@@ -82,16 +81,16 @@ export default function Index() {
     zoom: 10
   });
 
-  const eventsGeoJson: FeatureCollection = {
+  const eventsGeoJson: FeatureCollection = useMemo(() => ({
     type: 'FeatureCollection',
     features: events.map((event) => ({
       type: 'Feature',
       geometry: { type: 'Point', coordinates: [event.coordinates[1], event.coordinates[0]] },
       properties: event
     } as Feature)),
-  }
+  }), [events]);
 
-  const onClick = (event: MapMouseEvent) => {
+  const onClick = useCallback((event: MapMouseEvent) => {
     event.originalEvent.stopPropagation();
     const feature = event.features?.at(0);
     if (feature) {
@@ -125,9 +124,9 @@ export default function Index() {
     } else {
       setEvent(null)
     }
-  }
+  }, []);
 
-  const handleMapEnter = (event: MapMouseEvent) => {
+  const handleMapEnter = useCallback((event: MapMouseEvent) => {
     const nearestPoint = event.features?.at(0);
     if (nearestPoint) {
       const pointType = nearestPoint.layer?.id;
@@ -149,8 +148,8 @@ export default function Index() {
           break;
       }
     }
-  }
-  const handleMapLeave = (event: MapMouseEvent) => {
+  }, []);
+  const handleMapLeave = useCallback((event: MapMouseEvent) => {
     const nearestPoint = event.features?.at(0);
     if (nearestPoint) {
       const pointType = nearestPoint.layer?.id;
@@ -172,20 +171,20 @@ export default function Index() {
           break;
       }
     }
-  }
+  }, []);
 
-  const handleGeolocation = (e) => {
+  const handleGeolocation = useCallback((e) => {
     setEventsForGeolocation(e.coords);
-  }
+  }, []);
 
-  const handleStyleLoad = () => {
+  const handleStyleLoad = useCallback(() => {
     const map = mapRef.current;
     map?.setConfigProperty('basemap', 'lightPreset', 'night').setConfigProperty('basemap', 'font', 'Inter');
     setShowSource(true);
-  }
+  }, []);
 
   return (
-    <main className="w-[100vw] h-[100vh]">
+    <main className="w-dvw h-dvh">
       <Map
         ref={mapRef}
         mapboxAccessToken='pk.eyJ1IjoiY2Nzd2VlbmV5IiwiYSI6ImNsdXVtem5zcDBiZ3AyanNmZGwzamt4d2oifQ.j98Apz4tCtnO2SnlgpntJw'
@@ -199,9 +198,10 @@ export default function Index() {
         onMouseLeave={handleMapLeave}
         interactiveLayerIds={['clusters', 'unclustered-point']}
         onLoad={handleStyleLoad}
+        reuseMaps
       >
         {showSource &&
-          <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50}>
+          <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50} generateId>
             <Layer {...clustersLayerStyle} />
             <Layer {...clusterCountLayerStyle} />
             <Layer {...unclusteredLayerStyle} />

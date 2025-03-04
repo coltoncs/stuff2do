@@ -1,20 +1,14 @@
 import { useRef, useState, type ChangeEvent } from "react";
-import './ControlPanel.css';
 import { useMap } from "react-map-gl/mapbox";
-import { MdFormatListBulleted, MdOutlineClose, MdOutlineZoomOutMap } from "react-icons/md";
+import { MdFormatListBulleted, MdOutlineZoomOutMap } from "react-icons/md";
 import useMapStore from "~/store";
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
-import EventList from "../EventList";
-import { PiSecurityCameraDuotone } from "react-icons/pi";
-import { FaRotate } from "react-icons/fa6";
-import { TbRotate360 } from "react-icons/tb";
-import { LuRotate3D } from "react-icons/lu";
+import EventList from "./EventList";
 import { BsArrows, BsArrowsVertical } from "react-icons/bs";
 
 export function ControlPanel() {
   const [showMenu, setShowMenu] = useState(false);
-  const pitchRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const { contextSafe } = useGSAP({ scope: menuRef });
   const { current: map } = useMap();
@@ -51,17 +45,34 @@ export function ControlPanel() {
   return (
     <>
       <EventList ref={menuRef} toggle={handleMenuToggle} />
-      <div className="controls">
-        <div id="bottom-controls">
-          <div style={{ display: 'flex', gap: '15px' }}>
-            <button className="control" onClick={handleResetZoom}><MdOutlineZoomOutMap size="50px" /></button>
-            <button className="control" onClick={handleChangePitch}><BsArrowsVertical size="50px" /></button>
-            <button className="control" onClick={handleChangeBearing}><BsArrows size="50px" /></button>
+      <div>
+        <div className="pointer-events-none fixed bottom-7 w-full flex justify-between px-5">
+          <div className="pointer-events-auto flex flex-col sm:flex-row gap-5">
+            <button className="bg-slate-600 p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleResetZoom}><MdOutlineZoomOutMap size="50px" /></button>
+            <button className="bg-slate-600 p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleChangePitch}><BsArrowsVertical size="50px" /></button>
+            <button className="bg-slate-600 p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleChangeBearing}><BsArrows size="50px" /></button>
           </div>
-          <button className="control" onClick={handleMenuToggle}><MdFormatListBulleted size="50px" /></button>
+          <button className="bg-slate-600 p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md pointer-events-auto h-fit self-end" onClick={handleMenuToggle}><MdFormatListBulleted size="50px" /></button>
         </div>
-        <div id="date-container">
-          <input defaultValue={date.toISOString().split('T')[0]} className="w-3xs bg-slate-600 rounded px-5 py-3 border border-blue-200 text-slate-200" onChange={handleDateChange} id="datePicker" type="date"></input>
+        <div className="fixed top-5 w-full flex justify-center">
+          <input 
+            defaultValue={date.toISOString().split('T')[0]} 
+            className={`
+              w-3xs 
+              bg-slate-600 
+              rounded 
+              px-5 
+              py-3 
+              border 
+              font-black
+              text-md
+              border-blue-200 
+              text-slate-200 
+              shadow-md 
+              shadow-slate-600
+              `}
+            onChange={handleDateChange} 
+            type="date"></input>
         </div>
       </div>
     </>
