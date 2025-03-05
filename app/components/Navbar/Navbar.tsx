@@ -30,7 +30,7 @@ export function Navbar() {
       <button 
         ref={toggleRef} 
         onClick={onClick} 
-        className="fixed top-5 right-5 z-[9999] bg-slate-600 p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md">
+        className="fixed top-5 right-5 z-[9999] bg-slate-600 border-2 border-slate-400 p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md">
           <IoSettingsSharp className="pointer-events-none" size={28} />
       </button>
       <nav ref={navRef} className="fixed w-full h-full -translate-y-full z-[9999] bg-slate-600 flex flex-col">

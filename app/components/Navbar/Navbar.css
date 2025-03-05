@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .active {
-  @apply text-red-500 font-extrabold bg-slate-700;
+  @apply text-red-500 font-extrabold bg-slate-500;
 }
 
 .active::before {

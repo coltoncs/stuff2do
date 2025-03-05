@@ -81,14 +81,14 @@ export default function Index() {
     zoom: 10
   });
 
-  const eventsGeoJson: FeatureCollection = useMemo(() => ({
+  const eventsGeoJson: FeatureCollection = {
     type: 'FeatureCollection',
     features: events.map((event) => ({
       type: 'Feature',
       geometry: { type: 'Point', coordinates: [event.coordinates[1], event.coordinates[0]] },
       properties: event
     } as Feature)),
-  }), [events]);
+  };
 
   const onClick = useCallback((event: MapMouseEvent) => {
     event.originalEvent.stopPropagation();

@@ -23,7 +23,6 @@ function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] 
           const formatter = Intl.DateTimeFormat('en-US', { dateStyle: 'short' });
           const todaysDate = new Date(formatter.format(new Date()));
           const eventsDate = new Date(formatter.format(new Date(event.date)));
-          console.log(eventsDate)
           return (
             <a href={event.url}>
               <li 

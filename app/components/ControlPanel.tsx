@@ -19,6 +19,8 @@ export function ControlPanel() {
     map?.easeTo({
       center: [-78.6382, 35.7796],
       zoom: 10,
+      bearing: 0,
+      pitch: 0,
       duration: 2000
     });
   }
@@ -48,17 +50,18 @@ export function ControlPanel() {
       <div>
         <div className="pointer-events-none fixed bottom-7 w-full flex justify-between px-5">
           <div className="pointer-events-auto flex flex-col sm:flex-row gap-5">
-            <button className="bg-slate-600 p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleResetZoom}><MdOutlineZoomOutMap size="50px" /></button>
-            <button className="bg-slate-600 p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleChangePitch}><BsArrowsVertical size="50px" /></button>
-            <button className="bg-slate-600 p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleChangeBearing}><BsArrows size="50px" /></button>
+            <button className="bg-slate-600 border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleResetZoom}><MdOutlineZoomOutMap size="50px" /></button>
+            <button className="bg-slate-600 border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleChangePitch}><BsArrowsVertical size="50px" /></button>
+            <button className="bg-slate-600 border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleChangeBearing}><BsArrows size="50px" /></button>
           </div>
-          <button className="bg-slate-600 p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md pointer-events-auto h-fit self-end" onClick={handleMenuToggle}><MdFormatListBulleted size="50px" /></button>
+          <button className="bg-slate-600 border-2 border-slate-400 p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md pointer-events-auto h-fit self-end" onClick={handleMenuToggle}><MdFormatListBulleted size="50px" /></button>
         </div>
         <div className="fixed top-5 w-full flex justify-center">
           <input 
             defaultValue={date.toISOString().split('T')[0]} 
             className={`
-              w-3xs 
+              w-4xs
+              sm:w-3xs 
               bg-slate-600 
               rounded 
               px-5 
