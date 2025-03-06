@@ -72,6 +72,7 @@ const unclusteredLayerStyle: CircleLayerSpecification = {
 export default function Index() {
   const [showSource, setShowSource] = useState(false);
   const events = useMapStore((state) => state.events);
+  const routes = useMapStore((state) => state.routes);
   const setEvent = useMapStore((state) => state.setEvent);
   const setEventsForGeolocation = useMapStore((state) => state.setEventsForGeolocation);
   const mapRef = useRef<MapRef>(null);
@@ -200,6 +201,11 @@ export default function Index() {
         onLoad={handleStyleLoad}
         reuseMaps
       >
+        {/* {routes && routes.map((route) => {
+          return (
+            <Source id={`route${route.distance}`} type='geojson' data={route.geometries} />
+          )
+        })} */}
         {showSource &&
           <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50} generateId>
             <Layer {...clustersLayerStyle} />

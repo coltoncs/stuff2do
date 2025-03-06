@@ -7459,4 +7459,19 @@ export const events = [
       "https://www.google.com/maps/dir/?api=1&destination=123%20Vivian%20St.&travelmode=driving",
     datetime: "March 9, 2025 13:00:00",
   },
+  {
+    id: "asdf345bsdf",
+    name: "Seed Starting for Spring and Vegetables",
+    cost: "$28, 20% Members discount",
+    url: "https://gardens.duke.edu/event/seed-starting-for-spring-and-summer-vegetables/",
+    date: "March 7, 2025",
+    streetaddr: "420 Anderson Street",
+    city: "Durham",
+    times: "10:00 AM",
+    location: "Durham Performing Arts Center",
+    coordinates: [36.002453292944104, -78.93323366244687],
+    googleMapsUrl:
+      "https://www.google.com/maps/dir/?api=1&destination=420%20Anderson%20St.&travelmode=driving",
+    datetime: "March 7, 2025 10:00:00",
+  },
 ];
