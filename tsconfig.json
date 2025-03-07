@@ -15,7 +15,9 @@
     "rootDirs": [".", "./.react-router/types"],
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./app/*"]
+      "~/*": ["./app/*"],
+      "three/webgpu": ["node_modules/three/build/three.webgpu.js"],
+      "three/tsl": ["node_moduels/three/build/three.tsl.js"],
     },
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,

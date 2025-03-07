@@ -6,15 +6,22 @@ import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
 import EventList from "./EventList";
 import { BsArrows, BsArrowsVertical } from "react-icons/bs";
+import { FaSliders } from "react-icons/fa6";
 
 export function ControlPanel() {
   const [showMenu, setShowMenu] = useState(false);
+  const [showBtns, setShowBtns] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const btnsRef = useRef<HTMLDivElement>(null);
   const { contextSafe } = useGSAP({ scope: menuRef });
+  const { contextSafe: ctxSafe } = useGSAP({ scope: btnsRef });
   const { current: map } = useMap();
   const date = useMapStore((state) => state.date);
   const setDate = useMapStore((state) => state.setDate);
   const setEvent = useMapStore((state) => state.setEvent);
+  useGSAP(() => {
+    gsap.set(btnsRef.current.children, { x: -1000 })
+  })
   const handleResetZoom = () => {
     map?.easeTo({
       center: [-78.6382, 35.7796],
@@ -24,6 +31,10 @@ export function ControlPanel() {
       duration: 2000
     });
   }
+  const handleShowControls = ctxSafe(() => {
+    gsap.to(btnsRef.current?.children, { x: !showBtns ? 0 : -1000, stagger: 0.15, duration: 0.87, ease: 'power3.inOut' });
+    setShowBtns(!showBtns);
+  });
   const handleChangePitch = (e: React.MouseEvent<HTMLButtonElement>) => {
     map?.easeTo({
       pitch: map?.getPitch() !== 45 ? 45 : 0,
@@ -47,14 +58,17 @@ export function ControlPanel() {
   return (
     <>
       <EventList ref={menuRef} toggle={handleMenuToggle} />
+      <div ref={btnsRef} className="flex flex-col fixed bottom-7/50 sm:bottom-7/50 left-5 gap-5">
+        <button className="bg-slate-600 test border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleResetZoom}><MdOutlineZoomOutMap size="50px" /></button>
+        <button className="bg-slate-600 test border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleChangePitch}><BsArrowsVertical size="50px" /></button>
+        <button className="bg-slate-600 test border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleChangeBearing}><BsArrows size="50px" /></button>
+      </div>
       <div>
         <div className="pointer-events-none fixed bottom-7 w-full flex justify-between px-5">
-          <div className="pointer-events-auto flex flex-col sm:flex-row gap-5">
-            <button className="bg-slate-600 border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleResetZoom}><MdOutlineZoomOutMap size="50px" /></button>
-            <button className="bg-slate-600 border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleChangePitch}><BsArrowsVertical size="50px" /></button>
-            <button className="bg-slate-600 border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleChangeBearing}><BsArrows size="50px" /></button>
+          <div className="pointer-events-auto">
+            <button className="bg-slate-600 border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleShowControls}><FaSliders size="50px" /></button>
           </div>
-          <button className="bg-slate-600 border-2 border-slate-400 p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md pointer-events-auto h-fit self-end" onClick={handleMenuToggle}><MdFormatListBulleted size="50px" /></button>
+          <button className="bg-slate-600 border-2 border-slate-400 p-1 sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md pointer-events-auto h-fit self-end" onClick={handleMenuToggle}><MdFormatListBulleted size="50px" /></button>
         </div>
         <div className="fixed top-5 w-full flex justify-center">
           <input 

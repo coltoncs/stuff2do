@@ -1,12 +1,14 @@
 import type { Route } from "./+types/index";
 import Map, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
 import { type Feature, type FeatureCollection } from "geojson";
-import { useState, useRef, useCallback, useMemo } from "react";
+import { useState, useRef, useCallback } from "react";
 import type { MapRef } from 'react-map-gl/mapbox';
 import type { CircleLayerSpecification, SymbolLayerSpecification, GeoJSONSource, MapMouseEvent, Map } from "mapbox-gl";
 import { ControlPanel } from "~/components/ControlPanel";
 import { EventViewer } from "~/components/EventViewer";
 import useMapStore from "~/store";
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -208,7 +210,7 @@ export default function Index() {
             <Layer {...unclusteredLayerStyle} />
           </Source>
         }
-        {/* {routes && routes.map((route, idx) => {
+        {routes && routes.map((route, idx) => {
           return (
             <Source id={`route-${idx}`} type='geojson' data={{
               type: 'LineString',
@@ -224,7 +226,7 @@ export default function Index() {
               }} />
             </Source>
           )
-        })} */}
+        })}
         <GeolocateControl onGeolocate={handleGeolocation} position="top-left" />
         <ControlPanel />
         <EventViewer />

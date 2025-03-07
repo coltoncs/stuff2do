@@ -5,46 +5,35 @@ import { IoMdBicycle, IoMdCar, IoMdWalk } from 'react-icons/io';
 export const EventViewer = () => {
   const event = useMapStore((state) => state.event);
   const geolocation = useMapStore((state) => state.geolocation);
-  const routes = useMapStore((state) => state.routes)
   const setRoutes = useMapStore((state) => state.setRoutes);
 
   const handleDriveDirections = async () => {
     const profile = 'mapbox/driving';
-    const eventCoordsSplit = event?.coordinates.substring(1, event.coordinates.length - 1);
-    const coords = eventCoordsSplit.split(',');
-    const formattedCoords = `${coords[1]},${coords[0]}`;
-    const userCoords = `${geolocation?.longitude},${geolocation?.latitude}`;
-    const req = await fetch(`https://api.mapbox.com/directions/v5/${profile}/${userCoords};${formattedCoords}?geometries=geojson&access_token=pk.eyJ1IjoiY2Nzd2VlbmV5IiwiYSI6ImNsdzlsMDd5NDAybGsybG1td2c2Z2QwazkifQ.0a3dDvVgzpwLwMGHmnY4VQ`);
-    const res = await req.json();
-    if (res.code === 'Ok') {
-      const { routes } = res;
-      setRoutes(routes);
-    }
+    getDirections(profile);
   }
   const handleWalkDirections = async () => {
     const profile = 'mapbox/walking';
-    const eventCoordsSplit = event?.coordinates.substring(1, event.coordinates.length - 1);
-    const coords = eventCoordsSplit.split(',');
-    const formattedCoords = `${coords[1]},${coords[0]}`;
-    const userCoords = `${geolocation?.longitude},${geolocation?.latitude}`;
-    const req = await fetch(`https://api.mapbox.com/directions/v5/${profile}/${userCoords};${formattedCoords}?geometries=geojson&walkway_bias=1&access_token=pk.eyJ1IjoiY2Nzd2VlbmV5IiwiYSI6ImNsdzlsMDd5NDAybGsybG1td2c2Z2QwazkifQ.0a3dDvVgzpwLwMGHmnY4VQ`);
-    const res = await req.json();
-    if (res.code === 'Ok') {
-      const { routes } = res;
-      setRoutes(routes);
-    }
+    getDirections(profile);
   }
   const handleCycleDirections = async () => {
     const profile = 'mapbox/cycling';
-    const eventCoordsSplit = event?.coordinates.substring(1, event.coordinates.length - 1);
-    const coords = eventCoordsSplit.split(',');
+    getDirections(profile);
+  }
+
+  const getDirections = async (profile: string) => {
+    let coords;
+    if (typeof event?.coordinates === 'string') {
+      const eventCoordsSplit = event?.coordinates.substring(1, event.coordinates.length - 1);
+      coords = eventCoordsSplit.split(',');
+    } else {
+      coords = event?.coordinates;
+    }
     const formattedCoords = `${coords[1]},${coords[0]}`;
     const userCoords = `${geolocation?.longitude},${geolocation?.latitude}`;
     const req = await fetch(`https://api.mapbox.com/directions/v5/${profile}/${userCoords};${formattedCoords}?geometries=geojson&access_token=pk.eyJ1IjoiY2Nzd2VlbmV5IiwiYSI6ImNsdzlsMDd5NDAybGsybG1td2c2Z2QwazkifQ.0a3dDvVgzpwLwMGHmnY4VQ`);
     const res = await req.json();
     if (res.code === 'Ok') {
-      const { routes } = res; 
-      console.log(routes);
+      const { routes } = res;
       setRoutes(routes);
     }
   }
@@ -61,7 +50,7 @@ export const EventViewer = () => {
         }
       </p>
       <p className='w-full text-center'>{event.cost}</p>
-      {/* {geolocation && (
+      {geolocation && (
         <div className='w-full flex justify-center gap-5 mt-5'>
           <button
             onClick={handleDriveDirections}
@@ -80,9 +69,6 @@ export const EventViewer = () => {
           </button>
         </div>
       )}
-      {routes && (
-        routes.map(route => <div><p>{(route.duration / 60).toFixed(1)} minutes</p><p>{(route.distance / 1609).toFixed(1)} mi</p></div>)
-      )} */}
     </div>
   )
 }

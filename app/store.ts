@@ -73,7 +73,7 @@ const useMapStore = create<MapState>()((set) => ({
      });
   },
   setEvent: (event: Event | null) => {
-    set({ event });
+    set({ event, routes: null });
   },
   setRoutes: (routes: any[]) => {
     set({ routes });

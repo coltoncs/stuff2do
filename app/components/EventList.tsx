@@ -23,14 +23,14 @@ function EventList({ toggle, ref }) {
           {Object.entries(groupedEvents).map(([city, events]) => (
             <>
               <h2 className="text-slate-300 font-bold text-lg">{city !== 'undefined' ? city : 'N/A'}</h2>
-              {events?.map(event => <button className="w-full text-left" onClick={() => {
+              {events?.map(event => <button key={event.id} className="w-full text-left" onClick={() => {
                 setEvent(event);
                 map?.flyTo({
                   center: [event.coordinates[1], event.coordinates[0]],
                   pitch: 45,
                   zoom: 16
                 });
-              }}><li key={event.id} className="cursor-pointer bg-slate-600 hover:bg-slate-400 my-1 rounded px-3 py-2">{event.name}</li></button>)}
+              }}><li className="cursor-pointer bg-slate-600 hover:bg-slate-400 my-1 rounded px-3 py-2">{event.name}</li></button>)}
             </>
           ))}
         </ol>
