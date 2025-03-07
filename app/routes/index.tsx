@@ -201,11 +201,6 @@ export default function Index() {
         onLoad={handleStyleLoad}
         reuseMaps
       >
-        {/* {routes && routes.map((route) => {
-          return (
-            <Source id={`route${route.distance}`} type='geojson' data={route.geometries} />
-          )
-        })} */}
         {showSource &&
           <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50} generateId>
             <Layer {...clustersLayerStyle} />
@@ -213,6 +208,23 @@ export default function Index() {
             <Layer {...unclusteredLayerStyle} />
           </Source>
         }
+        {/* {routes && routes.map((route, idx) => {
+          return (
+            <Source id={`route-${idx}`} type='geojson' data={{
+              type: 'LineString',
+              coordinates: route.geometry.coordinates,
+            }}>
+              <Layer id="route" type="line" source={`route-${idx}`} layout={{
+                "line-join": 'round',
+                "line-cap": 'round'
+              }} paint={{
+                "line-color": "#34dd3d",
+                "line-width": 8,
+                "line-emissive-strength": 1,
+              }} />
+            </Source>
+          )
+        })} */}
         <GeolocateControl onGeolocate={handleGeolocation} position="top-left" />
         <ControlPanel />
         <EventViewer />
