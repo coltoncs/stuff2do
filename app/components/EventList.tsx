@@ -7,7 +7,7 @@ import { useGSAP } from "@gsap/react";
 function EventList({ toggle, ref }) {
   const { current: map } = useMap();
   const events = useMapStore((state) => state.events);
-  const setEvent = useMapStore((state) => state.setEvent);
+  const setSelectedEvents = useMapStore((state) => state.setSelectedEvents);
   useGSAP(() => {
     gsap.set(ref.current, { y: '520px' })
   });
@@ -24,7 +24,7 @@ function EventList({ toggle, ref }) {
             <>
               <h2 className="text-slate-300 font-bold text-lg">{city !== 'undefined' ? city : 'N/A'}</h2>
               {events?.map(event => <button key={event.id} className="w-full text-left" onClick={() => {
-                setEvent(event);
+                setSelectedEvents([event]);
                 map?.flyTo({
                   center: [event.coordinates[1], event.coordinates[0]],
                   pitch: 45,

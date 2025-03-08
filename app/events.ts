@@ -1403,7 +1403,7 @@ export const events = [
     times: "7:30pm",
     time: "19:30:00",
     location: "Holly Springs Cultural Center",
-    coordinates: [35.8189, -78.6447],
+    coordinates: [35.65006038208783, -78.83651033807979],
     googleMapsUrl:
       "https://www.google.com/maps/dir/?api=1&destination=300%20W.%20Ballentine%20St.&travelmode=driving",
     datetime: "March 8, 2025 19:30:00",
@@ -1556,7 +1556,7 @@ export const events = [
     city: "Holly Springs",
     times: "Sat. 1:00 PM -3:30 PM",
     location: "Bombshell Beer Co.",
-    coordinates: [35.8089767, -78.6212543],
+    coordinates: [35.65821280721485, -78.83686430124362],
     googleMapsUrl:
       "https://www.google.com/maps/dir/?api=1&destination=120%20Quantum%20St.&travelmode=driving",
     datetime: "March 8, 2025 undefined",

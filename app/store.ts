@@ -17,14 +17,14 @@ type Event = {
 }
 
 interface MapState {
-  event: Event | null;
+  selectedEvents: Event[] | null;
   events: any[];
   date: Date;
   geolocation: GeolocationCoordinates | null;
   routes: any[] | null;
   setEventsForGeolocation: (coords: GeolocationCoordinates) => void;
   setDate: (date: Date) => void;
-  setEvent: (event: Event | null) => void;
+  setSelectedEvents: (event: Event[] | null) => void;
   setRoutes: (route: any[]) => void;
 }
 
@@ -36,7 +36,7 @@ const matchesTodaysDate = (event) => {
 }
 
 const useMapStore = create<MapState>()((set) => ({
-  event: null,
+  selectedEvents: null,
   events: jsonEvents.filter(matchesTodaysDate),
   date: new Date(),
   geolocation: null,
@@ -69,11 +69,16 @@ const useMapStore = create<MapState>()((set) => ({
             )
         )
       }
-      return { date: date, events: filteredEvents }
+      return { date: date, events: filteredEvents, routes: null }
      });
   },
-  setEvent: (event: Event | null) => {
-    set({ event, routes: null });
+  setSelectedEvents: (event: Event[] | null) => {
+    set(state => {
+      if (state.routes) {
+        return { selectedEvents: event, routes: state.routes };
+      }
+      return { selectedEvents: event, routes: null };
+    });
   },
   setRoutes: (routes: any[]) => {
     set({ routes });

@@ -18,9 +18,9 @@ export function ControlPanel() {
   const { current: map } = useMap();
   const date = useMapStore((state) => state.date);
   const setDate = useMapStore((state) => state.setDate);
-  const setEvent = useMapStore((state) => state.setEvent);
+  const setSelectedEvents = useMapStore((state) => state.setSelectedEvents);
   useGSAP(() => {
-    gsap.set(btnsRef.current.children, { x: -1000 })
+    gsap.set(btnsRef.current!.children, { x: -1000 })
   })
   const handleResetZoom = () => {
     map?.easeTo({
@@ -32,7 +32,10 @@ export function ControlPanel() {
     });
   }
   const handleShowControls = ctxSafe(() => {
-    gsap.to(btnsRef.current?.children, { x: !showBtns ? 0 : -1000, stagger: 0.15, duration: 0.87, ease: 'power3.inOut' });
+    gsap.to(btnsRef.current!.children, { x: !showBtns ? 0 : -200, stagger: {
+      from: 'end',
+      amount: 0.25
+    }, duration: 0.87, ease: 'power3.inOut' });
     setShowBtns(!showBtns);
   });
   const handleChangePitch = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -49,7 +52,7 @@ export function ControlPanel() {
     const selectedDate = new Date(e.target.value);
     selectedDate.setUTCHours(8)
     setDate(selectedDate);
-    setEvent(null);
+    setSelectedEvents(null);
   }
   const handleMenuToggle = contextSafe(() => {
     setShowMenu(!showMenu);
@@ -58,7 +61,7 @@ export function ControlPanel() {
   return (
     <>
       <EventList ref={menuRef} toggle={handleMenuToggle} />
-      <div ref={btnsRef} className="flex flex-col fixed bottom-7/50 sm:bottom-7/50 left-5 gap-5">
+      <div ref={btnsRef} className="flex flex-col fixed bottom-7/50 sm:bottom-9/50 left-5 gap-5">
         <button className="bg-slate-600 test border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleResetZoom}><MdOutlineZoomOutMap size="50px" /></button>
         <button className="bg-slate-600 test border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleChangePitch}><BsArrowsVertical size="50px" /></button>
         <button className="bg-slate-600 test border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleChangeBearing}><BsArrows size="50px" /></button>
@@ -70,10 +73,11 @@ export function ControlPanel() {
           </div>
           <button className="bg-slate-600 border-2 border-slate-400 p-1 sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md pointer-events-auto h-fit self-end" onClick={handleMenuToggle}><MdFormatListBulleted size="50px" /></button>
         </div>
-        <div className="fixed top-5 w-full flex justify-center">
+        <div className="fixed top-5 w-full pointer-events-none flex justify-center">
           <input 
             defaultValue={date.toISOString().split('T')[0]} 
             className={`
+              pointer-events-auto
               w-4xs
               sm:w-3xs 
               bg-slate-600 

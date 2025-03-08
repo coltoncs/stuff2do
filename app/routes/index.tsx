@@ -1,6 +1,6 @@
 import type { Route } from "./+types/index";
 import Map, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
-import { type Feature, type FeatureCollection } from "geojson";
+import { type Feature, type FeatureCollection, type GeoJsonProperties, type Geometry } from "geojson";
 import { useState, useRef, useCallback } from "react";
 import type { MapRef } from 'react-map-gl/mapbox';
 import type { CircleLayerSpecification, SymbolLayerSpecification, GeoJSONSource, MapMouseEvent, Map } from "mapbox-gl";
@@ -75,7 +75,7 @@ export default function Index() {
   const [showSource, setShowSource] = useState(false);
   const events = useMapStore((state) => state.events);
   const routes = useMapStore((state) => state.routes);
-  const setEvent = useMapStore((state) => state.setEvent);
+  const setSelectedEvents = useMapStore((state) => state.setSelectedEvents);
   const setEventsForGeolocation = useMapStore((state) => state.setEventsForGeolocation);
   const mapRef = useRef<MapRef>(null);
   const [viewState, setViewState] = useState({
@@ -95,14 +95,13 @@ export default function Index() {
 
   const onClick = useCallback((event: MapMouseEvent) => {
     event.originalEvent.stopPropagation();
-    const feature = event.features?.at(0);
-    if (feature) {
-      const pointType = feature.layer?.id;
-      let clusterId, mapboxSource;
-      switch (pointType) {
-        case 'clusters':
-          clusterId = feature.properties?.cluster_id;
-          mapboxSource = mapRef.current?.getSource('events') as GeoJSONSource;
+    const features = event.features;
+    if (features) {
+      let eventInformation : GeoJsonProperties = [];
+      features.forEach((feature) => {
+        if (feature.layer?.id === 'clusters') {
+          let clusterId = feature.properties?.cluster_id;
+          let mapboxSource = mapRef.current?.getSource('events') as GeoJSONSource;
           mapboxSource.getClusterExpansionZoom(clusterId, (err, zoom) => {
             if (err) return;
             mapRef.current?.easeTo({
@@ -111,21 +110,49 @@ export default function Index() {
               duration: 500
             });
           });
-          break;
-        case 'unclustered-point':
-          const { properties } = feature;
-          setEvent(properties);
-          mapRef.current?.easeTo({
-            center: JSON.parse(properties?.coordinates).reverse(),
-            zoom: 16,
-            duration: 2123
-          });
-          break;
-        default:
-          break;
+        } else if (feature.layer?.id === 'unclustered-point') {
+          eventInformation.push(feature.properties)
+        }
+      })
+      if (eventInformation.length > 0) {
+        setSelectedEvents(eventInformation);
+        mapRef.current?.easeTo({
+          center: JSON.parse(eventInformation[0].coordinates).reverse(),
+          zoom: 16,
+          duration: 2123
+        });
+      } else {
+        setSelectedEvents(null)
       }
+      // const pointType = feature.layer?.id;
+      // let clusterId, mapboxSource;
+      // switch (pointType) {
+      //   case 'clusters':
+      //     clusterId = feature.properties?.cluster_id;
+      //     mapboxSource = mapRef.current?.getSource('events') as GeoJSONSource;
+      //     mapboxSource.getClusterExpansionZoom(clusterId, (err, zoom) => {
+      //       if (err) return;
+      //       mapRef.current?.easeTo({
+      //         center: event.lngLat,
+      //         zoom: zoom ?? 12,
+      //         duration: 500
+      //       });
+      //     });
+      //     break;
+      //   case 'unclustered-point':
+      //     const { properties } = feature;
+      //     setSelectedEvents(properties);
+      //     mapRef.current?.easeTo({
+      //       center: JSON.parse(properties?.coordinates).reverse(),
+      //       zoom: 16,
+      //       duration: 2123
+      //     });
+      //     break;
+      //   default:
+      //     break;
+      // }
     } else {
-      setEvent(null)
+      setSelectedEvents(null)
     }
   }, []);
 
