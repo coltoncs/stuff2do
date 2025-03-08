@@ -1,6 +1,7 @@
 import useMapStore from '~/store';
 import { FiExternalLink } from 'react-icons/fi';
 import { IoMdBicycle, IoMdCar, IoMdWalk } from 'react-icons/io';
+import { useState } from 'react';
 
 export const EventViewer = () => {
   const selectedEvents = useMapStore((state) => state.selectedEvents);
@@ -56,24 +57,24 @@ export const EventViewer = () => {
         </div>
       )) }
       {geolocation && (
-            <div className='w-full flex justify-center gap-5 mt-5'>
-              <button
-                onClick={handleDriveDirections}
-                className='bg-slate-600 hover:bg-slate-300 px-5 py-2 rounded-md border-2 border-slate-400 cursor-pointer'>
-                <IoMdCar size='25px' />
-              </button>
-              <button
-                onClick={handleCycleDirections}
-                className='bg-slate-600 hover:bg-slate-300 px-5 py-2 rounded-md border-2 border-slate-400 cursor-pointer'>
-                <IoMdBicycle size='25px' />
-              </button>
-              <button
-                onClick={handleWalkDirections}
-                className='bg-slate-600 hover:bg-slate-300 px-5 py-2 rounded-md border-2 border-slate-400 cursor-pointer'>
-                <IoMdWalk size='25px' />
-              </button>
-            </div>
-          )}
+        <div className='w-full flex justify-center gap-5 my-5'>
+          <button
+            onClick={handleDriveDirections}
+            className='bg-slate-600 hover:bg-slate-300 px-5 py-2 rounded-md border-2 border-slate-400 cursor-pointer'>
+            <IoMdCar size='25px' />
+          </button>
+          <button
+            onClick={handleCycleDirections}
+            className='bg-slate-600 hover:bg-slate-300 px-5 py-2 rounded-md border-2 border-slate-400 cursor-pointer'>
+            <IoMdBicycle size='25px' />
+          </button>
+          <button
+            onClick={handleWalkDirections}
+            className='bg-slate-600 hover:bg-slate-300 px-5 py-2 rounded-md border-2 border-slate-400 cursor-pointer'>
+            <IoMdWalk size='25px' />
+          </button>
+        </div>
+      )}
     </div>
   )
 }

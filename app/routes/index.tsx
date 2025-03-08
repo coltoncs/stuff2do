@@ -3,10 +3,11 @@ import Map, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
 import { type Feature, type FeatureCollection, type GeoJsonProperties, type Geometry } from "geojson";
 import { useState, useRef, useCallback } from "react";
 import type { MapRef } from 'react-map-gl/mapbox';
-import type { CircleLayerSpecification, SymbolLayerSpecification, GeoJSONSource, MapMouseEvent, Map } from "mapbox-gl";
+import type { CircleLayerSpecification, SymbolLayerSpecification, GeoJSONSource, MapMouseEvent, LngLatLike } from "mapbox-gl";
 import { ControlPanel } from "~/components/ControlPanel";
 import { EventViewer } from "~/components/EventViewer";
 import useMapStore from "~/store";
+import mapboxgl from 'mapbox-gl';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
@@ -75,8 +76,10 @@ export default function Index() {
   const [showSource, setShowSource] = useState(false);
   const events = useMapStore((state) => state.events);
   const routes = useMapStore((state) => state.routes);
+  const mapStyle = useMapStore((state) => state.mapStyle);
   const setSelectedEvents = useMapStore((state) => state.setSelectedEvents);
   const setEventsForGeolocation = useMapStore((state) => state.setEventsForGeolocation);
+  const setLoadingStyle = useMapStore((state) => state.setLoadingStyle);
   const mapRef = useRef<MapRef>(null);
   const [viewState, setViewState] = useState({
     longitude: -78.6382,
@@ -97,7 +100,7 @@ export default function Index() {
     event.originalEvent.stopPropagation();
     const features = event.features;
     if (features) {
-      let eventInformation : GeoJsonProperties = [];
+      let eventInformation: GeoJsonProperties = [];
       features.forEach((feature) => {
         if (feature.layer?.id === 'clusters') {
           let clusterId = feature.properties?.cluster_id;
@@ -124,33 +127,6 @@ export default function Index() {
       } else {
         setSelectedEvents(null)
       }
-      // const pointType = feature.layer?.id;
-      // let clusterId, mapboxSource;
-      // switch (pointType) {
-      //   case 'clusters':
-      //     clusterId = feature.properties?.cluster_id;
-      //     mapboxSource = mapRef.current?.getSource('events') as GeoJSONSource;
-      //     mapboxSource.getClusterExpansionZoom(clusterId, (err, zoom) => {
-      //       if (err) return;
-      //       mapRef.current?.easeTo({
-      //         center: event.lngLat,
-      //         zoom: zoom ?? 12,
-      //         duration: 500
-      //       });
-      //     });
-      //     break;
-      //   case 'unclustered-point':
-      //     const { properties } = feature;
-      //     setSelectedEvents(properties);
-      //     mapRef.current?.easeTo({
-      //       center: JSON.parse(properties?.coordinates).reverse(),
-      //       zoom: 16,
-      //       duration: 2123
-      //     });
-      //     break;
-      //   default:
-      //     break;
-      // }
     } else {
       setSelectedEvents(null)
     }
@@ -163,11 +139,7 @@ export default function Index() {
       let mapCanvas;
       switch (pointType) {
         case 'clusters':
-          mapCanvas = mapRef.current?.getCanvas();
-          if (mapCanvas) {
-            mapCanvas.style.cursor = 'pointer';
-          }
-          break;
+        case 'route':
         case 'unclustered-point':
           mapCanvas = mapRef.current?.getCanvas();
           if (mapCanvas) {
@@ -186,11 +158,7 @@ export default function Index() {
       let mapCanvas;
       switch (pointType) {
         case 'clusters':
-          mapCanvas = mapRef.current?.getCanvas();
-          if (mapCanvas) {
-            mapCanvas.style.cursor = '';
-          }
-          break;
+        case 'route':
         case 'unclustered-point':
           mapCanvas = mapRef.current?.getCanvas();
           if (mapCanvas) {
@@ -226,7 +194,7 @@ export default function Index() {
         onClick={onClick}
         onMouseEnter={handleMapEnter}
         onMouseLeave={handleMapLeave}
-        interactiveLayerIds={['clusters', 'unclustered-point']}
+        interactiveLayerIds={['clusters', 'unclustered-point', 'route']}
         onLoad={handleStyleLoad}
         reuseMaps
       >
@@ -239,15 +207,35 @@ export default function Index() {
         }
         {routes && routes.map((route, idx) => {
           return (
-            <Source id={`route-${idx}`} type='geojson' data={{
+            <Source id={`route-${idx}`} type='geojson' lineMetrics data={{
               type: 'LineString',
               coordinates: route.geometry.coordinates,
             }}>
               <Layer id="route" type="line" source={`route-${idx}`} layout={{
                 "line-join": 'round',
-                "line-cap": 'round'
+                "line-cap": 'round',
               }} paint={{
-                "line-color": "#34dd3d",
+                "line-gradient": [
+                  "interpolate",
+                  [
+                    "linear"
+                  ],
+                  [
+                    "line-progress"
+                  ],
+                  0,
+                  "blue",
+                  0.1,
+                  "royalblue",
+                  0.3,
+                  "cyan",
+                  0.5,
+                  "lime",
+                  0.7,
+                  "yellow",
+                  1,
+                  "red"
+                ],
                 "line-width": 8,
                 "line-emissive-strength": 1,
               }} />

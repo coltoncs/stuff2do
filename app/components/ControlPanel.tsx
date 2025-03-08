@@ -1,11 +1,11 @@
 import { useRef, useState, type ChangeEvent } from "react";
 import { useMap } from "react-map-gl/mapbox";
-import { MdFormatListBulleted, MdOutlineZoomOutMap } from "react-icons/md";
+import { MdDarkMode, MdFormatListBulleted, MdLightMode, MdOutlineZoomOutMap } from "react-icons/md";
 import useMapStore from "~/store";
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
 import EventList from "./EventList";
-import { BsArrows, BsArrowsVertical } from "react-icons/bs";
+import { BsArrows, BsArrowsVertical, BsBadge3D } from "react-icons/bs";
 import { FaSliders } from "react-icons/fa6";
 
 export function ControlPanel() {
