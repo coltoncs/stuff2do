@@ -70,6 +70,7 @@ const unclusteredLayerStyle: CircleLayerSpecification = {
 };
 
 export default function Index() {
+  const [showSource, setShowSource] = useState(false);
   const events = useMapStore((state) => state.events);
   const routes = useMapStore((state) => state.routes);
   const setSelectedEvents = useMapStore((state) => state.setSelectedEvents);
@@ -175,6 +176,7 @@ export default function Index() {
   const handleStyleLoad = useCallback(() => {
     const map = mapRef.current;
     map?.setConfigProperty('basemap', 'lightPreset', 'night').setConfigProperty('basemap', 'font', 'Inter');
+    setShowSource(true);
   }, []);
 
   return (
@@ -194,11 +196,11 @@ export default function Index() {
         onLoad={handleStyleLoad}
         reuseMaps
       >
-        <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50} generateId>
+        {showSource && <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50} generateId>
           <Layer {...clustersLayerStyle} />
           <Layer {...clusterCountLayerStyle} />
           <Layer {...unclusteredLayerStyle} />
-        </Source>
+        </Source>}
         {routes && routes.map((route, idx) => {
           return (
             <Source key={idx} id={`route-${idx}`} type='geojson' lineMetrics data={{
