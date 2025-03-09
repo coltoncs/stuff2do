@@ -65,7 +65,12 @@ export default function List() {
 
   return (
     <main className="flex flex-col items-center justify-center pt-16 pb-4">
-      { Object.entries(weeklyEvents).map(week => <div key={week[1][0].id}><WeeklyEvents dateRange={week[0]} events={week[1]} /></div>) }
+      { Object.entries(weeklyEvents).filter((group) => {
+        const yesterdaysDate = new Date();
+        yesterdaysDate.setDate(yesterdaysDate.getDate() - 1);
+        const eventDate = new Date(group[1][group[1].length-1].date)
+        return eventDate >= yesterdaysDate
+      }).map(week => <div key={week[1][0].id}><WeeklyEvents dateRange={week[0]} events={week[1]} /></div>) }
     </main>
   )
 }
