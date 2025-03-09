@@ -1,22 +1,21 @@
 import useMapStore from '~/store';
 import { FiExternalLink } from 'react-icons/fi';
 import { IoMdBicycle, IoMdCar, IoMdWalk } from 'react-icons/io';
-import { useState } from 'react';
 
 export const EventViewer = () => {
   const selectedEvents = useMapStore((state) => state.selectedEvents);
   const geolocation = useMapStore((state) => state.geolocation);
   const setRoutes = useMapStore((state) => state.setRoutes);
 
-  const handleDriveDirections = async () => {
+  const handleDriveDirections = () => {
     const profile = 'mapbox/driving';
     getDirections(profile);
   }
-  const handleWalkDirections = async () => {
+  const handleWalkDirections = () => {
     const profile = 'mapbox/walking';
     getDirections(profile);
   }
-  const handleCycleDirections = async () => {
+  const handleCycleDirections = () => {
     const profile = 'mapbox/cycling';
     getDirections(profile);
   }
@@ -32,7 +31,7 @@ export const EventViewer = () => {
     }
     const formattedCoords = `${coords[1]},${coords[0]}`;
     const userCoords = `${geolocation?.longitude},${geolocation?.latitude}`;
-    const req = await fetch(`https://api.mapbox.com/directions/v5/${profile}/${userCoords};${formattedCoords}?geometries=geojson&access_token=pk.eyJ1IjoiY2Nzd2VlbmV5IiwiYSI6ImNsdzlsMDd5NDAybGsybG1td2c2Z2QwazkifQ.0a3dDvVgzpwLwMGHmnY4VQ`);
+    const req = await fetch(`https://api.mapbox.com/directions/v5/${profile}/${userCoords};${formattedCoords}?geometries=geojson&alternatives=true&access_token=pk.eyJ1IjoiY2Nzd2VlbmV5IiwiYSI6ImNsdzlsMDd5NDAybGsybG1td2c2Z2QwazkifQ.0a3dDvVgzpwLwMGHmnY4VQ`);
     const res = await req.json();
     if (res.code === 'Ok') {
       const { routes } = res;

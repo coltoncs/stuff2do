@@ -1,5 +1,5 @@
 import type { Route } from "./+types/index";
-import Map, { Source, Layer, GeolocateControl, Popup } from 'react-map-gl/mapbox';
+import Map, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
 import { type Feature, type FeatureCollection, type GeoJsonProperties, type Geometry } from "geojson";
 import { useState, useRef, useCallback } from "react";
 import type { MapRef } from 'react-map-gl/mapbox';
@@ -70,8 +70,6 @@ const unclusteredLayerStyle: CircleLayerSpecification = {
 };
 
 export default function Index() {
-  const [showSource, setShowSource] = useState(false);
-  const [showPopup, setShowPopup] = useState(null);
   const events = useMapStore((state) => state.events);
   const routes = useMapStore((state) => state.routes);
   const setSelectedEvents = useMapStore((state) => state.setSelectedEvents);
@@ -177,7 +175,6 @@ export default function Index() {
   const handleStyleLoad = useCallback(() => {
     const map = mapRef.current;
     map?.setConfigProperty('basemap', 'lightPreset', 'night').setConfigProperty('basemap', 'font', 'Inter');
-    setShowSource(true);
   }, []);
 
   return (
@@ -197,16 +194,14 @@ export default function Index() {
         onLoad={handleStyleLoad}
         reuseMaps
       >
-        {showSource &&
-          <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50} generateId>
-            <Layer {...clustersLayerStyle} />
-            <Layer {...clusterCountLayerStyle} />
-            <Layer {...unclusteredLayerStyle} />
-          </Source>
-        }
+        <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50} generateId>
+          <Layer {...clustersLayerStyle} />
+          <Layer {...clusterCountLayerStyle} />
+          <Layer {...unclusteredLayerStyle} />
+        </Source>
         {routes && routes.map((route, idx) => {
           return (
-            <Source id={`route-${idx}`} type='geojson' lineMetrics data={{
+            <Source key={idx} id={`route-${idx}`} type='geojson' lineMetrics data={{
               type: 'LineString',
               coordinates: route.geometry.coordinates,
             }}>
@@ -232,7 +227,7 @@ export default function Index() {
                 "line-width": 8,
                 "line-blur": 1,
                 "line-emissive-strength": 1,
-              }}/>
+              }} />
             </Source>
           )
         })}
