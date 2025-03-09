@@ -6761,7 +6761,7 @@ export const events = [
     cost: "Free",
     url: "https://downtownraleigh.org/do/burial-beer-first-friday-with-andrew-langhans",
     date: "March 7, 2025",
-    streetaddr: "500 E Davie",
+    streetaddr: "500 E Davie Street",
     city: "Raleigh",
     times: "6:00 PM",
     location: "Burial DTR",
@@ -6784,5 +6784,20 @@ export const events = [
     googleMapsUrl:
       "https://www.google.com/maps/dir/?api=1&destination=3709%20Neil%20Street%20Raleigh&travelmode=driving",
     datetime: "March 8, 2025 12:00:00",
+  },
+  {
+    id: "34534534546356dfgdfgdfg86478567867",
+    name: "Futility of Ignorance Trivia",
+    cost: "Free",
+    url: "https://burialbeer.com/blogs/events",
+    date: "March 10, 2025",
+    streetaddr: "500 E Davie Street",
+    city: "Raleigh",
+    times: "7:00 PM",
+    location: "Burial DTR",
+    coordinates: [35.77525116887182, -78.63233975646844],
+    googleMapsUrl:
+      "https://www.google.com/maps/dir/?api=1&destination=500%20E%20Davie%20Street%20Raleigh&travelmode=driving",
+    datetime: "March 10, 2025 19:00:00",
   },
 ];

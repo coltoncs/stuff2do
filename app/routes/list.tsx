@@ -1,17 +1,13 @@
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { FiExternalLink } from 'react-icons/fi';
-import { events } from '~/events';
+import { events } from '~/data/events';
 
 function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] }) {
   const [isOpen, setIsOpen] = useState(false);
   const accordionRef = useRef(null);
-  const { contextSafe } = useGSAP({ scope: accordionRef });
-  const handleAccordionClick = contextSafe(() => {
-    // todo: gsap animations here
+  const handleAccordionClick = () => {
     setIsOpen(!isOpen);
-  })
+  }
   
   return (
     <div ref={accordionRef} className='w-full md:w-4xl rounded mb-5 bg-slate-800'>

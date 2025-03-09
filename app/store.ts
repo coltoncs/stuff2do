@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { events, events as jsonEvents } from "./events";
+import { events as jsonEvents } from "./data/events";
 
 type Event = {
   id: string,

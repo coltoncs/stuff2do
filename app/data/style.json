@@ -1,0 +1,7 @@
+{
+  "version": 8,
+  "name": "919Events-Mapbox",
+  "center": [35.7796, -78.6382],
+  "zoom": 10
+  // TODO: create a custom mapbox style
+}

@@ -1,5 +1,5 @@
 import type { Route } from "./+types/index";
-import Map, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
+import Map, { Source, Layer, GeolocateControl, Popup } from 'react-map-gl/mapbox';
 import { type Feature, type FeatureCollection, type GeoJsonProperties, type Geometry } from "geojson";
 import { useState, useRef, useCallback } from "react";
 import type { MapRef } from 'react-map-gl/mapbox';
@@ -7,9 +7,6 @@ import type { CircleLayerSpecification, SymbolLayerSpecification, GeoJSONSource,
 import { ControlPanel } from "~/components/ControlPanel";
 import { EventViewer } from "~/components/EventViewer";
 import useMapStore from "~/store";
-import mapboxgl from 'mapbox-gl';
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -74,12 +71,11 @@ const unclusteredLayerStyle: CircleLayerSpecification = {
 
 export default function Index() {
   const [showSource, setShowSource] = useState(false);
+  const [showPopup, setShowPopup] = useState(null);
   const events = useMapStore((state) => state.events);
   const routes = useMapStore((state) => state.routes);
-  const mapStyle = useMapStore((state) => state.mapStyle);
   const setSelectedEvents = useMapStore((state) => state.setSelectedEvents);
   const setEventsForGeolocation = useMapStore((state) => state.setEventsForGeolocation);
-  const setLoadingStyle = useMapStore((state) => state.setLoadingStyle);
   const mapRef = useRef<MapRef>(null);
   const [viewState, setViewState] = useState({
     longitude: -78.6382,
@@ -113,6 +109,9 @@ export default function Index() {
               duration: 500
             });
           });
+        } else if (feature.layer.id.includes('route')) {
+          // TODO: DO SOMETHING WITH THE ROUTE
+          console.log(feature);
         } else if (feature.layer?.id === 'unclustered-point') {
           eventInformation.push(feature.properties)
         }
@@ -213,7 +212,7 @@ export default function Index() {
             }}>
               <Layer id="route" type="line" source={`route-${idx}`} layout={{
                 "line-join": 'round',
-                "line-cap": 'round',
+                "line-cap": 'round'
               }} paint={{
                 "line-gradient": [
                   "interpolate",
@@ -224,21 +223,16 @@ export default function Index() {
                     "line-progress"
                   ],
                   0,
-                  "blue",
-                  0.1,
-                  "royalblue",
-                  0.3,
-                  "cyan",
-                  0.5,
-                  "lime",
-                  0.7,
-                  "yellow",
+                  "#3b82f6",
                   1,
-                  "red"
+                  "#22c55e",
                 ],
+                "line-occlusion-opacity": 0,
+                "line-opacity": 0.8,
                 "line-width": 8,
+                "line-blur": 1,
                 "line-emissive-strength": 1,
-              }} />
+              }}/>
             </Source>
           )
         })}
