@@ -27,10 +27,10 @@ function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] 
                   rounded 
                   px-5 
                   py-1 
-                  text-slate-300
                   hover:bg-slate-600 
                   hover:text-slate-100
                   ${eventsDate < todaysDate && ' line-through'}
+                  ${eventsDate.getDate() === todaysDate.getDate() ? ' text-green-500' : ' text-slate-300'}
                   `} 
                 key={event.id}>
                 <p className='flex gap-2 justify items-center'>
