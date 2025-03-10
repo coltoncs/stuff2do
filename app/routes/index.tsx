@@ -171,6 +171,14 @@ export default function Index() {
 
   const handleGeolocation = useCallback((e) => {
     setEventsForGeolocation(e.coords);
+    if (routes) {
+      mapRef.current?.easeTo({
+        center: [e.coords.longitude, e.coords.latitude],
+        zoom: 20,
+        pitch: 45,
+        bearing: e.coords.heading || 0
+      });
+    }
   }, []);
 
   const handleStyleLoad = useCallback(() => {
@@ -233,7 +241,7 @@ export default function Index() {
             </Source>
           )
         })}
-        <GeolocateControl onGeolocate={handleGeolocation} position="top-left" />
+        <GeolocateControl onGeolocate={handleGeolocation} showUserLocation trackUserLocation showUserHeading showAccuracyCircle={false} position="top-left" />
         <ControlPanel />
         <EventViewer />
       </Map>

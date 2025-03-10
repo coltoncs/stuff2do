@@ -1,11 +1,13 @@
 import useMapStore from '~/store';
 import { FiExternalLink } from 'react-icons/fi';
 import { IoMdBicycle, IoMdCar, IoMdWalk } from 'react-icons/io';
+import { useMap, type LngLatLike } from 'react-map-gl/mapbox';
 
 export const EventViewer = () => {
   const selectedEvents = useMapStore((state) => state.selectedEvents);
   const geolocation = useMapStore((state) => state.geolocation);
   const setRoutes = useMapStore((state) => state.setRoutes);
+  const { current: map } = useMap();
 
   const handleDriveDirections = () => {
     const profile = 'mapbox/driving';
@@ -36,6 +38,11 @@ export const EventViewer = () => {
     if (res.code === 'Ok') {
       const { routes } = res;
       setRoutes(routes);
+      map?.flyTo({
+        center: [geolocation?.longitude, geolocation?.latitude] as LngLatLike,
+        zoom: 20,
+        bearing: geolocation?.heading || 0,
+      })
     }
   }
 
