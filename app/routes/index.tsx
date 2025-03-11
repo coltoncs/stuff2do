@@ -1,5 +1,5 @@
 import type { Route } from "./+types/index";
-import Map, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
+import Map, { Source, Layer, GeolocateControl, useMap } from 'react-map-gl/mapbox';
 import { type Feature, type FeatureCollection, type GeoJsonProperties, type Geometry } from "geojson";
 import { useState, useRef, useCallback } from "react";
 import type { MapRef } from 'react-map-gl/mapbox';
@@ -10,8 +10,8 @@ import useMapStore from "~/store";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "919 Events" },
-    { name: "description", content: "A map listing of things to do in the Raleigh area." },
+    { title: "919 Events | Map" },
+    { name: "description", content: "A map plot of events in the Raleigh area." },
   ];
 }
 
@@ -194,7 +194,6 @@ export default function Index() {
         onMouseLeave={handleMapLeave}
         interactiveLayerIds={['clusters', 'unclustered-point', 'route']}
         onLoad={handleStyleLoad}
-        reuseMaps
       >
         {showSource && <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50} generateId>
           <Layer {...clustersLayerStyle} />

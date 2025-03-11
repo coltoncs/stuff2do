@@ -6800,4 +6800,19 @@ export const events = [
       "https://www.google.com/maps/dir/?api=1&destination=500%20E%20Davie%20Street%20Raleigh&travelmode=driving",
     datetime: "March 10, 2025 19:00:00",
   },
+  {
+    id: "asdasda4985372945fsdf9789",
+    name: "Beef Street and a Pig",
+    cost: "Free",
+    url: "http://trophybrewing.com/events-and-food-truck-calendar#event=77939037;instance=20250311170000?popup=1&lang=en-US",
+    date: "March 11, 2025",
+    streetaddr: "656 Maywood Avenue",
+    city: "Raleigh",
+    times: "5:00 PM",
+    location: "Trophy Maywood",
+    coordinates: [35.761620496919335, -78.65698682331346],
+    googleMapsUrl:
+      "https://www.google.com/maps/dir/?api=1&destination=656%20Maywood%20Avenue%20Raleigh&travelmode=driving",
+    datetime: "March 11, 2025 17:00:00",
+  },
 ];

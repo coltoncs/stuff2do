@@ -1,6 +1,14 @@
 import { useRef, useState } from 'react';
 import { FiExternalLink } from 'react-icons/fi';
 import { events } from '~/data/events';
+import type { Route } from './+types';
+
+export function meta({ }: Route.MetaArgs) {
+  return [
+    { title: "919 Events | List" },
+    { name: "description", content: "A list of events in the Raleigh area." },
+  ];
+}
 
 function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,17 +28,17 @@ function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] 
           const todaysDate = new Date(formatter.format(new Date()));
           const eventsDate = new Date(formatter.format(new Date(event.date)));
           return (
-            <a href={event.url}>
-              <li 
+            <a href={event.url} target='_blank' rel='noreferrer' key={event.id}>
+              <li
                 className={`
-                  listItem 
-                  rounded 
-                  px-5 
-                  py-1 
-                  hover:bg-slate-600 
-                  hover:text-slate-100
+                  listItem
+                  rounded
+                  px-5
+                  py-1
                   ${eventsDate < todaysDate && ' line-through'}
-                  ${eventsDate.getDate() === todaysDate.getDate() ? ' text-green-500' : ' text-slate-300'}
+                  ${eventsDate.getDate() === todaysDate.getDate() ? 'text-green-500' : 'text-slate-300'}
+                  hover:bg-slate-600 
+                  hover:text-blue-300
                   `} 
                 key={event.id}>
                 <p className='flex gap-2 justify items-center'>

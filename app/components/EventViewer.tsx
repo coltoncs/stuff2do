@@ -54,7 +54,7 @@ export const EventViewer = () => {
           </p>
           <p className='w-full text-center'>{e.cost}</p>
         </div>
-      )) }
+      ))}
       {geolocation && (
         <div className='w-full flex justify-center gap-5 my-5'>
           <button

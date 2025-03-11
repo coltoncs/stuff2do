@@ -20,8 +20,8 @@ function EventList({ toggle, ref }) {
       </div>
       <div>
         <ol className="list-decimal list-inside">
-          {Object.entries(groupedEvents).map(([city, events]) => (
-            <>
+          {Object.entries(groupedEvents).map(([city, events], index) => (
+            <div key={index}>
               <h2 className="text-slate-300 font-bold text-lg">{city !== 'undefined' ? city : 'N/A'}</h2>
               {events?.map(event => <button key={event.id} className="w-full text-left" onClick={() => {
                 setSelectedEvents([event]);
@@ -31,7 +31,7 @@ function EventList({ toggle, ref }) {
                   zoom: 16
                 });
               }}><li className="cursor-pointer bg-slate-600 hover:bg-slate-400 my-1 rounded px-3 py-2">{event.name}</li></button>)}
-            </>
+            </div>
           ))}
         </ol>
       </div>
