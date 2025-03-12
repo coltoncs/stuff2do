@@ -29,7 +29,7 @@ export const EventViewer = () => {
     } else {
       coords = event?.coordinates;
     }
-    const formattedCoords = `${coords[1]},${coords[0]}`;
+    const formattedCoords = `${coords![1]},${coords![0]}`;
     const userCoords = `${geolocation?.longitude},${geolocation?.latitude}`;
     const req = await fetch(`https://api.mapbox.com/directions/v5/${profile}/${userCoords};${formattedCoords}?geometries=geojson&alternatives=true&access_token=pk.eyJ1IjoiY2Nzd2VlbmV5IiwiYSI6ImNsdzlsMDd5NDAybGsybG1td2c2Z2QwazkifQ.0a3dDvVgzpwLwMGHmnY4VQ`);
     const res = await req.json();
@@ -40,7 +40,7 @@ export const EventViewer = () => {
   }
 
   return selectedEvents && (
-    <div className="fixed rounded border bottom-1/10 left-0 w-dvw sm:bottom-1/10 sm:left-25/100 sm:w-1/2 bg-gray-800 border-slate-600 p-5 h-fit shadow-lg shadow-slate-950">
+    <div className="fixed rounded border bottom-3/20 left-0 w-dvw sm:bottom-1/10 sm:left-25/100 sm:w-1/2 bg-gray-800 border-slate-600 p-5 h-fit shadow-lg shadow-slate-950">
       {selectedEvents.map(e => (
         <div className='bg-gray-700 rounded p-2 my-2 shadow-lg shadow-gray-800'>
           <h2 className='text-base font-bold text-blue-200 hover:text-blue-500'><a href={e.url} className='flex justify-center items-center gap-2 text-center' target="_blank">{e.name}<FiExternalLink size="10px" /></a></h2>

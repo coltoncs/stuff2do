@@ -24,6 +24,7 @@ function EventList({ toggle, ref }) {
             <div key={index}>
               <h2 className="text-slate-300 font-bold text-lg">{city !== 'undefined' ? city : 'N/A'}</h2>
               {events?.map(event => <button key={event.id} className="w-full text-left" onClick={() => {
+                if (window.innerWidth < 768) toggle();
                 setSelectedEvents([event]);
                 map?.flyTo({
                   center: [event.coordinates[1], event.coordinates[0]],

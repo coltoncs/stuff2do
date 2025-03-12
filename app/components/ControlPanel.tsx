@@ -1,6 +1,6 @@
 import { useRef, useState, type ChangeEvent } from "react";
 import { useMap } from "react-map-gl/mapbox";
-import { MdDarkMode, MdFormatListBulleted, MdLightMode, MdOutlineZoomOutMap } from "react-icons/md";
+import { MdFormatListBulleted, MdOutlineChevronLeft, MdOutlineChevronRight, MdOutlineZoomOutMap } from "react-icons/md";
 import useMapStore from "~/store";
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
@@ -32,10 +32,12 @@ export function ControlPanel() {
     });
   }
   const handleShowControls = ctxSafe(() => {
-    gsap.to(btnsRef.current!.children, { x: !showBtns ? 0 : -200, stagger: {
-      from: 'end',
-      amount: 0.25
-    }, duration: 0.87, ease: 'power3.inOut' });
+    gsap.to(btnsRef.current!.children, {
+      x: !showBtns ? 0 : -200, stagger: {
+        from: 'end',
+        amount: 0.25
+      }, duration: 0.87, ease: 'power3.inOut'
+    });
     setShowBtns(!showBtns);
   });
   const handleChangePitch = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -58,6 +60,20 @@ export function ControlPanel() {
     setShowMenu(!showMenu);
     gsap.to(menuRef.current, { y: showMenu ? 600 : 0, duration: 1, ease: 'power2.inOut' });
   });
+  const handleDayPrevious = () => {
+    const currentDate = new Date(date);
+    currentDate.setDate(currentDate.getDate() - 1);
+    currentDate.setUTCHours(8)
+    setDate(currentDate);
+    setSelectedEvents(null);
+  }
+  const handleDayNext = () => {
+    const currentDate = new Date(date);
+    currentDate.setDate(currentDate.getDate() + 1);
+    currentDate.setUTCHours(8)
+    setDate(currentDate);
+    setSelectedEvents(null);
+  }
   return (
     <>
       <EventList ref={menuRef} toggle={handleMenuToggle} />
@@ -73,14 +89,34 @@ export function ControlPanel() {
           </div>
           <button className="bg-slate-600 border-2 border-slate-400 p-1 sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md pointer-events-auto h-fit self-end" onClick={handleMenuToggle}><MdFormatListBulleted size="50px" /></button>
         </div>
-        <div className="fixed top-5 w-full pointer-events-none flex justify-center">
-          <input 
-            defaultValue={date.toISOString().split('T')[0]} 
+        <div className="fixed top-5 w-full pointer-events-none flex justify-center gap-5">
+          <button onClick={handleDayPrevious} className={`
+              pointer-events-auto
+              cursor-pointer
+              w-fit
+              bg-slate-600 
+              hover:bg-slate-400
+              rounded 
+              px-5 
+              py-3 
+              border 
+              font-black
+              text-md
+              border-blue-200 
+              text-slate-200 
+              shadow-md 
+              shadow-slate-600
+              `}><MdOutlineChevronLeft size={35} /></button>
+          <input
+            defaultValue={date.toISOString().split('T')[0]}
+            value={date.toISOString().split('T')[0]}
             className={`
               pointer-events-auto
+              cursor-pointer
               w-4xs
               sm:w-3xs 
               bg-slate-600 
+              hover:bg-slate-400
               rounded 
               px-5 
               py-3 
@@ -92,8 +128,25 @@ export function ControlPanel() {
               shadow-md 
               shadow-slate-600
               `}
-            onChange={handleDateChange} 
+            onChange={handleDateChange}
             type="date"></input>
+          <button onClick={handleDayNext} className={`
+              pointer-events-auto
+              w-fit
+              cursor-pointer
+              bg-slate-600 
+              hover:bg-slate-400
+              rounded 
+              px-5 
+              py-3 
+              border 
+              font-black
+              text-md
+              border-blue-200 
+              text-slate-200 
+              shadow-md 
+              shadow-slate-600
+              `}><MdOutlineChevronRight size={35} /></button>
         </div>
       </div>
     </>

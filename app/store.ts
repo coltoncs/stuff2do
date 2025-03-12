@@ -12,7 +12,7 @@ type Event = {
   city: string,
   times: string,
   location: string,
-  coordinates: [number, number],
+  coordinates: [number, number] | string,
   googleMapsUrl: string,
   datetime: string,
   routes?: any[],
