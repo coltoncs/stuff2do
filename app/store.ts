@@ -43,7 +43,7 @@ const useMapStore = create<MapState>()((set) => ({
           const eventDate = new Date(event.date);
           return eventDate.toDateString() === state.date.toDateString();
         })
-        .sort(
+        .sort( // sort by proximity using haversine formula
           (event1, event2) =>
             haversineDistanceKM(event1.coordinates, [
               coords.latitude,
