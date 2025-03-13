@@ -51,10 +51,18 @@ export function ControlPanel() {
     })
   }
   const handleDateChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const selectedDate = new Date(e.target.value);
-    selectedDate.setUTCHours(8)
-    setDate(selectedDate);
-    setSelectedEvents(null);
+    // if user selects "Clear", reset date to today (same as "Today" button)
+    if (e.target.value) {
+      const selectedDate = new Date(e.target.value);
+      selectedDate.setUTCHours(8)
+      setDate(selectedDate);
+      setSelectedEvents(null);
+    } else {
+      const today = new Date();
+      today.setUTCHours(8)
+      setDate(today);
+      setSelectedEvents(null);
+    }
   }
   const handleMenuToggle = contextSafe(() => {
     setShowMenu(!showMenu);
@@ -89,7 +97,7 @@ export function ControlPanel() {
           </div>
           <button className="bg-slate-600 border-2 border-slate-400 p-1 sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md pointer-events-auto h-fit self-end" onClick={handleMenuToggle}><MdFormatListBulleted size="50px" /></button>
         </div>
-        <div className="fixed top-5 w-full pointer-events-none flex justify-center gap-5">
+        <div className="fixed top-20 sm:top-5 w-full pointer-events-none flex justify-center gap-5">
           <button onClick={handleDayPrevious} className={`
               pointer-events-auto
               cursor-pointer
@@ -97,8 +105,10 @@ export function ControlPanel() {
               bg-slate-600 
               hover:bg-slate-400
               rounded 
-              px-5 
-              py-3 
+              px-3
+              py-1
+              sm:px-5 
+              sm:py-3 
               border 
               font-black
               text-md
@@ -108,6 +118,7 @@ export function ControlPanel() {
               shadow-slate-600
               `}><MdOutlineChevronLeft size={35} /></button>
           <input
+            type="date"
             defaultValue={date.toISOString().split('T')[0]}
             value={date.toISOString().split('T')[0]}
             className={`
@@ -118,8 +129,10 @@ export function ControlPanel() {
               bg-slate-600 
               hover:bg-slate-400
               rounded 
-              px-5 
-              py-3 
+              px-3
+              py-1
+              sm:px-5 
+              sm:py-3 
               border 
               font-black
               text-md
@@ -128,8 +141,7 @@ export function ControlPanel() {
               shadow-md 
               shadow-slate-600
               `}
-            onChange={handleDateChange}
-            type="date"></input>
+            onChange={handleDateChange}></input>
           <button onClick={handleDayNext} className={`
               pointer-events-auto
               w-fit
