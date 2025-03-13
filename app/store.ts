@@ -8,6 +8,7 @@ type Event = {
   cost: string;
   url: string;
   date: string;
+  description?: string;
   streetaddr: string;
   city: string;
   times: string;

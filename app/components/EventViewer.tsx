@@ -45,6 +45,7 @@ export const EventViewer = () => {
         <div className='bg-gray-700 rounded p-2 my-2 shadow-lg shadow-gray-800'>
           <h2 className='text-base font-bold text-blue-200 hover:text-blue-500'><a href={e.url} className='flex justify-center items-center gap-2 text-center' target="_blank">{e.name}<FiExternalLink size="10px" /></a></h2>
           <p className='text-sm font-bold text-blue-200 hover:text-blue-500'><a className='flex justify-center items-center gap-2 text-center' href={e.googleMapsUrl} target="_blank">{e.location}<FiExternalLink size="10px" /></a></p>
+          { e.description && <p className='w-full text-center'>{e.description}</p> }
           <p className='w-full text-center'>
             {e.date}
             {
