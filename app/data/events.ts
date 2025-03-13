@@ -1,1782 +1,5 @@
 export const events = [
   {
-    id: "67bc079fda60f28fe299d2f3",
-    name: "Author Event: Camille Di Maio",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/author-event%3a-camille-di-maio/95293/",
-    date: "March 5, 2025",
-    streetaddr: "415 Brooks St.",
-    city: "Wake Forest",
-    times: "Wed. 6pm",
-    location: "Page 158 Books",
-    coordinates: [35.9741741, -78.5087038],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=415%20Brooks%20St.&travelmode=driving",
-    datetime: "March 5, 2025 undefined",
-  },
-  {
-    id: "67bffc88da60f28fe29f68cf",
-    name: "Bobcat was abducted by aliens",
-    cost: "$5 donation at the door",
-    url: "https://www.visitraleigh.com/event/bobcat-was-abducted-by-aliens/96078/",
-    date: "March 5, 2025",
-    streetaddr: "416 W. South St.",
-    city: "Raleigh",
-    times: "Wed. 7pm-9:30pm",
-    location: "The Night Rider",
-    coordinates: [35.7725352, -78.6461459],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=416%20W.%20South%20St.&travelmode=driving",
-    datetime: "March 5, 2025 undefined",
-  },
-  {
-    id: "67bc40b3da60f28fe2719e5c",
-    name: "Connor Kelly & The Time Warp",
-    url: "https://www.visitraleigh.com/event/connor-kelly-%26-the-time-warp/95713/",
-    date: "March 5, 2025",
-    streetaddr: "224 S. Blount St.",
-    city: "Raleigh",
-    times: "Doors, 7pm; Show, 8pm",
-    location: "The Pour House Music Hall & Record Shop",
-    coordinates: [35.777175, -78.636884],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=224%20S.%20Blount%20St.&travelmode=driving",
-    datetime: "March 5, 2025 undefined",
-  },
-  {
-    id: "67ba7dbcda60f28fe28c88b5",
-    name: "Garden Story Walk",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/garden-story-walk/96153/",
-    date: "March 5, 2025",
-    streetaddr: "4415 Beryl Rd.",
-    city: "Raleigh",
-    times: "Daily 10am-4:30pm",
-    location: "JC Raulston Arboretum at North Carolina State University",
-    coordinates: [35.7934866, -78.6971178],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=4415%20Beryl%20Rd.&travelmode=driving",
-    datetime: "March 5, 2025 undefined",
-  },
-  {
-    id: "67c05ed8da60f28fe22b4813",
-    name: "Lisa Carl: Liquid, Stilled - Encaustic Paintings",
-    cost: "$12+",
-    url: "https://www.visitraleigh.com/event/lisa-carl%3a-liquid-stilled-encaustic-paintings/95855/",
-    date: "March 5, 2025",
-    streetaddr: "101 Dry Ave",
-    city: "Cary",
-    times: "Times vary with date",
-    location: "Cary Arts Center",
-    coordinates: [35.7826174, -78.7812738],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=101%20Dry%20Ave&travelmode=driving",
-    datetime: "March 5, 2025 undefined",
-  },
-  {
-    id: "67c13f51da60f28fe2cbe867",
-    name: "North Carolina State University vs. Campbell Baseball",
-    url: "https://www.visitraleigh.com/event/north-carolina-state-university-vs-campbell-baseball/95370/",
-    date: "March 5, 2025",
-    streetaddr: "1081 Varsity Dr.",
-    city: "Raleigh",
-    times: "3pm",
-    time: "15:00:00",
-    location: "Doak Field (North Carolina State University)",
-    coordinates: [35.7878444, -78.6799399],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1081%20Varsity%20Dr.&travelmode=driving",
-    datetime: "March 5, 2025 15:00:00",
-  },
-  {
-    id: "67bce8f8da60f28fe28e1c87",
-    name: "Open Mic At Goodnights",
-    cost: "$4.61",
-    url: "https://www.visitraleigh.com/event/open-mic-at-goodnights/96123/",
-    date: "March 5, 2025",
-    streetaddr: "401 Woodburn Rd.",
-    city: "Raleigh",
-    times: "Weds. 7:30pm",
-    location: "Goodnights Comedy Club",
-    coordinates: [35.7896074, -78.6597085],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd.&travelmode=driving",
-    datetime: "March 5, 2025 undefined",
-  },
-  {
-    id: "67bcbef6da60f28fe2a3b92f",
-    name: "Pecos and the Rooftops",
-    url: "https://www.visitraleigh.com/event/pecos-and-the-rooftops/95783/",
-    date: "March 5, 2025",
-    streetaddr: "126 E. Cabarrus St.",
-    city: "Raleigh",
-    times: "Doors, 7pm; Show, 8pm",
-    location: "Lincoln Theatre",
-    coordinates: [35.773854, -78.637416],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=126%20E.%20Cabarrus%20St.&travelmode=driving",
-    datetime: "March 5, 2025 undefined",
-  },
-  {
-    id: "67c20479da60f28fe2bd2e2e",
-    name: "Rewoven: The Art of Renewal",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/rewoven%3a-the-art-of-renewal/95663/",
-    date: "March 5, 2025",
-    streetaddr: "444 S. Blount St., Ste. 115B",
-    city: "Raleigh",
-    times: "Tuesday to Friday, Noon to 5pm",
-    location: "Arts Access Inc.",
-    coordinates: [35.7746887, -78.6369013],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=444%20S.%20Blount%20St.%2C%20Ste.%20115B&travelmode=driving",
-    datetime: "March 5, 2025 undefined",
-  },
-  {
-    id: "67be01b3da60f28fe2e2fad8",
-    name: "Special Event: Craig Conant",
-    cost: "$27-37",
-    url: "https://www.visitraleigh.com/event/special-event%3a-craig-conant/94734/",
-    date: "March 5, 2025",
-    streetaddr: "401 Woodburn Rd.",
-    city: "Raleigh",
-    times: "8pm",
-    time: "20:00:00",
-    location: "Goodnights Comedy Club",
-    coordinates: [35.7896074, -78.6597085],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd.&travelmode=driving",
-    datetime: "March 5, 2025 20:00:00",
-  },
-  {
-    id: "67c3d45eda60f28fe227560e",
-    name: "Amazing Grace, Confronting the Enduring Legacy",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
-    date: "March 5, 2025",
-    streetaddr: "1903 Hillsborough St.",
-    city: "Raleigh",
-    times: "Tues.-Sat. 10am-5pm",
-    location: "Gregg Museum of Art & Design",
-    coordinates: [35.7847621, -78.6616363],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
-    datetime: "March 5, 2025 undefined",
-  },
-  {
-    id: "67bc8651da60f28fe275b950",
-    name: "Coffee & Crochet",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/coffee-%26-crochet/95251/",
-    date: "March 5, 2025",
-    streetaddr: "323 Blake St.",
-    city: "Raleigh",
-    times: "4-7pm",
-    time: "16:00:00",
-    location: "Blackbird Books & Coffee",
-    coordinates: [35.7761731, -78.6356293],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=323%20Blake%20St.&travelmode=driving",
-    datetime: "March 5, 2025 16:00:00",
-  },
-  {
-    id: "67beaac7da60f28fe279406a",
-    name: "David LaChapelle: Picture Show",
-    cost: "Tickets at the museum",
-    url: "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
-    date: "March 5, 2025",
-    streetaddr: "2110 Blue Ridge Rd.",
-    city: "Raleigh",
-    times: "10am-5pm",
-    time: "22:00:00",
-    location: "North Carolina Museum of Art",
-    coordinates: [35.8098897, -78.7025739],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
-    datetime: "March 5, 2025 22:00:00",
-  },
-  {
-    id: "67c08936da60f28fe215da9b",
-    name: "Enjoy Aperitivo Menu at Figulina",
-    url: "https://www.visitraleigh.com/event/enjoy-aperitivo-menu-at-figulina/95842/",
-    date: "March 5, 2025",
-    streetaddr: "317 S. Harrington St.",
-    city: "Raleigh",
-    times: "Tue.-Thur. 5PM-6:30pm",
-    location: "Figulina",
-    coordinates: [35.776317, -78.644975],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=317%20S.%20Harrington%20St.&travelmode=driving",
-    datetime: "March 5, 2025 undefined",
-  },
-  {
-    id: "67c1be78da60f28fe240b003",
-    name: "JP Jermaine Powell—Leadership Reimagined: Share Your Journey",
-    cost: "Tickets at the Museum \r\n",
-    url: "https://www.visitraleigh.com/event/jp-jermaine-powell%e2%80%94leadership-reimagined%3a-share-your-journey/81922/",
-    date: "March 5, 2025",
-    streetaddr: "2110 Blue Ridge Rd.",
-    city: "Raleigh",
-    times: "10am-5pm",
-    time: "22:00:00",
-    location: "North Carolina Museum of Art",
-    coordinates: [35.8098897, -78.7025739],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
-    datetime: "March 5, 2025 22:00:00",
-  },
-  {
-    id: "67c42910da60f28fe2918e98",
-    name: "Journey to Space",
-    cost: "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
-    url: "https://www.visitraleigh.com/event/journey-to-space/94650/",
-    date: "March 5, 2025",
-    streetaddr: "11 W. Jones St.",
-    city: "Raleigh",
-    times: "Tues.-Sun., 10am-5pm (last entry, 4pm)",
-    location: "North Carolina Museum of Natural Sciences",
-    coordinates: [35.782354, -78.639277],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
-    datetime: "March 5, 2025 undefined",
-  },
-  {
-    id: "67c355fbda60f28fe28470d9",
-    name: "Karaoke!",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/karaoke!/95489/",
-    date: "March 5, 2025",
-    streetaddr: "14 W. Martin St.",
-    city: "Raleigh",
-    times: "8:00 PM",
-    time: "08:00:00",
-    location: "Neptunes Parlour",
-    coordinates: [35.7771353, -78.6398083],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=14%20W.%20Martin%20St.&travelmode=driving",
-    datetime: "March 5, 2025 08:00:00",
-  },
-  {
-    id: "67c14dd4da60f28fe21354e7",
-    name: "Material Messages: The Tales That Textiles Tell",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
-    date: "March 5, 2025",
-    streetaddr: "1903 Hillsborough St.",
-    city: "Raleigh",
-    times: "Tues.-Sat. 10am-5pm",
-    location: "Gregg Museum of Art & Design",
-    coordinates: [35.7847621, -78.6616363],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
-    datetime: "March 5, 2025 undefined",
-  },
-  {
-    id: "67bdf3cada60f28fe290fa6a",
-    name: "Raleigh Self-Guided Scavenger Hunt",
-    cost: "$10",
-    url: "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
-    date: "March 5, 2025",
-    streetaddr: "Around Raleigh and Wake County",
-    city: "Raleigh",
-    times: "10am-6pm",
-    time: "22:00:00",
-    location: "Search in the City",
-    coordinates: [35.7795897, -78.6381787],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
-    datetime: "March 5, 2025 22:00:00",
-  },
-  {
-    id: "67bb6cbbda60f28fe2917182",
-    name: "Seeing Red",
-    cost: "Tickets at the museum",
-    url: "https://www.visitraleigh.com/event/seeing-red/95608/",
-    date: "March 5, 2025",
-    streetaddr: "2110 Blue Ridge Rd.",
-    city: "Raleigh",
-    times: "10am-5pm",
-    time: "22:00:00",
-    location: "North Carolina Museum of Art",
-    coordinates: [35.8098897, -78.7025739],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
-    datetime: "March 5, 2025 22:00:00",
-  },
-  {
-    id: "67c22098da60f28fe25dcd3c",
-    name: "Brush the Skyline &#8211; Watercolors and Brews Workshop",
-    cost: "$45",
-    url: "https://www.visitraleigh.com/event/brush-the-skyline-%26%238211%3b-watercolors-and-brews-workshop/95848/",
-    date: "March 6, 2025",
-    streetaddr: "201 S. Boylan Ave.",
-    city: "Raleigh",
-    times: "Thur. 6:00 PM to 07:00 PM",
-    location: "Wye Hill Kitchen & Brewing",
-    coordinates: [35.7784641, -78.6490665],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=201%20S.%20Boylan%20Ave.&travelmode=driving",
-    datetime: "March 6, 2025 undefined",
-  },
-  {
-    id: "67c43760da60f28fe2cf746a",
-    name: "Chef’s 5-Course Tasting Menu at The Depot",
-    cost: "$140",
-    url: "https://www.visitraleigh.com/event/chef%e2%80%99s-5-course-tasting-menu-at-the-depot/95680/",
-    date: "March 6, 2025",
-    streetaddr: "608 N. First Ave.",
-    city: "Knightdale",
-    times: "6pm-9pm",
-    time: "18:00:00",
-    location: "The Depot on First",
-    coordinates: [35.7933708, -78.47689670000001],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=608%20N.%20First%20Ave.&travelmode=driving",
-    datetime: "March 6, 2025 18:00:00",
-  },
-  {
-    id: "67c034d3da60f28fe2777806",
-    name: "Cookies and Crochet! Crochet Workshop and Dessert Sampling",
-    cost: "$30",
-    url: "https://www.visitraleigh.com/event/cookies-and-crochet!-crochet-workshop-and-dessert-sampling/95836/",
-    date: "March 6, 2025",
-    streetaddr: "2237 Avent Ferry Rd.",
-    city: "Raleigh",
-    times: "6pm to 7:15pm",
-    time: "18:15:00",
-    location: "The Cookie People",
-    coordinates: [35.7773985, -78.6762602],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2237%20Avent%20Ferry%20Rd.&travelmode=driving",
-    datetime: "March 6, 2025 18:15:00",
-  },
-  {
-    id: "67ba7dbcda60f28fe28c88b8",
-    name: "Garden Story Walk",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/garden-story-walk/96153/",
-    date: "March 6, 2025",
-    streetaddr: "4415 Beryl Rd.",
-    city: "Raleigh",
-    times: "Daily 10am-4:30pm",
-    location: "JC Raulston Arboretum at North Carolina State University",
-    coordinates: [35.7934866, -78.6971178],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=4415%20Beryl%20Rd.&travelmode=driving",
-    datetime: "March 6, 2025 undefined",
-  },
-  {
-    id: "67beaac8da60f28fe2794832",
-    name: "Joe Wong Comedy 2025 College Tour",
-    url: "https://www.visitraleigh.com/event/joe-wong-comedy-2025-college-tour/96252/",
-    date: "March 6, 2025",
-    streetaddr: "2810 Cates Ave.",
-    city: "Raleigh",
-    times: "6:30pm; Doors open at 5:30pm",
-    time: "18:30:00",
-    location: "Witherspoon Student Center, NC State University",
-    coordinates: [35.785097, -78.6745151],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2810%20Cates%20Ave.&travelmode=driving",
-    datetime: "March 6, 2025 18:30:00",
-  },
-  {
-    id: "67c05ed8da60f28fe22b481b",
-    name: "Lisa Carl: Liquid, Stilled - Encaustic Paintings",
-    cost: "$12+",
-    url: "https://www.visitraleigh.com/event/lisa-carl%3a-liquid-stilled-encaustic-paintings/95855/",
-    date: "March 6, 2025",
-    streetaddr: "101 Dry Ave",
-    city: "Cary",
-    times: "Times vary with date",
-    location: "Cary Arts Center",
-    coordinates: [35.7826174, -78.7812738],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=101%20Dry%20Ave&travelmode=driving",
-    datetime: "March 6, 2025 undefined",
-  },
-  {
-    id: "67c32be6da60f28fe28ce53a",
-    name: "Lua Flora with The Wilson Springs Hotel, Cigs @ Sunset",
-    cost: "$12-$15",
-    url: "https://www.visitraleigh.com/event/lua-flora-with-the-wilson-springs-hotel-cigs-%40-sunset/95714/",
-    date: "March 6, 2025",
-    streetaddr: "224 S. Blount St.",
-    city: "Raleigh",
-    times: "Doors, 7pm; Show, 8pm",
-    location: "The Pour House Music Hall & Record Shop",
-    coordinates: [35.777175, -78.636884],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=224%20S.%20Blount%20St.&travelmode=driving",
-    datetime: "March 6, 2025 undefined",
-  },
-  {
-    id: "67bc248bda60f28fe2156fe9",
-    name: "MOE.",
-    url: "https://www.visitraleigh.com/event/moe/95416/",
-    date: "March 6, 2025",
-    streetaddr: "2820 Industrial Dr.",
-    city: "Raleigh",
-    times: "7:00 PM",
-    time: "07:00:00",
-    location: "The Ritz",
-    coordinates: [35.8161472, -78.6203874],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2820%20Industrial%20Dr.&travelmode=driving",
-    datetime: "March 6, 2025 07:00:00",
-  },
-  {
-    id: "67bfdfedda60f28fe212a824",
-    name: "Meredith Philharmonic Winter Concert",
-    cost: "Free\r\n\r\n",
-    url: "https://www.visitraleigh.com/event/meredith-philharmonic-winter-concert/96345/",
-    date: "March 6, 2025",
-    streetaddr: "3800 Hillsborough St.",
-    city: "Raleigh",
-    times: "Thur. 8pm-9pm",
-    location: "Meredith College",
-    coordinates: [35.7972072, -78.689006],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=3800%20Hillsborough%20St.&travelmode=driving",
-    datetime: "March 6, 2025 undefined",
-  },
-  {
-    id: "67c11556da60f28fe2df8531",
-    name: "NHL Carolina Hurricanes vs. Boston Bruins",
-    url: "https://www.visitraleigh.com/event/nhl-carolina-hurricanes-vs-boston-bruins/93162/",
-    date: "March 6, 2025",
-    streetaddr: "1400 Edwards Mill Rd.",
-    city: "Raleigh",
-    times: "7pm",
-    time: "19:00:00",
-    location: "PNC Arena",
-    coordinates: [35.803291, -78.7216992],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1400%20Edwards%20Mill%20Rd.&travelmode=driving",
-    datetime: "March 6, 2025 19:00:00",
-  },
-  {
-    id: "67bfdfedda60f28fe212a81f",
-    name: "Piano Ensemble Music by Korean Composers",
-    cost: "Free\r\n\r\n",
-    url: "https://www.visitraleigh.com/event/piano-ensemble-music-by-korean-composers/96344/",
-    date: "March 6, 2025",
-    streetaddr: "3800 Hillsborough St.",
-    city: "Raleigh",
-    times: "Thur. 7pm-8:30pm",
-    location: "Carswell Concert Hall, Wainwright Music Building.",
-    coordinates: [35.7972072, -78.689006],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=3800%20Hillsborough%20St.&travelmode=driving",
-    datetime: "March 6, 2025 undefined",
-  },
-  {
-    id: "67c20479da60f28fe2bd2e38",
-    name: "Rewoven: The Art of Renewal",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/rewoven%3a-the-art-of-renewal/95663/",
-    date: "March 6, 2025",
-    streetaddr: "444 S. Blount St., Ste. 115B",
-    city: "Raleigh",
-    times: "Tuesday to Friday, Noon to 5pm",
-    location: "Arts Access Inc.",
-    coordinates: [35.7746887, -78.6369013],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=444%20S.%20Blount%20St.%2C%20Ste.%20115B&travelmode=driving",
-    datetime: "March 6, 2025 undefined",
-  },
-  {
-    id: "67c00a31da60f28fe2d3eee0",
-    name: "Room 861 at Goodnights: Improv 101 Graduation Showcase",
-    cost: "$25-$33",
-    url: "https://www.visitraleigh.com/event/room-861-at-goodnights%3a-improv-101-graduation-showcase/96129/",
-    date: "March 6, 2025",
-    streetaddr: "401 Woodburn Rd.",
-    city: "Raleigh",
-    times: "Thur. 8:30pm",
-    location: "Goodnights Comedy Club",
-    coordinates: [35.7896074, -78.6597085],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd.&travelmode=driving",
-    datetime: "March 6, 2025 undefined",
-  },
-  {
-    id: "67bdbbe9da60f28fe279d696",
-    name: "Tophouse w/ The Wildwoods",
-    url: "https://www.visitraleigh.com/event/tophouse-w-the-wildwoods/95784/",
-    date: "March 6, 2025",
-    streetaddr: "126 E. Cabarrus St.",
-    city: "Raleigh",
-    times: "Doors, 7pm; Show, 8pm",
-    location: "Lincoln Theatre",
-    coordinates: [35.773854, -78.637416],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=126%20E.%20Cabarrus%20St.&travelmode=driving",
-    datetime: "March 6, 2025 undefined",
-  },
-  {
-    id: "67c3d45eda60f28fe2275615",
-    name: "Amazing Grace, Confronting the Enduring Legacy",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
-    date: "March 6, 2025",
-    streetaddr: "1903 Hillsborough St.",
-    city: "Raleigh",
-    times: "Tues.-Sat. 10am-5pm",
-    location: "Gregg Museum of Art & Design",
-    coordinates: [35.7847621, -78.6616363],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
-    datetime: "March 6, 2025 undefined",
-  },
-  {
-    id: "67bca258da60f28fe20773ff",
-    name: "Burger & Brews Thursdays",
-    cost: "$20",
-    url: "https://www.visitraleigh.com/event/burger-%26-brews-thursdays/93745/",
-    date: "March 6, 2025",
-    streetaddr: "616 S. Salisbury St.",
-    city: "Raleigh",
-    times: "5-10pm",
-    time: "17:00:00",
-    location: "10th & Terrace at Residence Inn Raleigh Downtown",
-    coordinates: [35.77288, -78.640775],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=616%20S.%20Salisbury%20St.&travelmode=driving",
-    datetime: "March 6, 2025 17:00:00",
-  },
-  {
-    id: "67beaac7da60f28fe2794075",
-    name: "David LaChapelle: Picture Show",
-    cost: "Tickets at the museum",
-    url: "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
-    date: "March 6, 2025",
-    streetaddr: "2110 Blue Ridge Rd.",
-    city: "Raleigh",
-    times: "10am-5pm",
-    time: "22:00:00",
-    location: "North Carolina Museum of Art",
-    coordinates: [35.8098897, -78.7025739],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
-    datetime: "March 6, 2025 22:00:00",
-  },
-  {
-    id: "67c08936da60f28fe215da9e",
-    name: "Enjoy Aperitivo Menu at Figulina",
-    url: "https://www.visitraleigh.com/event/enjoy-aperitivo-menu-at-figulina/95842/",
-    date: "March 6, 2025",
-    streetaddr: "317 S. Harrington St.",
-    city: "Raleigh",
-    times: "Tue.-Thur. 5PM-6:30pm",
-    location: "Figulina",
-    coordinates: [35.776317, -78.644975],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=317%20S.%20Harrington%20St.&travelmode=driving",
-    datetime: "March 6, 2025 undefined",
-  },
-  {
-    id: "67c1be78da60f28fe240b006",
-    name: "JP Jermaine Powell—Leadership Reimagined: Share Your Journey",
-    cost: "Tickets at the Museum \r\n",
-    url: "https://www.visitraleigh.com/event/jp-jermaine-powell%e2%80%94leadership-reimagined%3a-share-your-journey/81922/",
-    date: "March 6, 2025",
-    streetaddr: "2110 Blue Ridge Rd.",
-    city: "Raleigh",
-    times: "10am-5pm",
-    time: "22:00:00",
-    location: "North Carolina Museum of Art",
-    coordinates: [35.8098897, -78.7025739],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
-    datetime: "March 6, 2025 22:00:00",
-  },
-  {
-    id: "67c42910da60f28fe2918e9f",
-    name: "Journey to Space",
-    cost: "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
-    url: "https://www.visitraleigh.com/event/journey-to-space/94650/",
-    date: "March 6, 2025",
-    streetaddr: "11 W. Jones St.",
-    city: "Raleigh",
-    times: "Tues.-Sun., 10am-5pm (last entry, 4pm)",
-    location: "North Carolina Museum of Natural Sciences",
-    coordinates: [35.782354, -78.639277],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
-    datetime: "March 6, 2025 undefined",
-  },
-  {
-    id: "67c14dd4da60f28fe21354f2",
-    name: "Material Messages: The Tales That Textiles Tell",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
-    date: "March 6, 2025",
-    streetaddr: "1903 Hillsborough St.",
-    city: "Raleigh",
-    times: "Tues.-Sat. 10am-5pm",
-    location: "Gregg Museum of Art & Design",
-    coordinates: [35.7847621, -78.6616363],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
-    datetime: "March 6, 2025 undefined",
-  },
-  {
-    id: "67bdf3cada60f28fe290fa74",
-    name: "Raleigh Self-Guided Scavenger Hunt",
-    cost: "$10",
-    url: "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
-    date: "March 6, 2025",
-    streetaddr: "Around Raleigh and Wake County",
-    city: "Raleigh",
-    times: "10am-6pm",
-    time: "22:00:00",
-    location: "Search in the City",
-    coordinates: [35.7795897, -78.6381787],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
-    datetime: "March 6, 2025 22:00:00",
-  },
-  {
-    id: "67c3c6f8da60f28fe2efe02c",
-    name: "Science Trivia",
-    url: "https://www.visitraleigh.com/event/science-trivia/92940/",
-    date: "March 6, 2025",
-    streetaddr: "11 W. Jones St.",
-    city: "Raleigh",
-    times: "5pm",
-    time: "17:00:00",
-    location: "North Carolina Museum of Natural Sciences",
-    coordinates: [35.7821558, -78.6393356],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
-    datetime: "March 6, 2025 17:00:00",
-  },
-  {
-    id: "67bb6cbbda60f28fe2917187",
-    name: "Seeing Red",
-    cost: "Tickets at the museum",
-    url: "https://www.visitraleigh.com/event/seeing-red/95608/",
-    date: "March 6, 2025",
-    streetaddr: "2110 Blue Ridge Rd.",
-    city: "Raleigh",
-    times: "10am-5pm",
-    time: "22:00:00",
-    location: "North Carolina Museum of Art",
-    coordinates: [35.8098897, -78.7025739],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
-    datetime: "March 6, 2025 22:00:00",
-  },
-  {
-    id: "67c3c6f8da60f28fe2efe183",
-    name: "18th Annual Triangle Collegiate Softball Classic",
-    url: "https://www.trianglecollegiatesoftballclassic.org/tournament-information/",
-    date: "March 7, 2025",
-    streetaddr: "1201 Sunnybrook Rd.",
-    city: "Raleigh",
-    times: "See website for game times",
-    location: "Walnut Creek Athletic Complex",
-    coordinates: [35.7608397, -78.5808672],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1201%20Sunnybrook%20Rd.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67c3e274da60f28fe2646a13",
-    name: "An Evening with Palmyra",
-    cost: "$20",
-    url: "https://www.visitraleigh.com/event/an-evening-with-palmyra/92821/",
-    date: "March 7, 2025",
-    streetaddr: "415 Brooks St.",
-    city: "Wake Forest",
-    times: "7:30pm",
-    time: "19:30:00",
-    location: "The Wake Forest Listening Room",
-    coordinates: [35.97412840890253, -78.50869337992233],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=415%20Brooks%20St.&travelmode=driving",
-    datetime: "March 7, 2025 19:30:00",
-  },
-  {
-    id: "67c22098da60f28fe25dcd42",
-    name: "An Evening with sitar maestro Pandit Krishna Mohan Bhatt accompanied on tabla Sandeep Hattangady",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/an-evening-with-sitar-maestro-pandit-krishna-mohan-bhatt-accompanied-on-tabla-sandeep-hattangady/96312/",
-    date: "March 7, 2025",
-    streetaddr: "742 W. Garner Rd.",
-    city: "Garner",
-    times: "Fri. 7:30pm",
-    location: "Garner Performing Arts Center",
-    coordinates: [35.711829, -78.6121946],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=742%20W.%20Garner%20Rd.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67c2bb5cda60f28fe26db2c5",
-    name: "Brunch Specials at Bar Louie",
-    cost: "Free",
-    url: "https://www.barlouie.com/locations/us/nc/raleigh/brier-creek",
-    date: "March 7, 2025",
-    streetaddr: "8401 Brier Creek Pkwy.",
-    city: "Raleigh",
-    times: "Fri. - Sun. 10am-3pm",
-    location: "Bar Louie",
-    coordinates: [35.907272, -78.7848384],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=8401%20Brier%20Creek%20Pkwy.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67c21289da60f28fe20bb130",
-    name: "First Friday Fiber Friends",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/first-friday-fiber-friends/94958/",
-    date: "March 7, 2025",
-    streetaddr: "120 S. Wilmington St.",
-    city: "Raleigh",
-    times: "Fri. 5-7pm",
-    location: "Parcero Studio - Yarn & Gifts Shop",
-    coordinates: [35.7789949, -78.6386325],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=120%20S.%20Wilmington%20St.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67ba7dbcda60f28fe28c88bd",
-    name: "Garden Story Walk",
-    cost: "Free",
-    url: "https://jcra.ncsu.edu/events/details.php?ID=3777",
-    date: "March 7, 2025",
-    streetaddr: "4415 Beryl Rd.",
-    city: "Raleigh",
-    times: "Daily 10am-4:30pm",
-    location: "JC Raulston Arboretum at North Carolina State University",
-    coordinates: [35.7934866, -78.6971178],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=4415%20Beryl%20Rd.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67c48b19da60f28fe271fe26",
-    name: "Ian Fidance",
-    cost: "$31-$86\r\nAges 21+",
-    url: "https://www.visitraleigh.com/event/ian-fidance/96193/",
-    date: "March 7, 2025",
-    streetaddr: "1224 Parkside Main St.",
-    city: "Cary",
-    times: "Fri. 7pm & 9:15pm; Sat. 6:30pm & 9pm",
-    location: "Raleigh Improv",
-    coordinates: [35.8491034, -78.890939],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1224%20Parkside%20Main%20St.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67c43760da60f28fe2cf7747",
-    name: "Joey Harkum with Ashley Larue Band\t",
-    url: "https://wl.seetickets.us/event/joey-harkum-with-ashley-larue-band/629698?afflky=ThePourHouseMusicHallRecordShop",
-    date: "March 7, 2025",
-    streetaddr: "224 S. Blount St.",
-    city: "Raleigh",
-    times: "Doors, 8pm; Show, 9pm",
-    location: "The Pour House Music Hall & Record Shop",
-    coordinates: [35.777175, -78.636884],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=224%20S.%20Blount%20St.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67bd20dfda60f28fe2a94d39",
-    name: "Know Your Artist",
-    url: "https://www.visitraleigh.com/event/know-your-artist/96383/",
-    date: "March 7, 2025",
-    streetaddr: "201 W. Martin St.",
-    city: "Raleigh",
-    times: "Fri 6pm-9pm",
-    location: "Whiskey Kitchen",
-    coordinates: [35.776712, -78.642141],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=201%20W.%20Martin%20St.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67c05ed8da60f28fe22b4820",
-    name: "Lisa Carl: Liquid, Stilled - Encaustic Paintings",
-    cost: "$12+",
-    url: "https://www.visitraleigh.com/event/lisa-carl%3a-liquid-stilled-encaustic-paintings/95855/",
-    date: "March 7, 2025",
-    streetaddr: "101 Dry Ave",
-    city: "Cary",
-    times: "Times vary with date",
-    location: "Cary Arts Center",
-    coordinates: [35.7826174, -78.7812738],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=101%20Dry%20Ave&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67c1f646da60f28fe26dae86",
-    name: "North Carolina State University vs. Wright State Baseball",
-    url: "https://www.visitraleigh.com/event/north-carolina-state-university-vs-wright-state-baseball/95371/",
-    date: "March 7, 2025",
-    streetaddr: "1081 Varsity Dr.",
-    city: "Raleigh",
-    times: "3pm",
-    time: "15:00:00",
-    location: "Doak Field (North Carolina State University)",
-    coordinates: [35.7878444, -78.6799399],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1081%20Varsity%20Dr.&travelmode=driving",
-    datetime: "March 7, 2025 15:00:00",
-  },
-  {
-    id: "67bf0dd6da60f28fe216f3b0",
-    name: "PWHL Takeover Tour",
-    cost: "$27-$69",
-    url: "https://www.lenovocenter.com/events/detail/pwhltakeover",
-    date: "March 7, 2025",
-    streetaddr: "1400 Edwards Mill Rd.",
-    city: "Raleigh",
-    times: "7pm",
-    time: "19:00:00",
-    location: "Lenovo Center",
-    coordinates: [35.803335, -78.721795],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1400%20Edwards%20Mill%20Rd.&travelmode=driving",
-    datetime: "March 7, 2025 19:00:00",
-  },
-  {
-    id: "67c034d3da60f28fe277781e",
-    name: "R&B Nights at Bar Louie",
-    cost: "Free",
-    url: "https://www.barlouie.com/locations/us/nc/raleigh/brier-creek",
-    date: "March 7, 2025",
-    streetaddr: "8401 Brier Creek Pkwy.",
-    city: "Raleigh",
-    times: "Fri. 8pm-12am",
-    location: "Bar Louie",
-    coordinates: [35.907272, -78.7848384],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=8401%20Brier%20Creek%20Pkwy.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67c20479da60f28fe2bd2e3c",
-    name: "Rewoven: The Art of Renewal",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/rewoven%3a-the-art-of-renewal/95663/",
-    date: "March 7, 2025",
-    streetaddr: "444 S. Blount St., Ste. 115B",
-    city: "Raleigh",
-    times: "Tuesday to Friday, Noon to 5pm",
-    location: "Arts Access Inc.",
-    coordinates: [35.7746887, -78.6369013],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=444%20S.%20Blount%20St.%2C%20Ste.%20115B&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67be563ada60f28fe2ad9d86",
-    name: "Special Event: Martin Amini - THE LOVE WORLD TOUR",
-    cost: "$30-50",
-    url: "https://www.visitraleigh.com/event/special-event%3a-martin-amini-the-love-world-tour/94735/",
-    date: "March 7, 2025",
-    streetaddr: "401 Woodburn Rd.",
-    city: "Raleigh",
-    times: "7:30pm, 10pm",
-    time: "19:30:00",
-    location: "Goodnights Comedy Club",
-    coordinates: [35.7896074, -78.6597085],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd.&travelmode=driving",
-    datetime: "March 7, 2025 19:30:00",
-  },
-  {
-    id: "67c26753da60f28fe2d4576c",
-    name: "Stitch Experience",
-    cost: "$20-$50",
-    url: "https://www.visitraleigh.com/event/stitch-experience/96045/",
-    date: "March 7, 2025",
-    streetaddr: "3801 Hillsborough St",
-    city: "Raleigh",
-    times: "Fri. 6pm",
-    location: "The Portal",
-    coordinates: [35.7939185, -78.6882748],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20St&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67ba703eda60f28fe255c3d3",
-    name: "TRAP Karaoke",
-    cost: "$40+. Must be 21 yrs of age & older with ID",
-    url: "https://trapkaraoke.com/events/2820-industrial-dr-raleigh-nc-27609-2/",
-    date: "March 7, 2025",
-    streetaddr: "2820 Industrial Dr.",
-    city: "Raleigh",
-    times: "Fri. 6:30pm-11pm",
-    location: "The Ritz",
-    coordinates: [35.8161472, -78.6203874],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2820%20Industrial%20Dr.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67bdd772da60f28fe2eed1a1",
-    name: "The Friday ComedyWorx Show",
-    cost: "$11-15",
-    url: "https://www.visitraleigh.com/event/the-friday-comedyworx-show/96233/",
-    date: "March 7, 2025",
-    streetaddr: "3801 Hillsborough Street",
-    city: "Raleigh",
-    times: "Fri. 7:30pm-9:30pm",
-    location: "ComedyWorx",
-    coordinates: [35.7939173, -78.6883692],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67bd1362da60f28fe26abc57",
-    name: "The Harry Show",
-    cost: "$10-$12",
-    url: "https://www.visitraleigh.com/event/the-harry-show/96224/",
-    date: "March 7, 2025",
-    streetaddr: "3801 Hillsborough Street",
-    city: "Raleigh",
-    times: "Fri. 9:30pm-11:15pm",
-    location: "ComedyWorx",
-    coordinates: [35.7939173, -78.6883692],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67bfd1b8da60f28fe2bcfa63",
-    name: "UGA BUGA, Evel, We Follow the Earth, Napalm Cruiser",
-    cost: "$15 ",
-    url: "https://www.visitraleigh.com/event/uga-buga-evel-we-follow-the-earth-napalm-cruiser/96098/",
-    date: "March 7, 2025",
-    streetaddr: "658 Maywood Ave.,",
-    city: "Raleigh",
-    times: "Fri. 8pm",
-    location: "Chapel of Bones",
-    coordinates: [35.7618674, -78.6576791],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=658%20Maywood%20Ave.%2C&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67c01825da60f28fe20948ec",
-    name: "Wakka Wakka Productions’ The Immortal Jellyfish Girl",
-    cost: "$30-35 | $10 NC State Students | $20 Faculty/Staff",
-    url: "https://www.visitraleigh.com/event/wakka-wakka-productions%e2%80%99-the-immortal-jellyfish-girl/95795/",
-    date: "March 7, 2025",
-    streetaddr: "2610 Cates Ave.",
-    city: "Raleigh",
-    times: "Thur. 7:30PM",
-    location:
-      "Stewart Theatre, Talley Student Center at North Carolina State University",
-    coordinates: [35.7840099, -78.670987],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2610%20Cates%20Ave.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67c3d45eda60f28fe2275619",
-    name: "Amazing Grace, Confronting the Enduring Legacy",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
-    date: "March 7, 2025",
-    streetaddr: "1903 Hillsborough St.",
-    city: "Raleigh",
-    times: "Tues.-Sat. 10am-5pm",
-    location: "Gregg Museum of Art & Design",
-    coordinates: [35.7847621, -78.6616363],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67beaac7da60f28fe2794084",
-    name: "David LaChapelle: Picture Show",
-    cost: "Tickets at the museum",
-    url: "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
-    date: "March 7, 2025",
-    streetaddr: "2110 Blue Ridge Rd.",
-    city: "Raleigh",
-    times: "10am-5pm",
-    time: "22:00:00",
-    location: "North Carolina Museum of Art",
-    coordinates: [35.8098897, -78.7025739],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
-    datetime: "March 7, 2025 22:00:00",
-  },
-  {
-    id: "67c08936da60f28fe215d707",
-    name: "Dorothea Dix Asylum: Dark History Tour",
-    cost: "$14",
-    url: "https://www.visitraleigh.com/event/dorothea-dix-asylum%3a-dark-history-tour/92880/",
-    date: "March 7, 2025",
-    streetaddr: "840 Umstead Dr.",
-    city: "Raleigh",
-    times: "5:30-6:45pm",
-    time: "17:30:00",
-    location: "Greg Poole All-Faiths Chapel",
-    coordinates: [35.7707431, -78.6546858],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=840%20Umstead%20Dr.&travelmode=driving",
-    datetime: "March 7, 2025 17:30:00",
-  },
-  {
-    id: "67c3642ada60f28fe2d6e0c8",
-    name: "Downtown Raleigh Tasting Tour",
-    cost: "$95",
-    url: "https://www.visitraleigh.com/event/downtown-raleigh-tasting-tour/63324/",
-    date: "March 7, 2025",
-    streetaddr: "Downtown Raleigh",
-    city: "Raleigh",
-    times: "Fri., 12:45pm; Sat., 10:30am",
-    location: "Taste Carolina Gourmet Food Tours",
-    coordinates: [35.7822393, -78.6285252],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=Downtown%20Raleigh&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67c43760da60f28fe2cf73e6",
-    name: "First Friday's at the City of Raleigh Museum",
-    url: "https://www.visitraleigh.com/event/first-fridays-at-the-city-of-raleigh-museum/93004/",
-    date: "March 7, 2025",
-    streetaddr: "220 Fayetteville St., Ste. 100",
-    city: "Raleigh",
-    times: "6-9pm",
-    time: "18:00:00",
-    location: "City of Raleigh Museum (COR Museum)",
-    coordinates: [35.77766, -78.639762],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=220%20Fayetteville%20St.%2C%20Ste.%20100&travelmode=driving",
-    datetime: "March 7, 2025 18:00:00",
-  },
-  {
-    id: "67c3022fda60f28fe2ac4de7",
-    name: "Greek Night at Taverna Agora",
-    url: "https://www.visitraleigh.com/event/greek-night-at-taverna-agora/95195/",
-    date: "March 7, 2025",
-    streetaddr: "326 Hillsborough St.",
-    city: "Raleigh",
-    times: "From: 7:00 PM to 10:00 PM",
-    location: "Taverna Agora",
-    coordinates: [35.7808358, -78.644441],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=326%20Hillsborough%20St.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67c1be78da60f28fe240b008",
-    name: "JP Jermaine Powell—Leadership Reimagined: Share Your Journey",
-    cost: "Tickets at the Museum \r\n",
-    url: "https://www.visitraleigh.com/event/jp-jermaine-powell%e2%80%94leadership-reimagined%3a-share-your-journey/81922/",
-    date: "March 7, 2025",
-    streetaddr: "2110 Blue Ridge Rd.",
-    city: "Raleigh",
-    times: "10am-5pm",
-    time: "22:00:00",
-    location: "North Carolina Museum of Art",
-    coordinates: [35.8098897, -78.7025739],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
-    datetime: "March 7, 2025 22:00:00",
-  },
-  {
-    id: "67c42910da60f28fe2918ea7",
-    name: "Journey to Space",
-    cost: "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
-    url: "https://www.visitraleigh.com/event/journey-to-space/94650/",
-    date: "March 7, 2025",
-    streetaddr: "11 W. Jones St.",
-    city: "Raleigh",
-    times: "Tues.-Sun., 10am-5pm (last entry, 4pm)",
-    location: "North Carolina Museum of Natural Sciences",
-    coordinates: [35.782354, -78.639277],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67c14dd4da60f28fe21354fd",
-    name: "Material Messages: The Tales That Textiles Tell",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
-    date: "March 7, 2025",
-    streetaddr: "1903 Hillsborough St.",
-    city: "Raleigh",
-    times: "Tues.-Sat. 10am-5pm",
-    location: "Gregg Museum of Art & Design",
-    coordinates: [35.7847621, -78.6616363],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67bdf3cada60f28fe290fa83",
-    name: "Raleigh Self-Guided Scavenger Hunt",
-    cost: "$10",
-    url: "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
-    date: "March 7, 2025",
-    streetaddr: "Around Raleigh and Wake County",
-    city: "Raleigh",
-    times: "10am-6pm",
-    time: "22:00:00",
-    location: "Search in the City",
-    coordinates: [35.7795897, -78.6381787],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
-    datetime: "March 7, 2025 22:00:00",
-  },
-  {
-    id: "67c1b037da60f28fe2f58d91",
-    name: "Raleigh True Crime Tour",
-    cost: "$14",
-    url: "https://www.visitraleigh.com/event/raleigh-true-crime-tour/95034/",
-    date: "March 7, 2025",
-    streetaddr: "Around Raleigh and Wake County",
-    times: "Fri. and Sun., 6-7pm",
-    location: "Moore Square",
-    coordinates: [35.7795897, -78.6381787],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
-    datetime: "March 7, 2025 undefined",
-  },
-  {
-    id: "67bb6cbbda60f28fe2917190",
-    name: "Seeing Red",
-    cost: "Tickets at the museum",
-    url: "https://ncartmuseum.org/exhibition/seeing-red/",
-    date: "March 7, 2025",
-    streetaddr: "2110 Blue Ridge Rd.",
-    city: "Raleigh",
-    times: "10am-5pm",
-    time: "22:00:00",
-    location: "North Carolina Museum of Art",
-    coordinates: [35.8098897, -78.7025739],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
-    datetime: "March 7, 2025 22:00:00",
-  },
-  {
-    id: "67c3c6f8da60f28fe2efe18a",
-    name: "18th Annual Triangle Collegiate Softball Classic",
-    url: "https://www.trianglecollegiatesoftballclassic.org/tournament-information/",
-    date: "March 8, 2025",
-    streetaddr: "1201 Sunnybrook Rd.",
-    city: "Raleigh",
-    times: "See website for game times",
-    location: "Walnut Creek Athletic Complex",
-    coordinates: [35.7608397, -78.5808672],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1201%20Sunnybrook%20Rd.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c0f945da60f28fe2385801",
-    name: "2025 Run the Peak",
-    cost: "$45 - 5K run\r\n$55 - 10K run \r\n$10 - Kids fun run - no shirt provided",
-    url: "https://www.visitraleigh.com/event/2025-run-the-peak/96257/",
-    date: "March 8, 2025",
-    streetaddr: "220 N. Salem St.",
-    city: "Apex",
-    times: "Sat. 7:30am",
-    location: "Apex Chamber of Commerce",
-    coordinates: [35.7318454, -78.8500368],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=220%20N.%20Salem%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c096ecda60f28fe26abb83",
-    name: "Apex Racing Lab Bull Bash at the Bullring Winter Series: Race #3",
-    cost: "Adults, $10; Seniors/Military/Students, $10; Children 6-12, $5; Children 5 & Under, Free",
-    url: "https://www.visitraleigh.com/event/apex-racing-lab-bull-bash-at-the-bullring-winter-series%3a-race-%233/95012/",
-    date: "March 8, 2025",
-    streetaddr: "2109 Simpkins Rd.",
-    city: "Raleigh",
-    times: "2-5pm",
-    time: "14:00:00",
-    location: "Wake County Speedway",
-    coordinates: [35.7019739, -78.6753423],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2109%20Simpkins%20Rd.&travelmode=driving",
-    datetime: "March 8, 2025 14:00:00",
-  },
-  {
-    id: "67be4829da60f28fe26ae37c",
-    name: "Black Orchid (Black Sabbath Tribute) / The Wild Ones (Thin Lizzy Tribute) / Star People Band (David Bowie Tribute)",
-    cost: "$14-28",
-    url: "https://www.visitraleigh.com/event/black-orchid-(black-sabbath-tribute)-the-wild-ones-(thin-lizzy-tribute)-star-people-band-(david-bowie-tribute)/95785/",
-    date: "March 8, 2025",
-    streetaddr: "126 E. Cabarrus St.",
-    city: "Raleigh",
-    times: "Doors, 7pm; Show, 8pm",
-    location: "Lincoln Theatre",
-    coordinates: [35.773854, -78.637416],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=126%20E.%20Cabarrus%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c2bb5cda60f28fe26db2cb",
-    name: "Brunch Specials at Bar Louie",
-    cost: "Free",
-    url: "https://www.barlouie.com/locations/us/nc/raleigh/brier-creek",
-    date: "March 8, 2025",
-    streetaddr: "8401 Brier Creek Pkwy.",
-    city: "Raleigh",
-    times: "Fri. - Sun. 10am-3pm",
-    location: "Bar Louie",
-    coordinates: [35.907272, -78.7848384],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=8401%20Brier%20Creek%20Pkwy.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c31e8ada60f28fe2416f0e",
-    name: "Early Spring Gardening Checklist",
-    cost: "$60.00 for JCRA Members, $75.00 for nonmembers.",
-    url: "https://www.visitraleigh.com/event/early-spring-gardening-checklist/96155/",
-    date: "March 8, 2025",
-    streetaddr: "4415 Beryl Rd.",
-    city: "Raleigh",
-    times: "Sat. 9am-12:30pm",
-    location: "JC Raulston Arboretum at North Carolina State University",
-    coordinates: [35.7934866, -78.6971178],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=4415%20Beryl%20Rd.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67b5c50eda60f28fe267ff86",
-    name: "Evol Intent / Snack B2B Mojo-T / Phobia / Noble K",
-    cost: "$30, $35 at the door, all ages ",
-    url: "https://www.visitraleigh.com/event/evol-intent-snack-b2b-mojo-t-phobia-noble-k/96100/",
-    date: "March 8, 2025",
-    streetaddr: "658 Maywood Ave.,",
-    city: "Raleigh",
-    times: "Sat. 9pm-2am",
-    location: "Chapel of Bones",
-    coordinates: [35.7618674, -78.6576791],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=658%20Maywood%20Ave.%2C&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c107c0da60f28fe28e67c9",
-    name: "Family Nature Journaling",
-    cost: "$20.00 per child, includes adult reservation.",
-    url: "https://www.visitraleigh.com/event/family-nature-journaling/96156/",
-    date: "March 8, 2025",
-    streetaddr: "4415 Beryl Rd.",
-    city: "Raleigh",
-    times: "Sat. 9:30am-11a,m",
-    location: "JC Raulston Arboretum at North Carolina State University",
-    coordinates: [35.7934866, -78.6971178],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=4415%20Beryl%20Rd.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67ba7dbcda60f28fe28c88c1",
-    name: "Garden Story Walk",
-    cost: "Free",
-    url: "https://jcra.ncsu.edu/events/details.php?ID=3777",
-    date: "March 8, 2025",
-    streetaddr: "4415 Beryl Rd.",
-    city: "Raleigh",
-    times: "Daily 10am-4:30pm",
-    location: "JC Raulston Arboretum at North Carolina State University",
-    coordinates: [35.7934866, -78.6971178],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=4415%20Beryl%20Rd.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c48b19da60f28fe271fe33",
-    name: "Ian Fidance",
-    cost: "$31-$86\r\nAges 21+",
-    url: "https://www.visitraleigh.com/event/ian-fidance/96193/",
-    date: "March 8, 2025",
-    streetaddr: "1224 Parkside Main St.",
-    city: "Cary",
-    times: "Fri. 7pm & 9:15pm; Sat. 6:30pm & 9pm",
-    location: "Raleigh Improv",
-    coordinates: [35.8491034, -78.890939],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1224%20Parkside%20Main%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67bcbef6da60f28fe2a3b986",
-    name: "Intro to Improv",
-    cost: "$200",
-    url: "https://www.visitraleigh.com/event/intro-to-improv/96237/",
-    date: "March 8, 2025",
-    streetaddr: "3801 Hillsborough Street",
-    city: "Raleigh",
-    times: "Sat. 12pm-3pm",
-    location: "ComedyWorx",
-    coordinates: [35.7939173, -78.6883692],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c05ed8da60f28fe22b4823",
-    name: "Lisa Carl: Liquid, Stilled - Encaustic Paintings",
-    cost: "$12+",
-    url: "https://www.visitraleigh.com/event/lisa-carl%3a-liquid-stilled-encaustic-paintings/95855/",
-    date: "March 8, 2025",
-    streetaddr: "101 Dry Ave",
-    city: "Cary",
-    times: "Times vary with date",
-    location: "Cary Arts Center",
-    coordinates: [35.7826174, -78.7812738],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=101%20Dry%20Ave&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c169e9da60f28fe2837ca3",
-    name: "Mollusk Research Day",
-    cost: "free",
-    url: "https://www.visitraleigh.com/event/mollusk-research-day/95605/",
-    date: "March 8, 2025",
-    streetaddr: "11 W. Jones St.",
-    city: "Raleigh",
-    times: "Sat. 10AM-2PM",
-    location: "North Carolina Museum of Natural Sciences",
-    coordinates: [35.7821558, -78.6393356],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c3f08eda60f28fe2a07995",
-    name: "North Carolina State University vs. Wright State Baseball",
-    url: "https://www.visitraleigh.com/event/north-carolina-state-university-vs-wright-state-baseball/95373/",
-    date: "March 8, 2025",
-    streetaddr: "1081 Varsity Dr.",
-    city: "Raleigh",
-    times: "2pm",
-    time: "14:00:00",
-    location: "Doak Field (North Carolina State University)",
-    coordinates: [35.7878444, -78.6799399],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1081%20Varsity%20Dr.&travelmode=driving",
-    datetime: "March 8, 2025 14:00:00",
-  },
-  {
-    id: "67c01825da60f28fe20948f6",
-    name: "Quarrel for the Crown:Empowering Women to  Rise & Reign Female Amateur Boxing Showcase & Empowerment Event",
-    cost: "$25 General Admission, $40 Ringside Row 2 and 3, $55 Ringside Row 1",
-    url: "https://www.visitraleigh.com/event/quarrel-for-the-crown%3aempowering-women-to-rise-%26-reign-female-amateur-boxing-showcase-%26-empowerment-event/96120/",
-    date: "March 8, 2025",
-    streetaddr: "500 S. Salisbury St.",
-    city: "Raleigh",
-    times: "Sat. 12pm-7pm",
-    location: "Raleigh Convention Center",
-    coordinates: [35.7735601, -78.64081379999999],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=500%20S.%20Salisbury%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c21289da60f28fe20bb1ca",
-    name: "Route 55 Jazz Orchestra",
-    cost: "$10 Adults; $7 Seniors and Students",
-    url: "https://www.visitraleigh.com/event/route-55-jazz-orchestra/95892/",
-    date: "March 8, 2025",
-    streetaddr: "300 W. Ballentine St.",
-    city: "Holly Springs",
-    times: "7:30pm",
-    time: "19:30:00",
-    location: "Holly Springs Cultural Center",
-    coordinates: [35.65006038208783, -78.83651033807979],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=300%20W.%20Ballentine%20St.&travelmode=driving",
-    datetime: "March 8, 2025 19:30:00",
-  },
-  {
-    id: "67c0b319da60f28fe2169c24",
-    name: "Safe Word March",
-    cost: "$20-$75 21+ yrs",
-    url: "https://www.visitraleigh.com/event/safe-word-march/96083/",
-    date: "March 8, 2025",
-    streetaddr: "416 W. South St.",
-    city: "Raleigh",
-    times: "Sat. 9pm-2am",
-    location: "The Wicked Witch",
-    coordinates: [35.7725352, -78.6461459],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=416%20W.%20South%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c3d45eda60f28fe2275a52",
-    name: "Sensory Friendly Creative Saturdays",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/sensory-friendly-creative-saturdays/95865/",
-    date: "March 8, 2025",
-    streetaddr: "1400 Millbrook Rd.",
-    city: "Raleigh",
-    times: "1pm to 3pm",
-    time: "13:00:00",
-    location: "Sertoma Arts Center",
-    coordinates: [35.8574157, -78.6651948],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1400%20Millbrook%20Rd.&travelmode=driving",
-    datetime: "March 8, 2025 13:00:00",
-  },
-  {
-    id: "67be563ada60f28fe2ad9d8c",
-    name: "Special Event: Martin Amini - THE LOVE WORLD TOUR",
-    cost: "$30-50",
-    url: "https://www.visitraleigh.com/event/special-event%3a-martin-amini-the-love-world-tour/94735/",
-    date: "March 8, 2025",
-    streetaddr: "401 Woodburn Rd.",
-    city: "Raleigh",
-    times: "7:30pm, 10pm",
-    time: "19:30:00",
-    location: "Goodnights Comedy Club",
-    coordinates: [35.7896074, -78.6597085],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd.&travelmode=driving",
-    datetime: "March 8, 2025 19:30:00",
-  },
-  {
-    id: "67ba99dbda60f28fe2054efa",
-    name: "Stand-Up Level 1: An Introduction",
-    cost: "$200",
-    url: "https://www.visitraleigh.com/event/stand-up-level-1%3a-an-introduction/96236/",
-    date: "March 8, 2025",
-    streetaddr: "3801 Hillsborough Street",
-    city: "Raleigh",
-    times: "Sat. 10am-12pm",
-    location: "ComedyWorx",
-    coordinates: [35.7939173, -78.6883692],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67ba5481da60f28fe2e148c2",
-    name: "The ComedyWorx Matinee",
-    cost: "$9-$11",
-    url: "https://www.visitraleigh.com/event/the-comedyworx-matinee/96226/",
-    date: "March 8, 2025",
-    streetaddr: "3801 Hillsborough Street",
-    city: "Raleigh",
-    times: "Sat. 3:30pm-5:15pm",
-    location: "ComedyWorx",
-    coordinates: [35.7939173, -78.6883692],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c24b1eda60f28fe23c92ee",
-    name: "The Mystic Party: A Cary Interactive Murder Mystery Cocktail Party with Clue Rooms",
-    cost: "$95 Gen Adminssion, $115 Secret Suspect",
-    url: "https://www.visitraleigh.com/event/the-mystic-party%3a-a-cary-interactive-murder-mystery-cocktail-party-with-clue-rooms/95868/",
-    date: "March 8, 2025",
-    streetaddr: "317 W. Chatham St.",
-    city: "Cary",
-    times: "Sat. 6pm-8pm",
-    location: "The Matthews House",
-    coordinates: [35.7863745, -78.7871621],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=317%20W.%20Chatham%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67bf53cfda60f28fe29bce88",
-    name: "Wakka Wakka Productions’ The Immortal Jellyfish Girl-Family Matinee",
-    cost: "Adults $25 | Youth $10",
-    url: "https://www.visitraleigh.com/event/wakka-wakka-productions%e2%80%99-the-immortal-jellyfish-girl-family-matinee/95797/",
-    date: "March 8, 2025",
-    streetaddr: "2610 Cates Ave.",
-    city: "Raleigh",
-    times: "Sat. 3pm",
-    location:
-      "Stewart Theatre, Talley Student Center at North Carolina State University",
-    coordinates: [35.7840099, -78.670987],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2610%20Cates%20Ave.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67bbcf5eda60f28fe2705445",
-    name: "Wenzday",
-    url: "https://www.visitraleigh.com/event/wenzday/95765/",
-    date: "March 8, 2025",
-    streetaddr: "224 S. Blount St.",
-    city: "Raleigh",
-    times: "Doors, 8pm; Show, 9pm",
-    location: "The Pour House Music Hall & Record Shop",
-    coordinates: [35.777175, -78.636884],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=224%20S.%20Blount%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c1865ada60f28fe2144444",
-    name: "Whimsy in Sculpture: Intro to Representational Ceramic Art",
-    cost: "$90",
-    url: "https://www.visitraleigh.com/event/whimsy-in-sculpture%3a-intro-to-representational-ceramic-art/95541/",
-    date: "March 8, 2025",
-    streetaddr: "201 E. Davie St.",
-    city: "Raleigh",
-    times: "1:00 PM to 4:00 PM",
-    time: "01:00:00",
-    location: "Artspace",
-    coordinates: [35.7756989, -78.6362831],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=201%20E.%20Davie%20St.&travelmode=driving",
-    datetime: "March 8, 2025 01:00:00",
-  },
-  {
-    id: "67c3489cda60f28fe2367cc2",
-    name: "Women-in-Beer Tour in Holly Springs",
-    cost: "$50. Must be 21 to participate. Tour is rain or shine.",
-    url: "https://www.visitraleigh.com/event/women-in-beer-tour-in-holly-springs/95880/",
-    date: "March 8, 2025",
-    streetaddr: "120 Quantum St.",
-    city: "Holly Springs",
-    times: "Sat. 1:00 PM -3:30 PM",
-    location: "Bombshell Beer Co.",
-    coordinates: [35.65821280721485, -78.83686430124362],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=120%20Quantum%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c3d45eda60f28fe2275620",
-    name: "Amazing Grace, Confronting the Enduring Legacy",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
-    date: "March 8, 2025",
-    streetaddr: "1903 Hillsborough St.",
-    city: "Raleigh",
-    times: "Tues.-Sat. 10am-5pm",
-    location: "Gregg Museum of Art & Design",
-    coordinates: [35.7847621, -78.6616363],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67beaac7da60f28fe279409a",
-    name: "David LaChapelle: Picture Show",
-    cost: "Tickets at the museum",
-    url: "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
-    date: "March 8, 2025",
-    streetaddr: "2110 Blue Ridge Rd.",
-    city: "Raleigh",
-    times: "10am-5pm",
-    time: "22:00:00",
-    location: "North Carolina Museum of Art",
-    coordinates: [35.8098897, -78.7025739],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
-    datetime: "March 8, 2025 22:00:00",
-  },
-  {
-    id: "67c43760da60f28fe2cf6e9b",
-    name: "Downtown Raleigh Dinner & Drinks Tour",
-    cost: "$115",
-    url: "https://www.visitraleigh.com/event/downtown-raleigh-dinner-%26-drinks-tour/63323/",
-    date: "March 8, 2025",
-    streetaddr: "Downtown Raleigh",
-    city: "Raleigh",
-    times: "Sat., 2:30pm; Sat., 3:00pm; Sun., 3:15pm",
-    location: "Taste Carolina Gourmet Food Tours",
-    coordinates: [35.7822393, -78.6285252],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=Downtown%20Raleigh&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67b9102ada60f28fe2b41d1f",
-    name: "Downtown Raleigh Murals and Public Art Tour",
-    cost: "Pay-what-you-want",
-    url: "https://www.visitraleigh.com/event/downtown-raleigh-murals-and-public-art-tour/79777/",
-    date: "March 8, 2025",
-    streetaddr: "300 S. Salisbury St.",
-    city: "Raleigh",
-    times: "See website for times",
-    location: "Downtown Raleigh",
-    coordinates: [35.7765381, -78.6411149],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=300%20S.%20Salisbury%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c3642ada60f28fe2d6e0cc",
-    name: "Downtown Raleigh Tasting Tour",
-    cost: "$95",
-    url: "https://www.visitraleigh.com/event/downtown-raleigh-tasting-tour/63324/",
-    date: "March 8, 2025",
-    streetaddr: "Downtown Raleigh",
-    city: "Raleigh",
-    times: "Fri., 12:45pm; Sat., 10:30am",
-    location: "Taste Carolina Gourmet Food Tours",
-    coordinates: [35.7822393, -78.6285252],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=Downtown%20Raleigh&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67b9ff13da60f28fe2518cd0",
-    name: "Free Wine Tasting",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/free-wine-tasting/92540/",
-    date: "March 8, 2025",
-    streetaddr: "211 E. Franklin St.",
-    city: "Raleigh",
-    times: "Noon-3pm",
-    location: "Wine Authorities",
-    coordinates: [35.79036, -78.6348299],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=211%20E.%20Franklin%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67beb8ffda60f28fe2b7ab08",
-    name: "Holly Springs Farmers Market",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/holly-springs-farmers-market/83047/",
-    date: "March 8, 2025",
-    streetaddr: "300 West Ballentine St.",
-    city: "Holly Springs",
-    times: "May-Oct.: Sat, 8am-noon; Nov.-April: 9am-noon",
-    location: "Holly Springs Farmers Market",
-    coordinates: [35.6501933, -78.8364802],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=300%20West%20Ballentine%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c1be78da60f28fe240b009",
-    name: "JP Jermaine Powell—Leadership Reimagined: Share Your Journey",
-    cost: "Tickets at the Museum \r\n",
-    url: "https://www.visitraleigh.com/event/jp-jermaine-powell%e2%80%94leadership-reimagined%3a-share-your-journey/81922/",
-    date: "March 8, 2025",
-    streetaddr: "2110 Blue Ridge Rd.",
-    city: "Raleigh",
-    times: "10am-5pm",
-    time: "22:00:00",
-    location: "North Carolina Museum of Art",
-    coordinates: [35.8098897, -78.7025739],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
-    datetime: "March 8, 2025 22:00:00",
-  },
-  {
-    id: "67c42910da60f28fe2918eac",
-    name: "Journey to Space",
-    cost: "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
-    url: "https://www.visitraleigh.com/event/journey-to-space/94650/",
-    date: "March 8, 2025",
-    streetaddr: "11 W. Jones St.",
-    city: "Raleigh",
-    times: "Tues.-Sun., 10am-5pm (last entry, 4pm)",
-    location: "North Carolina Museum of Natural Sciences",
-    coordinates: [35.782354, -78.639277],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67c14dd4da60f28fe2135507",
-    name: "Material Messages: The Tales That Textiles Tell",
-    cost: "Free",
-    url: "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
-    date: "March 8, 2025",
-    streetaddr: "1903 Hillsborough St.",
-    city: "Raleigh",
-    times: "Tues.-Sat. 10am-5pm",
-    location: "Gregg Museum of Art & Design",
-    coordinates: [35.7847621, -78.6616363],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
-    datetime: "March 8, 2025 undefined",
-  },
-  {
-    id: "67bdf3cada60f28fe290fa87",
-    name: "Raleigh Self-Guided Scavenger Hunt",
-    cost: "$10",
-    url: "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
-    date: "March 8, 2025",
-    streetaddr: "Around Raleigh and Wake County",
-    city: "Raleigh",
-    times: "10am-6pm",
-    time: "22:00:00",
-    location: "Search in the City",
-    coordinates: [35.7795897, -78.6381787],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
-    datetime: "March 8, 2025 22:00:00",
-  },
-  {
-    id: "67bb6cbbda60f28fe2917198",
-    name: "Seeing Red",
-    cost: "Tickets at the museum",
-    url: "https://ncartmuseum.org/exhibition/seeing-red/",
-    date: "March 8, 2025",
-    streetaddr: "2110 Blue Ridge Rd.",
-    city: "Raleigh",
-    times: "10am-5pm",
-    time: "22:00:00",
-    location: "North Carolina Museum of Art",
-    coordinates: [35.8098897, -78.7025739],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
-    datetime: "March 8, 2025 22:00:00",
-  },
-  {
-    id: "67c3c6f8da60f28fe2efe0e4",
-    name: "Silent Book Club",
-    url: "https://www.visitraleigh.com/event/silent-book-club/95260/",
-    date: "March 8, 2025",
-    streetaddr: "323 Blake St.",
-    city: "Raleigh",
-    times: "5:00 PM to 7:00 PM",
-    time: "05:00:00",
-    location: "Blackbird Books & Coffee",
-    coordinates: [35.7761731, -78.6356293],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=323%20Blake%20St.&travelmode=driving",
-    datetime: "March 8, 2025 05:00:00",
-  },
-  {
-    id: "67c0f945da60f28fe2385688",
-    name: "The Time Is Always Now: Artists Reframe the Black Figure",
-    cost: "Tickets at the museum",
-    url: "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
-    date: "March 8, 2025",
-    streetaddr: "2110 Blue Ridge Rd.",
-    city: "Raleigh",
-    times: "10am-5pm",
-    time: "22:00:00",
-    location: "North Carolina Museum of Art",
-    coordinates: [35.8098897, -78.7025739],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
-    datetime: "March 8, 2025 22:00:00",
-  },
-  {
     id: "67bef12fda60f28fe2a68f6b",
     name: "10th Anniversary Classical Concert Series - Nostalgia, Frank Huang, piano",
     cost: "$15/Adult $12/Senior $10/Student",
@@ -6815,4 +5038,5751 @@ export const events = [
       "https://www.google.com/maps/dir/?api=1&destination=656%20Maywood%20Avenue%20Raleigh&travelmode=driving",
     datetime: "March 11, 2025 17:00:00",
   },
+  {
+    id: "67c9b4f3da60f28fe267cdc1",
+    name: "Apex Racing Lab Bull Bash at the Bullring Winter Series: Race #4 (Championship)",
+    cost: "Adults, $10; Seniors/Military/Students, $10; Children 6-12, $5; Children 5 & Under, Free.",
+    url: "https://www.visitraleigh.com/event/apex-racing-lab-bull-bash-at-the-bullring-winter-series%3a-race-%234-(championship)/95013/",
+    date: "March 22, 2025",
+    streetaddr: "2109 Simpkins Rd.",
+    city: "Raleigh",
+    times: "2pm to 5pm",
+    time: "14:00:00",
+    location: "Wake County Speedway",
+    coordinates: [
+      35.7019739,
+      -78.6753423
+    ],
+    googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=2109%20Simpkins%20Rd.&travelmode=driving",
+    datetime: "March 22, 2025 14:00:00"
+  },
+  {
+    "id": "67d149adda60f28fe2f30472",
+    "name": "Applause! Cary Youth Theatre presents: Tuck Everlasting",
+    "cost": "$8.50-$12",
+    "url": "https://www.visitraleigh.com/event/applause!-cary-youth-theatre-presents%3a-tuck-everlasting/96262/",
+    "date": "March 22, 2025",
+    "streetaddr": "101 Dry Ave.",
+    "city": "Cary",
+    "times": "Fri. & Sat. 7:30pm; Sun.3pm",
+    "location": "Cary Arts Center",
+    "coordinates": [
+      35.782687,
+      -78.781277
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=101%20Dry%20Ave.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d13c49da60f28fe2c32a72",
+    "name": "Art Exhibition: Acrylic Paintings and Polymer Clay",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/art-exhibition%3a-acrylic-paintings-and-polymer-clay/96487/",
+    "date": "March 22, 2025",
+    "streetaddr": "200 S. Academy St.",
+    "city": "Cary",
+    "times": "11am-5:30pm",
+    "time": "23:30:00",
+    "location": "Cary Gallery of Artists",
+    "coordinates": [
+      35.7864238,
+      -78.7817176
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=200%20S.%20Academy%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 23:30:00"
+  },
+  {
+    "id": "67cc2042da60f28fe2b0941d",
+    "name": "Brunch Specials at Bar Louie",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/brunch-specials-at-bar-louie/96276/",
+    "date": "March 22, 2025",
+    "streetaddr": "8401 Brier Creek Pkwy.",
+    "city": "Raleigh",
+    "times": "Fri. - Sun. 10am-3pm",
+    "location": "Bar Louie",
+    "coordinates": [
+      35.907272,
+      -78.7848384
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=8401%20Brier%20Creek%20Pkwy.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67cda9aeda60f28fe2788c87",
+    "name": "Candlelight: A Tribute to Adele",
+    "cost": "$34.00. 8 years old or older. Anyone under the age of 16 must be accompanied by an adult",
+    "url": "https://www.visitraleigh.com/event/candlelight%3a-a-tribute-to-adele/96459/",
+    "date": "March 22, 2025",
+    "streetaddr": "500 N Blount St",
+    "city": "Raleigh",
+    "times": "Tue. 6:30pm",
+    "location": "Merrimon-Wynne House",
+    "coordinates": [
+      35.7862758,
+      -78.6357733
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=500%20N%20Blount%20St&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67ce52cdda60f28fe2e54157",
+    "name": "Chatlee Boat Sale",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/chatlee-boat-sale/95719/",
+    "date": "March 22, 2025",
+    "streetaddr": "4285 Trinity Rd.",
+    "city": "Raleigh",
+    "times": "Thur.-Sun. Check back for times",
+    "location": "North Carolina State Fairgrounds-Kerr Scott building",
+    "coordinates": [
+      35.7964165,
+      -78.7141617
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=4285%20Trinity%20Rd.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d0e73fda60f28fe282263f",
+    "name": "Drone Key Flight Academy",
+    "cost": "$120",
+    "url": "https://www.visitraleigh.com/event/drone-key-flight-academy/96563/",
+    "date": "March 22, 2025",
+    "streetaddr": "2105 Umstead Dr.",
+    "city": "Raleigh",
+    "times": "Sat. 10am-12pm",
+    "location": "Dorothea Dix Park",
+    "coordinates": [
+      35.7728467,
+      -78.6638964
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2105%20Umstead%20Dr.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67cc3c0bda60f28fe2187a2f",
+    "name": "Goth Night",
+    "cost": "$13-$60\r\nAll 18+ tickets MUST be purchased in advance. ",
+    "url": "https://www.visitraleigh.com/event/goth-night/96085/",
+    "date": "March 22, 2025",
+    "streetaddr": "416 W. South St.",
+    "city": "Raleigh",
+    "times": "Sat. 9m-2am",
+    "location": "The Wicked Witch",
+    "coordinates": [
+      35.7725352,
+      -78.6461459
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=416%20W.%20South%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d271817fcc52ccbcadc143",
+    "name": "Holi, the Hindu festival of colors",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/holi-the-hindu-festival-of-colors/96516/",
+    "date": "March 22, 2025",
+    "streetaddr": "1050B  Town Hall Dr.",
+    "city": "Morrisville",
+    "times": "Sat.12pm-3pm",
+    "location": "Cedar Fork District Park",
+    "coordinates": [
+      35.8363247,
+      -78.83859609999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1050B%20%20Town%20Hall%20Dr.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67cc9f17da60f28fe2ed8f75",
+    "name": "Holly Springs Community Band presents Lights! Camera! Music!",
+    "cost": "$5, $3 seniors",
+    "url": "https://www.visitraleigh.com/event/holly-springs-community-band-presents-lights!-camera!-music!/95894/",
+    "date": "March 22, 2025",
+    "streetaddr": "128 S. Main St.",
+    "city": "Holly Springs",
+    "times": "Sat 7:30pm",
+    "location": "Town of Holly Springs",
+    "coordinates": [
+      35.650246,
+      -78.8339117
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=128%20S.%20Main%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d2d39d7fcc52ccbcdb8c9a",
+    "name": "Intro to Improv",
+    "cost": "$200",
+    "url": "https://www.visitraleigh.com/event/intro-to-improv/96237/",
+    "date": "March 22, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Sat. 12pm-3pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d092c6da60f28fe2de87ce",
+    "name": "Josh Blue",
+    "cost": "$33-$46",
+    "url": "https://www.visitraleigh.com/event/josh-blue/96139/",
+    "date": "March 22, 2025",
+    "streetaddr": "401 Woodburn Rd",
+    "city": "Raleigh",
+    "times": "Thur. 7:30pm; Fri. 7pm; Sat. 7pm & 9:30pm",
+    "location": "Goodnights Comedy Club",
+    "coordinates": [
+      35.7896074,
+      -78.6597085
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d04c8ada60f28fe24de46e",
+    "name": "KPOP Club Night",
+    "url": "https://www.visitraleigh.com/event/kpop-club-night/95449/",
+    "date": "March 22, 2025",
+    "streetaddr": "14 W. Martin St.",
+    "city": "Raleigh",
+    "times": "9:00 PM",
+    "time": "09:00:00",
+    "location": "KINGS",
+    "coordinates": [
+      35.7771353,
+      -78.6398083
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=14%20W.%20Martin%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 09:00:00"
+  },
+  {
+    "id": "67cec2e1da60f28fe28915d4",
+    "name": "Kids’ Weekend activities at Bass Pro Shops OR Cabela’s in Garner",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/kids%e2%80%99-weekend-activities-at-bass-pro-shops-or-cabela%e2%80%99s-in-garner/96537/",
+    "date": "March 22, 2025",
+    "streetaddr": "201 Cabela Drive",
+    "city": "Garner",
+    "times": "Sat. & Sun. 11am-4pm",
+    "location": "Bass Pro Shops",
+    "coordinates": [
+      35.6982398,
+      -78.5811882
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=201%20Cabela%20Drive&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d1c8c7da60f28fe25d10a7",
+    "name": "LITE Theatre Returns",
+    "cost": "$10 each and available at The Halle box office in person, over the phone, or online",
+    "url": "https://www.visitraleigh.com/event/lite-theatre-returns/96256/",
+    "date": "March 22, 2025",
+    "streetaddr": "237 N. Salem St.",
+    "city": "Apex",
+    "times": "Fri. & Sat. 7pm; Sun 3pm",
+    "location": "The Halle Cultural Arts Center",
+    "coordinates": [
+      35.7326667,
+      -78.8504294
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=237%20N.%20Salem%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67cadcfada60f28fe2f6d742",
+    "name": "Lisa Carl: Liquid, Stilled - Encaustic Paintings",
+    "cost": "$12+",
+    "url": "https://www.visitraleigh.com/event/lisa-carl%3a-liquid-stilled-encaustic-paintings/95855/",
+    "date": "March 22, 2025",
+    "streetaddr": "101 Dry Ave",
+    "city": "Cary ",
+    "times": "Times vary with date",
+    "location": "Cary Arts Center",
+    "coordinates": [
+      35.7826174,
+      -78.7812738
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=101%20Dry%20Ave&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d0d927da60f28fe2426b53",
+    "name": "Marchtoberfest",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/marchtoberfest/96568/",
+    "date": "March 22, 2025",
+    "streetaddr": "1233 Front St.",
+    "city": "Raleigh",
+    "times": "Sat. 12pm-10pm; Sun. 2pm-8pm",
+    "location": "Clouds Brewing Taproom",
+    "coordinates": [
+      35.8216383,
+      -78.6140877
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1233%20Front%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67c960e6da60f28fe2006df7",
+    "name": "NC Courage vs Seattle Reign FC",
+    "cost": "See the website for ticket prices.",
+    "url": "https://www.visitraleigh.com/event/nc-courage-vs-seattle-reign-fc/91405/",
+    "date": "March 22, 2025",
+    "streetaddr": "First Horizon Stadium at WakeMed Soccer park",
+    "city": "Cary",
+    "times": "7:00PM",
+    "time": "07:00:00",
+    "location": "First Horizon Stadium at WakeMed Soccer park",
+    "coordinates": [
+      35.7865815,
+      -78.7550912
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=First%20Horizon%20Stadium%20at%20WakeMed%20Soccer%20park&travelmode=driving",
+    "datetime": "March 22, 2025 07:00:00"
+  },
+  {
+    "id": "67ca176cda60f28fe299637e",
+    "name": "Preparing Your Garden Bed: A Spring Readiness Workshop",
+    "cost": "$35",
+    "url": "https://www.visitraleigh.com/event/preparing-your-garden-bed%3a-a-spring-readiness-workshop/95945/",
+    "date": "March 22, 2025",
+    "streetaddr": "2312 Long and Winding Rd.",
+    "city": "Raleigh",
+    "times": "Sat. 1-2:30pm",
+    "location": "Carolina Garden Coaching",
+    "coordinates": [
+      35.8208475,
+      -78.2405312
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2312%20Long%20and%20Winding%20Rd.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67cb22aada60f28fe2494525",
+    "name": "Rain Garden Rain Barrel Workshop",
+    "cost": "Free - Registration is required\r\n\r\n\r\n\r\n",
+    "url": "https://www.visitraleigh.com/event/rain-garden-rain-barrel-workshop/96430/",
+    "date": "March 22, 2025",
+    "streetaddr": "3237 Spottswood Street",
+    "city": "Raleigh",
+    "times": "Sat. 2:30pm-4pm",
+    "location": "Campbell Lodge at Durant Nature Preserve",
+    "coordinates": [
+      35.8910127,
+      -78.57736349999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3237%20Spottswood%20Street&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67c9fb5ada60f28fe2f4e620",
+    "name": "Raleigh St. Patrick's Day Treasure Hunt - Walking Team Scavenger Hunt!",
+    "cost": "$20, Adults; $12, Youth 10-17",
+    "url": "https://www.visitraleigh.com/event/raleigh-st-patricks-day-treasure-hunt-walking-team-scavenger-hunt!/96302/",
+    "date": "March 22, 2025",
+    "streetaddr": "319 W. Davie St.",
+    "city": "Raleigh",
+    "times": "2pm to 3pm",
+    "time": "14:00:00",
+    "location": "Crank Arm Brewing",
+    "coordinates": [
+      35.7755164,
+      -78.6440848
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=319%20W.%20Davie%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 14:00:00"
+  },
+  {
+    "id": "67d2efd57fcc52ccbc5cc5c9",
+    "name": "Spring Equinox Wellness Market",
+    "cost": "FREE",
+    "url": "https://www.visitraleigh.com/event/spring-equinox-wellness-market/96580/",
+    "date": "March 22, 2025",
+    "streetaddr": "218 Southport Dr.",
+    "city": "Morrisville",
+    "times": "Thur. 1pm-4pm",
+    "location": "NOVEL Morrisville and Land of a Thousand Hills Coffee and Social",
+    "coordinates": [
+      35.8368768,
+      -78.8163316
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=218%20Southport%20Dr.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67cf4fbada60f28fe28edbd5",
+    "name": "Stand-Up Level 1: An Introduction",
+    "cost": "$200",
+    "url": "https://www.visitraleigh.com/event/stand-up-level-1%3a-an-introduction/96236/",
+    "date": "March 22, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Sat. 10am-12pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d263317fcc52ccbc817850",
+    "name": "Stormwater Wildlife Paper Mosaic Workshop at Lions Park",
+    "url": "https://www.visitraleigh.com/event/stormwater-wildlife-paper-mosaic-workshop-at-lions-park/96504/",
+    "date": "March 22, 2025",
+    "streetaddr": "516 Dennis Ave.",
+    "city": "Raleigh",
+    "times": "Sat. 10am-12:30pm",
+    "location": "Lions Park and Community Center",
+    "coordinates": [
+      35.7977363,
+      -78.6140731
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=516%20Dennis%20Ave.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67c9b4f3da60f28fe267cdcd",
+    "name": "The Art of Tea in Bloom",
+    "cost": "$75 per person, prepaid",
+    "url": "https://www.visitraleigh.com/event/the-art-of-tea-in-bloom/96273/",
+    "date": "March 22, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Wed. - Sun. 10am-3:30pm",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.80988970000001,
+      -78.70257389999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67cec2e1da60f28fe28915c6",
+    "name": "The ComedyWorx Matinee",
+    "cost": "$9-$11",
+    "url": "https://www.visitraleigh.com/event/the-comedyworx-matinee/96226/",
+    "date": "March 22, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Sat. 3:30pm-5:15pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67cb937dda60f28fe2784b76",
+    "name": "The Mystic Party: A Cary Interactive Murder Mystery Cocktail Party with Clue Rooms",
+    "cost": "$95 Gen Adminssion, $115 Secret Suspect",
+    "url": "https://www.visitraleigh.com/event/the-mystic-party%3a-a-cary-interactive-murder-mystery-cocktail-party-with-clue-rooms/95868/",
+    "date": "March 22, 2025",
+    "streetaddr": "317 W. Chatham St.",
+    "city": "Cary",
+    "times": "Sat. 6pm-8pm",
+    "location": "The Matthews House",
+    "coordinates": [
+      35.7863745,
+      -78.7871621
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=317%20W.%20Chatham%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67cf33c7da60f28fe2f97e72",
+    "name": "The Saturday ComedyWorx Show",
+    "cost": "$11-15",
+    "url": "https://www.visitraleigh.com/event/the-saturday-comedyworx-show/96223/",
+    "date": "March 22, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Sat. 6:30pm-8:30pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d092c6da60f28fe2de880f",
+    "name": "The Saturday ComedyWorx Show",
+    "cost": "$11-$15",
+    "url": "https://www.visitraleigh.com/event/the-saturday-comedyworx-show/96234/",
+    "date": "March 22, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Sat. 7pm-8:30pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67ca5e1fda60f28fe2f9a2c5",
+    "name": "Wendell Food Truck Rodeo",
+    "cost": "Free\r\n\r\n",
+    "url": "https://www.visitraleigh.com/event/wendell-food-truck-rodeo/96527/",
+    "date": "March 22, 2025",
+    "streetaddr": "20 E Campen St",
+    "city": "Wendell",
+    "times": "Sat. 3pm-7pm",
+    "location": "Downtown Wendell",
+    "coordinates": [
+      35.7817718,
+      -78.3694028
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=20%20E%20Campen%20St&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed308",
+    "name": "Amazing Grace, Confronting the Enduring Legacy",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
+    "date": "March 22, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67cb06a2da60f28fe2b3e47e",
+    "name": "Art in Bloom, Presented by PNC",
+    "cost": "$40 Members, $50 Nonmembers; Free for children six and under",
+    "url": "https://www.visitraleigh.com/event/art-in-bloom-presented-by-pnc/95325/",
+    "date": "March 22, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Wed., 10am-3pm; Thurs., 10am-5pm; Fri., 11am-7pm; Sat., 10am-7pm; Sun., 10am-5pm",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67c97d71da60f28fe26d4b01",
+    "name": "Burning Coal Presents BEING CHAKA",
+    "cost": "$30 for adults, $5 for minors",
+    "url": "https://www.visitraleigh.com/event/burning-coal-presents-being-chaka/92696/",
+    "date": "March 22, 2025",
+    "streetaddr": "224 Polk St",
+    "city": "Raleigh",
+    "times": "Thurs.-Sat. 7:30pm; Sun. 2pm",
+    "location": "Burning Coal Theatre",
+    "coordinates": [
+      35.7856856,
+      -78.6349564
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=224%20Polk%20St&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d271807fcc52ccbcadbd7f",
+    "name": "David LaChapelle: Picture Show",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
+    "date": "March 22, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 22, 2025 22:00:00"
+  },
+  {
+    "id": "67ce7ccada60f28fe296feba",
+    "name": "Downtown Raleigh Dinner & Drinks Tour",
+    "cost": "$115",
+    "url": "https://www.visitraleigh.com/event/downtown-raleigh-dinner-%26-drinks-tour/63323/",
+    "date": "March 22, 2025",
+    "streetaddr": "Downtown Raleigh",
+    "city": "Raleigh",
+    "times": "Sat., 2:30pm; Sat., 3:00pm; Sun., 3:15pm",
+    "location": "Taste Carolina Gourmet Food Tours",
+    "coordinates": [
+      35.7822393,
+      -78.6285252
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Downtown%20Raleigh&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d238cb7fcc52ccbcf58bbd",
+    "name": "Downtown Raleigh Murals and Public Art Tour",
+    "cost": "Pay-what-you-want",
+    "url": "https://www.visitraleigh.com/event/downtown-raleigh-murals-and-public-art-tour/79777/",
+    "date": "March 22, 2025",
+    "streetaddr": "300 S. Salisbury St.",
+    "city": "Raleigh",
+    "times": "See website for times",
+    "location": "Downtown Raleigh",
+    "coordinates": [
+      35.7765381,
+      -78.6411149
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=300%20S.%20Salisbury%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67ce2838da60f28fe2179960",
+    "name": "Downtown Raleigh Tasting Tour",
+    "cost": "$95",
+    "url": "https://www.visitraleigh.com/event/downtown-raleigh-tasting-tour/63324/",
+    "date": "March 22, 2025",
+    "streetaddr": "Downtown Raleigh",
+    "city": "Raleigh",
+    "times": "Fri., 12:45pm; Sat., 10:30am",
+    "location": "Taste Carolina Gourmet Food Tours",
+    "coordinates": [
+      35.7822393,
+      -78.6285252
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Downtown%20Raleigh&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67ce6154da60f28fe2265ab8",
+    "name": "Free Wine Tasting",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/free-wine-tasting/92540/",
+    "date": "March 22, 2025",
+    "streetaddr": "211 E. Franklin St.",
+    "city": "Raleigh",
+    "times": "Noon-3pm",
+    "location": "Wine Authorities",
+    "coordinates": [
+      35.79036,
+      -78.6348299
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=211%20E.%20Franklin%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67cc03f0da60f28fe23d0eee",
+    "name": "Gifts of Gold Reception 2025",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/gifts-of-gold-reception-2025/96435/",
+    "date": "March 22, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Wednesday through Sunday 10am-5pm",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.80988970000001,
+      -78.70257389999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d255307fcc52ccbc57a6fa",
+    "name": "Holly Springs Farmers Market",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/holly-springs-farmers-market/83047/",
+    "date": "March 22, 2025",
+    "streetaddr": "300 West Ballentine St.",
+    "city": "Holly Springs",
+    "times": "May-Oct.: Sat, 8am-noon; Nov.-April: 9am-noon",
+    "location": "Holly Springs Farmers Market",
+    "coordinates": [
+      35.6501933,
+      -78.8364802
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=300%20West%20Ballentine%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67ce3674da60f28fe25f948b",
+    "name": "Journey to Space",
+    "cost": "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
+    "url": "https://www.visitraleigh.com/event/journey-to-space/94650/",
+    "date": "March 22, 2025",
+    "streetaddr": "11 W. Jones St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sun., 10am-5pm (last entry, 4pm)",
+    "location": "North Carolina Museum of Natural Sciences",
+    "coordinates": [
+      35.782354,
+      -78.639277
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67cb310cda60f28fe29ba161",
+    "name": "Material Messages: The Tales That Textiles Tell",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
+    "date": "March 22, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d2c5907fcc52ccbcaba23f",
+    "name": "Morning After Grace",
+    "cost": "Adult: $31\r\nSenior/Student: $27\r\nSeniors are age 62 and up. Students are through college.",
+    "url": "https://www.visitraleigh.com/event/morning-after-grace/92916/",
+    "date": "March 22, 2025",
+    "streetaddr": "301 Pogue St.",
+    "city": "Raleigh",
+    "times": "Thurs., Fri., and Sat. 8pm; Sun. 3pm",
+    "location": "Raleigh Little Theatre",
+    "coordinates": [
+      35.791437,
+      -78.668828
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=301%20Pogue%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d149acda60f28fe2f2fc4a",
+    "name": "Raleigh Self-Guided Scavenger Hunt",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
+    "date": "March 22, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "city": "Raleigh",
+    "times": "10am-6pm",
+    "time": "22:00:00",
+    "location": "Search in the City",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "March 22, 2025 22:00:00"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d499",
+    "name": "Seeing Red",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/seeing-red/95608/",
+    "date": "March 22, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 22, 2025 22:00:00"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3af3",
+    "name": "The Time Is Always Now: Artists Reframe the Black Figure",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
+    "date": "March 22, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 22, 2025 22:00:00"
+  },
+  {
+    "id": "67cdd3acda60f28fe25c461f",
+    "name": "Your Brain on Art",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/your-brain-on-art/95639/",
+    "date": "March 22, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 22, 2025 undefined"
+  },
+  {
+    "id": "67d149adda60f28fe2f30477",
+    "name": "Applause! Cary Youth Theatre presents: Tuck Everlasting",
+    "cost": "$8.50-$12",
+    "url": "https://www.visitraleigh.com/event/applause!-cary-youth-theatre-presents%3a-tuck-everlasting/96262/",
+    "date": "March 23, 2025",
+    "streetaddr": "101 Dry Ave.",
+    "city": "Cary",
+    "times": "Fri. & Sat. 7:30pm; Sun.3pm",
+    "location": "Cary Arts Center",
+    "coordinates": [
+      35.782687,
+      -78.781277
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=101%20Dry%20Ave.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67cc2042da60f28fe2b09422",
+    "name": "Brunch Specials at Bar Louie",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/brunch-specials-at-bar-louie/96276/",
+    "date": "March 23, 2025",
+    "streetaddr": "8401 Brier Creek Pkwy.",
+    "city": "Raleigh",
+    "times": "Fri. - Sun. 10am-3pm",
+    "location": "Bar Louie",
+    "coordinates": [
+      35.907272,
+      -78.7848384
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=8401%20Brier%20Creek%20Pkwy.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67ce52cdda60f28fe2e5415d",
+    "name": "Chatlee Boat Sale",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/chatlee-boat-sale/95719/",
+    "date": "March 23, 2025",
+    "streetaddr": "4285 Trinity Rd.",
+    "city": "Raleigh",
+    "times": "Thur.-Sun. Check back for times",
+    "location": "North Carolina State Fairgrounds-Kerr Scott building",
+    "coordinates": [
+      35.7964165,
+      -78.7141617
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=4285%20Trinity%20Rd.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67caea8cda60f28fe22cc894",
+    "name": "DakhaBrakha",
+    "cost": "$40-45 | $10 NC State Students | $20 Faculty/Staff\r\nBISTRO & A SHOW - before DakhaBrakha mesmerize us with their voices, visit NC State’s 1887 Bistro for an elegant three-course prix fixe Brunch. Brunch is $39.95 per person and includes soft drinks and mocktails. Doors open at 12:30pm. Reservations required. Reserve online or at the box office when you buy your concert ticket.",
+    "url": "https://www.visitraleigh.com/event/dakhabrakha/95796/",
+    "date": "March 23, 2025",
+    "streetaddr": "2610 Cates Ave.",
+    "city": "Raleigh",
+    "times": "Sun. 3pm",
+    "location": "Stewart Theatre, Talley Student Center at North Carolina State University",
+    "coordinates": [
+      35.7840099,
+      -78.670987
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2610%20Cates%20Ave.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67ca5e1fda60f28fe2f9a1b9",
+    "name": "Explosions in the Sky- The End Tour",
+    "cost": "$42+",
+    "url": "https://www.visitraleigh.com/event/explosions-in-the-sky-the-end-tour/95986/",
+    "date": "March 23, 2025",
+    "streetaddr": "2820 Industrial Dr.",
+    "city": "Raleigh",
+    "times": "Sun. 7pm",
+    "location": "The Ritz",
+    "coordinates": [
+      35.815896,
+      -78.619991
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2820%20Industrial%20Dr.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67d0306fda60f28fe2b07ca1",
+    "name": "GRAND OPENING at THE BEND BAR",
+    "cost": "Free ",
+    "url": "https://www.visitraleigh.com/event/grand-opening-at-the-bend-bar/96555/",
+    "date": "March 23, 2025",
+    "streetaddr": "853 W. Morgan St.",
+    "city": "Raleigh",
+    "times": "Sun. 12pm-4pm",
+    "location": "The Bend Bar",
+    "coordinates": [
+      35.7798023,
+      -78.65534869999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=853%20W.%20Morgan%20St.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67ca7a95da60f28fe286dbea",
+    "name": "Horsegirl [Early show!]",
+    "url": "https://www.visitraleigh.com/event/horsegirl-%5bearly-show!%5d/95450/",
+    "date": "March 23, 2025",
+    "streetaddr": "14 W. Martin St.",
+    "city": "Raleigh",
+    "times": "4:30 PM",
+    "time": "04:30:00",
+    "location": "KINGS",
+    "coordinates": [
+      35.7771353,
+      -78.6398083
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=14%20W.%20Martin%20St.&travelmode=driving",
+    "datetime": "March 23, 2025 04:30:00"
+  },
+  {
+    "id": "67cfb1dbda60f28fe2d2d459",
+    "name": "Kanin Wren’s Taylor Swift Experience",
+    "cost": "$14-$30",
+    "url": "https://www.visitraleigh.com/event/kanin-wren%e2%80%99s-taylor-swift-experience/95801/",
+    "date": "March 23, 2025",
+    "streetaddr": "126 E. Cabarrus St.",
+    "city": "Raleigh",
+    "times": "Doors, 6pm; Show, 7pm",
+    "location": "Lincoln Theatre",
+    "coordinates": [
+      35.773854,
+      -78.637416
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=126%20E.%20Cabarrus%20St.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67cec2e1da60f28fe2891608",
+    "name": "Kids’ Weekend activities at Bass Pro Shops OR Cabela’s in Garner",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/kids%e2%80%99-weekend-activities-at-bass-pro-shops-or-cabela%e2%80%99s-in-garner/96537/",
+    "date": "March 23, 2025",
+    "streetaddr": "201 Cabela Drive",
+    "city": "Garner",
+    "times": "Sat. & Sun. 11am-4pm",
+    "location": "Bass Pro Shops",
+    "coordinates": [
+      35.6982398,
+      -78.5811882
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=201%20Cabela%20Drive&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67d1c8c7da60f28fe25d10ad",
+    "name": "LITE Theatre Returns",
+    "cost": "$10 each and available at The Halle box office in person, over the phone, or online",
+    "url": "https://www.visitraleigh.com/event/lite-theatre-returns/96256/",
+    "date": "March 23, 2025",
+    "streetaddr": "237 N. Salem St.",
+    "city": "Apex",
+    "times": "Fri. & Sat. 7pm; Sun 3pm",
+    "location": "The Halle Cultural Arts Center",
+    "coordinates": [
+      35.7326667,
+      -78.8504294
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=237%20N.%20Salem%20St.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67cadcfada60f28fe2f6d749",
+    "name": "Lisa Carl: Liquid, Stilled - Encaustic Paintings",
+    "cost": "$12+",
+    "url": "https://www.visitraleigh.com/event/lisa-carl%3a-liquid-stilled-encaustic-paintings/95855/",
+    "date": "March 23, 2025",
+    "streetaddr": "101 Dry Ave",
+    "city": "Cary ",
+    "times": "Times vary with date",
+    "location": "Cary Arts Center",
+    "coordinates": [
+      35.7826174,
+      -78.7812738
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=101%20Dry%20Ave&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67d238cc7fcc52ccbcf58df9",
+    "name": "Luis J. Gomez",
+    "cost": "$33-$44",
+    "url": "https://www.visitraleigh.com/event/luis-j-gomez/96140/",
+    "date": "March 23, 2025",
+    "streetaddr": "401 Woodburn Rd",
+    "city": "Raleigh",
+    "times": "Sun. 7pm",
+    "location": "Goodnights Comedy Club",
+    "coordinates": [
+      35.7896074,
+      -78.6597085
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67d0d927da60f28fe2426bf0",
+    "name": "Marchtoberfest",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/marchtoberfest/96568/",
+    "date": "March 23, 2025",
+    "streetaddr": "1233 Front St.",
+    "city": "Raleigh",
+    "times": "Sat. 12pm-10pm; Sun. 2pm-8pm",
+    "location": "Clouds Brewing Taproom",
+    "coordinates": [
+      35.8216383,
+      -78.6140877
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1233%20Front%20St.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67d2a9427fcc52ccbc4bdfbf",
+    "name": "Paws and Pals: Oodles of Doodles!",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/paws-and-pals%3a-oodles-of-doodles!/96263/",
+    "date": "March 23, 2025",
+    "streetaddr": "327 S. Academy St.",
+    "city": "Cary",
+    "times": "Sun. 3pm-4pm",
+    "location": "Downtown Cary Park",
+    "coordinates": [
+      35.7837301,
+      -78.7809437
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=327%20S.%20Academy%20St.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67c9fb5ada60f28fe2f4e629",
+    "name": "Raleigh St. Patrick's Day Treasure Hunt - Walking Team Scavenger Hunt!",
+    "cost": "$20, Adults; $12, Youth 10-17",
+    "url": "https://www.visitraleigh.com/event/raleigh-st-patricks-day-treasure-hunt-walking-team-scavenger-hunt!/96302/",
+    "date": "March 23, 2025",
+    "streetaddr": "319 W. Davie St.",
+    "city": "Raleigh",
+    "times": "2pm to 3pm",
+    "time": "14:00:00",
+    "location": "Crank Arm Brewing",
+    "coordinates": [
+      35.7755164,
+      -78.6440848
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=319%20W.%20Davie%20St.&travelmode=driving",
+    "datetime": "March 23, 2025 14:00:00"
+  },
+  {
+    "id": "67d21d247fcc52ccbc9f7094",
+    "name": "Resin Workshop",
+    "cost": "$75",
+    "url": "https://www.visitraleigh.com/event/resin-workshop/96486/",
+    "date": "March 23, 2025",
+    "streetaddr": "120 S. Wilmington St.",
+    "city": "Raleigh",
+    "times": "Sun. 9:00 AM -11:00 AM",
+    "location": "Parcero Studio - Yarn & Gifts Shop",
+    "coordinates": [
+      35.7789949,
+      -78.6386325
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=120%20S.%20Wilmington%20St.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67c8aa26da60f28fe218cce2",
+    "name": "Room 861 at Goodnights: Jay Derrell",
+    "cost": "$25-$33",
+    "url": "https://www.visitraleigh.com/event/room-861-at-goodnights%3a-jay-derrell/96141/",
+    "date": "March 23, 2025",
+    "streetaddr": "401 Woodburn Rd",
+    "city": "Raleigh",
+    "times": "Sun. 7pm",
+    "location": "Goodnights Comedy Club",
+    "coordinates": [
+      35.7896074,
+      -78.6597085
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67ccbaa6da60f28fe26e7732",
+    "name": "SPIRIT of Inclusion Expo",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/spirit-of-inclusion-expo/96322/",
+    "date": "March 23, 2025",
+    "streetaddr": "701 Harris Road.",
+    "city": "Wake Forest",
+    "times": "Sun. 11am-2pm",
+    "location": "Joyner Park Community Center, 701 Harris Road.",
+    "coordinates": [
+      35.9960193,
+      -78.51638940000001
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=701%20Harris%20Road.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67d03f2dda60f28fe201f25f",
+    "name": "Shortform 1: Game Mechanics",
+    "cost": "$200",
+    "url": "https://www.visitraleigh.com/event/shortform-1%3a-game-mechanics/96238/",
+    "date": "March 23, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Sun. 1pm-4pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67ce2839da60f28fe2179ee5",
+    "name": "Shortform 2: Performance",
+    "cost": "$200",
+    "url": "https://www.visitraleigh.com/event/shortform-2%3a-performance/96239/",
+    "date": "March 23, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Sun. 7pm-7pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67c99995da60f28fe2e72ce8",
+    "name": "Superbloom Comedy Show with Mike Lebovitz",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/superbloom-comedy-show-with-mike-lebovitz/96382/",
+    "date": "March 23, 2025",
+    "streetaddr": "224 S Blount St",
+    "city": "Raleigh",
+    "times": "Sun. 7pm-10pm",
+    "location": "The Pourhouse Music Hall & Record Shop",
+    "coordinates": [
+      35.777175,
+      -78.636884
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=224%20S%20Blount%20St&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67c9b4f3da60f28fe267cdd1",
+    "name": "The Art of Tea in Bloom",
+    "cost": "$75 per person, prepaid",
+    "url": "https://www.visitraleigh.com/event/the-art-of-tea-in-bloom/96273/",
+    "date": "March 23, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Wed. - Sun. 10am-3:30pm",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.80988970000001,
+      -78.70257389999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed312",
+    "name": "Amazing Grace, Confronting the Enduring Legacy",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
+    "date": "March 23, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67cb06a2da60f28fe2b3e485",
+    "name": "Art in Bloom, Presented by PNC",
+    "cost": "$40 Members, $50 Nonmembers; Free for children six and under",
+    "url": "https://www.visitraleigh.com/event/art-in-bloom-presented-by-pnc/95325/",
+    "date": "March 23, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Wed., 10am-3pm; Thurs., 10am-5pm; Fri., 11am-7pm; Sat., 10am-7pm; Sun., 10am-5pm",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67c97d71da60f28fe26d4b18",
+    "name": "Burning Coal Presents BEING CHAKA",
+    "cost": "$30 for adults, $5 for minors",
+    "url": "https://www.visitraleigh.com/event/burning-coal-presents-being-chaka/92696/",
+    "date": "March 23, 2025",
+    "streetaddr": "224 Polk St",
+    "city": "Raleigh",
+    "times": "Thurs.-Sat. 7:30pm; Sun. 2pm",
+    "location": "Burning Coal Theatre",
+    "coordinates": [
+      35.7856856,
+      -78.6349564
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=224%20Polk%20St&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67d11199da60f28fe22c1623",
+    "name": "Craft Pasta Alfredo From Scratch With Chef Lucas",
+    "cost": "$55.00",
+    "url": "https://www.visitraleigh.com/event/craft-pasta-alfredo-from-scratch-with-chef-lucas/95754/",
+    "date": "March 23, 2025",
+    "streetaddr": "300 Glenwood Avenue",
+    "city": "Raleigh",
+    "times": "Time varies with date",
+    "location": "Tin Roof",
+    "coordinates": [
+      35.7843127,
+      -78.64718760000001
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=300%20Glenwood%20Avenue&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67d271807fcc52ccbcadbd86",
+    "name": "David LaChapelle: Picture Show",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
+    "date": "March 23, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 23, 2025 22:00:00"
+  },
+  {
+    "id": "67d21d237fcc52ccbc9f6dfc",
+    "name": "Downtown Cary Historic Walking Tour",
+    "cost": "$14",
+    "url": "https://www.visitraleigh.com/event/downtown-cary-historic-walking-tour/92881/",
+    "date": "March 23, 2025",
+    "streetaddr": "114 S Academy St, Cary, NC 27511",
+    "city": "Cary",
+    "times": "2-3pm",
+    "time": "14:00:00",
+    "location": "Esteamed Coffee",
+    "coordinates": [
+      35.7868655,
+      -78.7814932
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=114%20S%20Academy%20St%2C%20Cary%2C%20NC%2027511&travelmode=driving",
+    "datetime": "March 23, 2025 14:00:00"
+  },
+  {
+    "id": "67ce7ccada60f28fe296fec0",
+    "name": "Downtown Raleigh Dinner & Drinks Tour",
+    "cost": "$115",
+    "url": "https://www.visitraleigh.com/event/downtown-raleigh-dinner-%26-drinks-tour/63323/",
+    "date": "March 23, 2025",
+    "streetaddr": "Downtown Raleigh",
+    "city": "Raleigh",
+    "times": "Sat., 2:30pm; Sat., 3:00pm; Sun., 3:15pm",
+    "location": "Taste Carolina Gourmet Food Tours",
+    "coordinates": [
+      35.7822393,
+      -78.6285252
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Downtown%20Raleigh&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67cc03f0da60f28fe23d0ef3",
+    "name": "Gifts of Gold Reception 2025",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/gifts-of-gold-reception-2025/96435/",
+    "date": "March 23, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Wednesday through Sunday 10am-5pm",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.80988970000001,
+      -78.70257389999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67ce3674da60f28fe25f948c",
+    "name": "Journey to Space",
+    "cost": "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
+    "url": "https://www.visitraleigh.com/event/journey-to-space/94650/",
+    "date": "March 23, 2025",
+    "streetaddr": "11 W. Jones St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sun., 10am-5pm (last entry, 4pm)",
+    "location": "North Carolina Museum of Natural Sciences",
+    "coordinates": [
+      35.782354,
+      -78.639277
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67d08555da60f28fe293eaae",
+    "name": "Make Traditional Dumplings From Scratch With Chef Jenny",
+    "cost": "$55.00 per person",
+    "url": "https://www.visitraleigh.com/event/make-traditional-dumplings-from-scratch-with-chef-jenny/95748/",
+    "date": "March 23, 2025",
+    "streetaddr": "300 Glenwood Avenue",
+    "city": "Raleigh",
+    "times": "Varies according to date",
+    "location": "Tin Roof",
+    "coordinates": [
+      35.7843127,
+      -78.64718760000001
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=300%20Glenwood%20Avenue&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67cb310cda60f28fe29ba169",
+    "name": "Material Messages: The Tales That Textiles Tell",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
+    "date": "March 23, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67d2c5907fcc52ccbcaba245",
+    "name": "Morning After Grace",
+    "cost": "Adult: $31\r\nSenior/Student: $27\r\nSeniors are age 62 and up. Students are through college.",
+    "url": "https://www.visitraleigh.com/event/morning-after-grace/92916/",
+    "date": "March 23, 2025",
+    "streetaddr": "301 Pogue St.",
+    "city": "Raleigh",
+    "times": "Thurs., Fri., and Sat. 8pm; Sun. 3pm",
+    "location": "Raleigh Little Theatre",
+    "coordinates": [
+      35.791437,
+      -78.668828
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=301%20Pogue%20St.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67d149acda60f28fe2f2fc52",
+    "name": "Raleigh Self-Guided Scavenger Hunt",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
+    "date": "March 23, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "city": "Raleigh",
+    "times": "10am-6pm",
+    "time": "22:00:00",
+    "location": "Search in the City",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "March 23, 2025 22:00:00"
+  },
+  {
+    "id": "67cbbd48da60f28fe2314d29",
+    "name": "Raleigh True Crime Tour",
+    "cost": "$14",
+    "url": "https://www.visitraleigh.com/event/raleigh-true-crime-tour/95034/",
+    "date": "March 23, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "times": "Fri. and Sun., 6-7pm",
+    "location": "Moore Square",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d4a3",
+    "name": "Seeing Red",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/seeing-red/95608/",
+    "date": "March 23, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 23, 2025 22:00:00"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3af7",
+    "name": "The Time Is Always Now: Artists Reframe the Black Figure",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
+    "date": "March 23, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 23, 2025 22:00:00"
+  },
+  {
+    "id": "67cdd3acda60f28fe25c462a",
+    "name": "Your Brain on Art",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/your-brain-on-art/95639/",
+    "date": "March 23, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 23, 2025 undefined"
+  },
+  {
+    "id": "67d092c6da60f28fe2de8866",
+    "name": "Intro to Improv",
+    "cost": "$200",
+    "url": "https://www.visitraleigh.com/event/intro-to-improv/96241/",
+    "date": "March 24, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Mon. 7pm-10pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 24, 2025 undefined"
+  },
+  {
+    "id": "67d2fd8b7fcc52ccbca0d959",
+    "name": "Renovating & Remodeling the Home Landscape",
+    "cost": "$250.00 for members, $300.00 for nonmembers.",
+    "url": "https://www.visitraleigh.com/event/renovating-%26-remodeling-the-home-landscape/96353/",
+    "date": "March 24, 2025",
+    "streetaddr": "4415 Beryl Rd.",
+    "city": "Raleigh",
+    "times": "Mon. 6:30pm-8:30pm",
+    "location": "JC Raulston Arboretum at North Carolina State University",
+    "coordinates": [
+      35.7934866,
+      -78.6971178
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=4415%20Beryl%20Rd.&travelmode=driving",
+    "datetime": "March 24, 2025 undefined"
+  },
+  {
+    "id": "67d2a9427fcc52ccbc4bdfb9",
+    "name": "Ric Diez",
+    "cost": "$33-$41",
+    "url": "https://www.visitraleigh.com/event/ric-diez/96142/",
+    "date": "March 24, 2025",
+    "streetaddr": "401 Woodburn Rd",
+    "city": "Raleigh",
+    "times": "Mon. 7:30pm",
+    "location": "Goodnights Comedy Club",
+    "coordinates": [
+      35.7896074,
+      -78.6597085
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd&travelmode=driving",
+    "datetime": "March 24, 2025 undefined"
+  },
+  {
+    "id": "67ccd6deda60f28fe2019856",
+    "name": "Weatherday",
+    "url": "https://www.visitraleigh.com/event/weatherday/95451/",
+    "date": "March 24, 2025",
+    "streetaddr": "14 W. Martin St.",
+    "city": "Raleigh",
+    "times": "8:00 PM",
+    "time": "08:00:00",
+    "location": "KINGS",
+    "coordinates": [
+      35.7771353,
+      -78.6398083
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=14%20W.%20Martin%20St.&travelmode=driving",
+    "datetime": "March 24, 2025 08:00:00"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed318",
+    "name": "Amazing Grace, Confronting the Enduring Legacy",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
+    "date": "March 24, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 24, 2025 undefined"
+  },
+  {
+    "id": "67cde26bda60f28fe2a9d654",
+    "name": "Board Game Night",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/board-game-night/92963/",
+    "date": "March 24, 2025",
+    "streetaddr": "123 E. Martin St.",
+    "city": "Raleigh",
+    "times": "From: 5:00 PM to 9:00 PM",
+    "location": "The Hippo Wine Bar",
+    "coordinates": [
+      35.777088,
+      -78.6370759
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=123%20E.%20Martin%20St.&travelmode=driving",
+    "datetime": "March 24, 2025 undefined"
+  },
+  {
+    "id": "67d271807fcc52ccbcadbd8f",
+    "name": "David LaChapelle: Picture Show",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
+    "date": "March 24, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 24, 2025 22:00:00"
+  },
+  {
+    "id": "67cb310cda60f28fe29ba16e",
+    "name": "Material Messages: The Tales That Textiles Tell",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
+    "date": "March 24, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 24, 2025 undefined"
+  },
+  {
+    "id": "67d149acda60f28fe2f2fc54",
+    "name": "Raleigh Self-Guided Scavenger Hunt",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
+    "date": "March 24, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "city": "Raleigh",
+    "times": "10am-6pm",
+    "time": "22:00:00",
+    "location": "Search in the City",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "March 24, 2025 22:00:00"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d4ae",
+    "name": "Seeing Red",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/seeing-red/95608/",
+    "date": "March 24, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 24, 2025 22:00:00"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3b00",
+    "name": "The Time Is Always Now: Artists Reframe the Black Figure",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
+    "date": "March 24, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 24, 2025 22:00:00"
+  },
+  {
+    "id": "67cdd3acda60f28fe25c4631",
+    "name": "Your Brain on Art",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/your-brain-on-art/95639/",
+    "date": "March 24, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 24, 2025 undefined"
+  },
+  {
+    "id": "67d13c49da60f28fe2c32a7a",
+    "name": "Art Exhibition: Acrylic Paintings and Polymer Clay",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/art-exhibition%3a-acrylic-paintings-and-polymer-clay/96487/",
+    "date": "March 25, 2025",
+    "streetaddr": "200 S. Academy St.",
+    "city": "Cary",
+    "times": "11am-5:30pm",
+    "time": "23:30:00",
+    "location": "Cary Gallery of Artists",
+    "coordinates": [
+      35.7864238,
+      -78.7817176
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=200%20S.%20Academy%20St.&travelmode=driving",
+    "datetime": "March 25, 2025 23:30:00"
+  },
+  {
+    "id": "67cefb31da60f28fe29cc8eb",
+    "name": "Author Event: Travis Mulhauser",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/author-event%3a-travis-mulhauser/96160/",
+    "date": "March 25, 2025",
+    "streetaddr": "415 Brooks St.",
+    "city": "Wake Forest",
+    "times": "Tue. 6:00 PM",
+    "location": "Page 158 Books",
+    "coordinates": [
+      35.97417410000001,
+      -78.50870379999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=415%20Brooks%20St.&travelmode=driving",
+    "datetime": "March 25, 2025 undefined"
+  },
+  {
+    "id": "67d2efd57fcc52ccbc5cc482",
+    "name": "Decaf and Craft",
+    "cost": "$7 for Residents, $10 for Non-Residents",
+    "url": "https://www.visitraleigh.com/event/decaf-and-craft/96572/",
+    "date": "March 25, 2025",
+    "streetaddr": "2400 State Rd. 2710",
+    "city": "Garner",
+    "times": "Tue. 6pm-8pm",
+    "location": "White Deer Park Nature Center",
+    "coordinates": [
+      35.6800263,
+      -78.6263307
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2400%20State%20Rd.%202710&travelmode=driving",
+    "datetime": "March 25, 2025 undefined"
+  },
+  {
+    "id": "67cd8d5ada60f28fe2f3708c",
+    "name": "NHL Carolina Hurricanes vs. Nashville Predators",
+    "url": "https://www.visitraleigh.com/event/nhl-carolina-hurricanes-vs-nashville-predators/93167/",
+    "date": "March 25, 2025",
+    "streetaddr": "1400 Edwards Mill Rd.",
+    "city": "Raleigh",
+    "times": "7pm",
+    "time": "19:00:00",
+    "location": "PNC Arena",
+    "coordinates": [
+      35.803291,
+      -78.7216992
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1400%20Edwards%20Mill%20Rd.&travelmode=driving",
+    "datetime": "March 25, 2025 19:00:00"
+  },
+  {
+    "id": "67d17419da60f28fe29b443c",
+    "name": "North Carolina State University vs. USC Upstate Baseball",
+    "url": "https://www.visitraleigh.com/event/north-carolina-state-university-vs-usc-upstate-baseball/95380/",
+    "date": "March 25, 2025",
+    "streetaddr": "1081 Varsity Dr.",
+    "city": "Raleigh",
+    "times": "6pm",
+    "time": "18:00:00",
+    "location": "Doak Field (North Carolina State University)",
+    "coordinates": [
+      35.7878444,
+      -78.6799399
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1081%20Varsity%20Dr.&travelmode=driving",
+    "datetime": "March 25, 2025 18:00:00"
+  },
+  {
+    "id": "67d0bd1cda60f28fe2c3caf2",
+    "name": "Pedro Gonzalez",
+    "cost": "$31-$42",
+    "url": "https://www.visitraleigh.com/event/pedro-gonzalez/96143/",
+    "date": "March 25, 2025",
+    "streetaddr": "401 Woodburn Rd",
+    "city": "Raleigh",
+    "times": "Tue. 7:30pm",
+    "location": "Goodnights Comedy Club",
+    "coordinates": [
+      35.7896074,
+      -78.6597085
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd&travelmode=driving",
+    "datetime": "March 25, 2025 undefined"
+  },
+  {
+    "id": "67d0770cda60f28fe24175ce",
+    "name": "Tapestry Weaving Workshop at Lucky Tree Cafe",
+    "cost": "$56",
+    "url": "https://www.visitraleigh.com/event/tapestry-weaving-workshop-at-lucky-tree-cafe/95743/",
+    "date": "March 25, 2025",
+    "streetaddr": "3801 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "From: 06:00 PM to 08:00 PM",
+    "location": "Lucky Tree",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 25, 2025 undefined"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed31f",
+    "name": "Amazing Grace, Confronting the Enduring Legacy",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
+    "date": "March 25, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 25, 2025 undefined"
+  },
+  {
+    "id": "67cf960eda60f28fe2f8e0bd",
+    "name": "Beer and Banjos: A Showcase of Regional Roots Music",
+    "url": "https://www.visitraleigh.com/event/beer-and-banjos%3a-a-showcase-of-regional-roots-music/92982/",
+    "date": "March 25, 2025",
+    "streetaddr": "500 E. Davie St.",
+    "city": "Raleigh",
+    "times": "From: 6:30 PM to 9:00 PM",
+    "location": "Transfer Co. Food Hall",
+    "coordinates": [
+      35.7750934,
+      -78.6321862
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=500%20E.%20Davie%20St.&travelmode=driving",
+    "datetime": "March 25, 2025 undefined"
+  },
+  {
+    "id": "67cb4d2ada60f28fe22c285f",
+    "name": "Comedy Open Mic",
+    "url": "https://www.visitraleigh.com/event/comedy-open-mic/93204/",
+    "date": "March 25, 2025",
+    "streetaddr": "227 S. Wilmington St.",
+    "city": "Raleigh",
+    "times": "10:30pm",
+    "time": "22:30:00",
+    "location": "Slim's Downtown",
+    "coordinates": [
+      35.7774343,
+      -78.6381176
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=227%20S.%20Wilmington%20St.&travelmode=driving",
+    "datetime": "March 25, 2025 22:30:00"
+  },
+  {
+    "id": "67d271807fcc52ccbcadbd95",
+    "name": "David LaChapelle: Picture Show",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
+    "date": "March 25, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 25, 2025 22:00:00"
+  },
+  {
+    "id": "67ca33d4da60f28fe228f37b",
+    "name": "Enjoy Aperitivo Menu at Figulina",
+    "url": "https://www.visitraleigh.com/event/enjoy-aperitivo-menu-at-figulina/95842/",
+    "date": "March 25, 2025",
+    "streetaddr": "317 S. Harrington St.",
+    "city": "Raleigh",
+    "times": "Tue.-Thur. 5PM-6:30pm",
+    "location": "Figulina",
+    "coordinates": [
+      35.776317,
+      -78.644975
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=317%20S.%20Harrington%20St.&travelmode=driving",
+    "datetime": "March 25, 2025 undefined"
+  },
+  {
+    "id": "67ce3674da60f28fe25f948d",
+    "name": "Journey to Space",
+    "cost": "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
+    "url": "https://www.visitraleigh.com/event/journey-to-space/94650/",
+    "date": "March 25, 2025",
+    "streetaddr": "11 W. Jones St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sun., 10am-5pm (last entry, 4pm)",
+    "location": "North Carolina Museum of Natural Sciences",
+    "coordinates": [
+      35.782354,
+      -78.639277
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
+    "datetime": "March 25, 2025 undefined"
+  },
+  {
+    "id": "67cb310cda60f28fe29ba173",
+    "name": "Material Messages: The Tales That Textiles Tell",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
+    "date": "March 25, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 25, 2025 undefined"
+  },
+  {
+    "id": "67d149acda60f28fe2f2fc5e",
+    "name": "Raleigh Self-Guided Scavenger Hunt",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
+    "date": "March 25, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "city": "Raleigh",
+    "times": "10am-6pm",
+    "time": "22:00:00",
+    "location": "Search in the City",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "March 25, 2025 22:00:00"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d4b6",
+    "name": "Seeing Red",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/seeing-red/95608/",
+    "date": "March 25, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 25, 2025 22:00:00"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3b07",
+    "name": "The Time Is Always Now: Artists Reframe the Black Figure",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
+    "date": "March 25, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 25, 2025 22:00:00"
+  },
+  {
+    "id": "67cdd3acda60f28fe25c4645",
+    "name": "Your Brain on Art",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/your-brain-on-art/95639/",
+    "date": "March 25, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 25, 2025 undefined"
+  },
+  {
+    "id": "67cfb1dbda60f28fe2d2d45f",
+    "name": "1975 Dinner at Irregardless",
+    "cost": "$80",
+    "url": "https://www.visitraleigh.com/event/1975-dinner-at-irregardless/95845/",
+    "date": "March 26, 2025",
+    "streetaddr": "901 W. Morgan St.",
+    "city": "Raleigh",
+    "times": "Wed. 6:30pm-9PM",
+    "location": "Irregardless",
+    "coordinates": [
+      35.7811906,
+      -78.6560403
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=901%20W.%20Morgan%20St.&travelmode=driving",
+    "datetime": "March 26, 2025 undefined"
+  },
+  {
+    "id": "67cd7fb2da60f28fe2bdd41c",
+    "name": "Smooth Jazz at the Improv Presents: Will Downing",
+    "cost": "$127\r\nAges 21+",
+    "url": "https://www.visitraleigh.com/event/smooth-jazz-at-the-improv-presents%3a-will-downing/96195/",
+    "date": "March 26, 2025",
+    "streetaddr": "1224 Parkside Main St.",
+    "city": "Cary",
+    "times": "Wed. 7:30pm",
+    "location": "Raleigh Improv",
+    "coordinates": [
+      35.8491034,
+      -78.890939
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1224%20Parkside%20Main%20St.&travelmode=driving",
+    "datetime": "March 26, 2025 undefined"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed329",
+    "name": "Amazing Grace, Confronting the Enduring Legacy",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
+    "date": "March 26, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 26, 2025 undefined"
+  },
+  {
+    "id": "67d0770cda60f28fe24173ea",
+    "name": "Coffee & Crochet",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/coffee-%26-crochet/95251/",
+    "date": "March 26, 2025",
+    "streetaddr": "323 Blake St.",
+    "city": "Raleigh",
+    "times": "4-7pm",
+    "time": "16:00:00",
+    "location": "Blackbird Books & Coffee",
+    "coordinates": [
+      35.7761731,
+      -78.6356293
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=323%20Blake%20St.&travelmode=driving",
+    "datetime": "March 26, 2025 16:00:00"
+  },
+  {
+    "id": "67d271807fcc52ccbcadbd9b",
+    "name": "David LaChapelle: Picture Show",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
+    "date": "March 26, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 26, 2025 22:00:00"
+  },
+  {
+    "id": "67ca33d4da60f28fe228f385",
+    "name": "Enjoy Aperitivo Menu at Figulina",
+    "url": "https://www.visitraleigh.com/event/enjoy-aperitivo-menu-at-figulina/95842/",
+    "date": "March 26, 2025",
+    "streetaddr": "317 S. Harrington St.",
+    "city": "Raleigh",
+    "times": "Tue.-Thur. 5PM-6:30pm",
+    "location": "Figulina",
+    "coordinates": [
+      35.776317,
+      -78.644975
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=317%20S.%20Harrington%20St.&travelmode=driving",
+    "datetime": "March 26, 2025 undefined"
+  },
+  {
+    "id": "67cc03f0da60f28fe23d0ef9",
+    "name": "Gifts of Gold Reception 2025",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/gifts-of-gold-reception-2025/96435/",
+    "date": "March 26, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Wednesday through Sunday 10am-5pm",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.80988970000001,
+      -78.70257389999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 26, 2025 undefined"
+  },
+  {
+    "id": "67ce3674da60f28fe25f9491",
+    "name": "Journey to Space",
+    "cost": "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
+    "url": "https://www.visitraleigh.com/event/journey-to-space/94650/",
+    "date": "March 26, 2025",
+    "streetaddr": "11 W. Jones St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sun., 10am-5pm (last entry, 4pm)",
+    "location": "North Carolina Museum of Natural Sciences",
+    "coordinates": [
+      35.782354,
+      -78.639277
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
+    "datetime": "March 26, 2025 undefined"
+  },
+  {
+    "id": "67ccd6deda60f28fe201987a",
+    "name": "Karaoke!",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/karaoke!/95489/",
+    "date": "March 26, 2025",
+    "streetaddr": "14 W. Martin St.",
+    "city": "Raleigh",
+    "times": "8:00 PM",
+    "time": "08:00:00",
+    "location": "Neptunes Parlour",
+    "coordinates": [
+      35.7771353,
+      -78.6398083
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=14%20W.%20Martin%20St.&travelmode=driving",
+    "datetime": "March 26, 2025 08:00:00"
+  },
+  {
+    "id": "67cb310cda60f28fe29ba17b",
+    "name": "Material Messages: The Tales That Textiles Tell",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
+    "date": "March 26, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 26, 2025 undefined"
+  },
+  {
+    "id": "67d149acda60f28fe2f2fc65",
+    "name": "Raleigh Self-Guided Scavenger Hunt",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
+    "date": "March 26, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "city": "Raleigh",
+    "times": "10am-6pm",
+    "time": "22:00:00",
+    "location": "Search in the City",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "March 26, 2025 22:00:00"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d4c5",
+    "name": "Seeing Red",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/seeing-red/95608/",
+    "date": "March 26, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 26, 2025 22:00:00"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3b14",
+    "name": "The Time Is Always Now: Artists Reframe the Black Figure",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
+    "date": "March 26, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 26, 2025 22:00:00"
+  },
+  {
+    "id": "67cdd3acda60f28fe25c464a",
+    "name": "Your Brain on Art",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/your-brain-on-art/95639/",
+    "date": "March 26, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 26, 2025 undefined"
+  },
+  {
+    "id": "67d2e21c7fcc52ccbc1fa087",
+    "name": "BK Pilates Spring Resetfitness",
+    "cost": "free",
+    "url": "https://www.visitraleigh.com/event/bk-pilates-spring-resetfitness/96578/",
+    "date": "March 27, 2025",
+    "streetaddr": "1019 S Saunders St",
+    "city": "Raleigh",
+    "times": "Thur 5pm-8pm",
+    "location": "BK Pilates Raleigh",
+    "coordinates": [
+      35.76743099999999,
+      -78.648364
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1019%20S%20Saunders%20St&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3a84",
+    "name": "Brooks & Dunn",
+    "cost": "$29-$191+",
+    "url": "https://www.visitraleigh.com/event/brooks-%26-dunn/95308/",
+    "date": "March 27, 2025",
+    "streetaddr": "1400 Edwards Mill Rd.",
+    "city": "Raleigh",
+    "times": "7pm",
+    "time": "19:00:00",
+    "location": "Lenovo Center",
+    "coordinates": [
+      35.803335,
+      -78.721795
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1400%20Edwards%20Mill%20Rd.&travelmode=driving",
+    "datetime": "March 27, 2025 19:00:00"
+  },
+  {
+    "id": "67d255307fcc52ccbc57a993",
+    "name": "Brush the Skyline &#8211; Watercolors and Brews Workshop",
+    "cost": "$45",
+    "url": "https://www.visitraleigh.com/event/brush-the-skyline-%26%238211%3b-watercolors-and-brews-workshop/95749/",
+    "date": "March 27, 2025",
+    "streetaddr": "201 S. Boylan Ave.",
+    "city": "Raleigh",
+    "times": "6:30pm to 7:30pm",
+    "time": "18:30:00",
+    "location": "Wye Hill Kitchen & Brewing",
+    "coordinates": [
+      35.7784641,
+      -78.6490665
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=201%20S.%20Boylan%20Ave.&travelmode=driving",
+    "datetime": "March 27, 2025 18:30:00"
+  },
+  {
+    "id": "67d2e21c7fcc52ccbc1fa07f",
+    "name": "CYC Small Business Fair",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/cyc-small-business-fair/95978/",
+    "date": "March 27, 2025",
+    "streetaddr": "2610 Cates Ave.",
+    "city": "Raleigh",
+    "times": "1-6pm",
+    "time": "13:00:00",
+    "location": "Stafford Commons, NC State",
+    "coordinates": [
+      35.7840099,
+      -78.670987
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2610%20Cates%20Ave.&travelmode=driving",
+    "datetime": "March 27, 2025 13:00:00"
+  },
+  {
+    "id": "67cbf610da60f28fe20e6167",
+    "name": "Chanel Beads with More Ease",
+    "cost": "$16-$20",
+    "url": "https://www.visitraleigh.com/event/chanel-beads-with-more-ease/95806/",
+    "date": "March 27, 2025",
+    "streetaddr": "14 W. Martin St.",
+    "city": "Raleigh",
+    "times": "Doors, 7pm; Show, 8pm",
+    "location": "KINGS",
+    "coordinates": [
+      35.7771353,
+      -78.6398083
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=14%20W.%20Martin%20St.&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67cf25eada60f28fe2a8cbed",
+    "name": "Chef’s 5-Course Tasting Menu at The Depot",
+    "cost": "$140",
+    "url": "https://www.visitraleigh.com/event/chef%e2%80%99s-5-course-tasting-menu-at-the-depot/95680/",
+    "date": "March 27, 2025",
+    "streetaddr": "608 N. First Ave.",
+    "city": "Knightdale",
+    "times": "6pm-9pm",
+    "time": "18:00:00",
+    "location": "The Depot on First",
+    "coordinates": [
+      35.7933708,
+      -78.47689670000001
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=608%20N.%20First%20Ave.&travelmode=driving",
+    "datetime": "March 27, 2025 18:00:00"
+  },
+  {
+    "id": "67c88dadda60f28fe24d3c3c",
+    "name": "Live at Lunch Featuring: Emma Rae",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/live-at-lunch-featuring%3a-emma-rae/96264/",
+    "date": "March 27, 2025",
+    "streetaddr": "327 S. Academy St.",
+    "city": "Cary",
+    "times": "Thur. 11:30am-1:30pm",
+    "location": "Downtown Cary Park",
+    "coordinates": [
+      35.7837301,
+      -78.7809437
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=327%20S.%20Academy%20St.&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67ce3674da60f28fe25f9756",
+    "name": "TCC: The ComedyWorx Conservatory",
+    "cost": "$8",
+    "url": "https://www.visitraleigh.com/event/tcc%3a-the-comedyworx-conservatory/96232/",
+    "date": "March 27, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Thur. 8:30pm-10pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67ced1c7da60f28fe2c3ad5f",
+    "name": "TCC: The ComedyWorx Conservatory",
+    "cost": "$8",
+    "url": "https://www.visitraleigh.com/event/tcc%3a-the-comedyworx-conservatory/96231/",
+    "date": "March 27, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Thur. 6pm-7:30pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67d165eada60f28fe261c7b8",
+    "name": "Tony Rock",
+    "cost": "$28-$41",
+    "url": "https://www.visitraleigh.com/event/tony-rock/96144/",
+    "date": "March 27, 2025",
+    "streetaddr": "401 Woodburn Rd",
+    "city": "Raleigh",
+    "times": "Thur. 7:30pm; Fri. & Sat. 7pm & 10pm; Sun. 7pm",
+    "location": "Goodnights Comedy Club",
+    "coordinates": [
+      35.7896074,
+      -78.6597085
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67ca5e1fda60f28fe2f9a1d3",
+    "name": "WILDER WOODS - THE CURIOSO TOUR",
+    "cost": "$50+",
+    "url": "https://www.visitraleigh.com/event/wilder-woods-the-curioso-tour/95990/",
+    "date": "March 27, 2025",
+    "streetaddr": "2820 Industrial Dr.",
+    "city": "Raleigh",
+    "times": "Thur. 7pm",
+    "location": "The Ritz",
+    "coordinates": [
+      35.815896,
+      -78.619991
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2820%20Industrial%20Dr.&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed333",
+    "name": "Amazing Grace, Confronting the Enduring Legacy",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
+    "date": "March 27, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67d20ef17fcc52ccbc734cfd",
+    "name": "Burger & Brews Thursdays",
+    "cost": "$20",
+    "url": "https://www.visitraleigh.com/event/burger-%26-brews-thursdays/93745/",
+    "date": "March 27, 2025",
+    "streetaddr": "616 S. Salisbury St.",
+    "city": "Raleigh",
+    "times": "5-10pm",
+    "time": "17:00:00",
+    "location": "10th & Terrace at Residence Inn Raleigh Downtown",
+    "coordinates": [
+      35.77288,
+      -78.640775
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=616%20S.%20Salisbury%20St.&travelmode=driving",
+    "datetime": "March 27, 2025 17:00:00"
+  },
+  {
+    "id": "67c97d71da60f28fe26d4b36",
+    "name": "Burning Coal Presents BEING CHAKA",
+    "cost": "$30 for adults, $5 for minors",
+    "url": "https://www.visitraleigh.com/event/burning-coal-presents-being-chaka/92696/",
+    "date": "March 27, 2025",
+    "streetaddr": "224 Polk St",
+    "city": "Raleigh",
+    "times": "Thurs.-Sat. 7:30pm; Sun. 2pm",
+    "location": "Burning Coal Theatre",
+    "coordinates": [
+      35.7856856,
+      -78.6349564
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=224%20Polk%20St&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67d271807fcc52ccbcadbda5",
+    "name": "David LaChapelle: Picture Show",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
+    "date": "March 27, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 27, 2025 22:00:00"
+  },
+  {
+    "id": "67ca33d4da60f28fe228f391",
+    "name": "Enjoy Aperitivo Menu at Figulina",
+    "url": "https://www.visitraleigh.com/event/enjoy-aperitivo-menu-at-figulina/95842/",
+    "date": "March 27, 2025",
+    "streetaddr": "317 S. Harrington St.",
+    "city": "Raleigh",
+    "times": "Tue.-Thur. 5PM-6:30pm",
+    "location": "Figulina",
+    "coordinates": [
+      35.776317,
+      -78.644975
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=317%20S.%20Harrington%20St.&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67cc03f0da60f28fe23d0efe",
+    "name": "Gifts of Gold Reception 2025",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/gifts-of-gold-reception-2025/96435/",
+    "date": "March 27, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Wednesday through Sunday 10am-5pm",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.80988970000001,
+      -78.70257389999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67ce3674da60f28fe25f9496",
+    "name": "Journey to Space",
+    "cost": "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
+    "url": "https://www.visitraleigh.com/event/journey-to-space/94650/",
+    "date": "March 27, 2025",
+    "streetaddr": "11 W. Jones St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sun., 10am-5pm (last entry, 4pm)",
+    "location": "North Carolina Museum of Natural Sciences",
+    "coordinates": [
+      35.782354,
+      -78.639277
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67cb310cda60f28fe29ba17f",
+    "name": "Material Messages: The Tales That Textiles Tell",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
+    "date": "March 27, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67d2c5907fcc52ccbcaba249",
+    "name": "Morning After Grace",
+    "cost": "Adult: $31\r\nSenior/Student: $27\r\nSeniors are age 62 and up. Students are through college.",
+    "url": "https://www.visitraleigh.com/event/morning-after-grace/92916/",
+    "date": "March 27, 2025",
+    "streetaddr": "301 Pogue St.",
+    "city": "Raleigh",
+    "times": "Thurs., Fri., and Sat. 8pm; Sun. 3pm",
+    "location": "Raleigh Little Theatre",
+    "coordinates": [
+      35.791437,
+      -78.668828
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=301%20Pogue%20St.&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67ce3674da60f28fe25f9659",
+    "name": "NCFST Mobile Market",
+    "cost": "pay-what-you-can scale.",
+    "url": "https://www.visitraleigh.com/event/ncfst-mobile-market/95920/",
+    "date": "March 27, 2025",
+    "streetaddr": "350 East Holding Ave",
+    "city": "Wake Forest",
+    "times": "2nd & 4th Thur. 3pm-5pm",
+    "time": "14:00:00",
+    "location": "Across from the Northern Regional Center",
+    "coordinates": [
+      35.9701669,
+      -78.5109516
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=350%20East%20Holding%20Ave&travelmode=driving",
+    "datetime": "March 27, 2025 14:00:00"
+  },
+  {
+    "id": "67d149acda60f28fe2f2fc6e",
+    "name": "Raleigh Self-Guided Scavenger Hunt",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
+    "date": "March 27, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "city": "Raleigh",
+    "times": "10am-6pm",
+    "time": "22:00:00",
+    "location": "Search in the City",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "March 27, 2025 22:00:00"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d4cd",
+    "name": "Seeing Red",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/seeing-red/95608/",
+    "date": "March 27, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 27, 2025 22:00:00"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3b18",
+    "name": "The Time Is Always Now: Artists Reframe the Black Figure",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
+    "date": "March 27, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 27, 2025 22:00:00"
+  },
+  {
+    "id": "67cdd3acda60f28fe25c4651",
+    "name": "Your Brain on Art",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/your-brain-on-art/95639/",
+    "date": "March 27, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 27, 2025 undefined"
+  },
+  {
+    "id": "67cf6b89da60f28fe21e739b",
+    "name": "48th Annual Tar Heel Gem & Mineral Club Annual Show",
+    "cost": "$3 per person over 12\r\n$5 for family of 4\r\n12 and under are free ",
+    "url": "https://www.visitraleigh.com/event/48th-annual-tar-heel-gem-%26-mineral-club-annual-show/95721/",
+    "date": "March 28, 2025",
+    "streetaddr": "4285 Trinity Rd.",
+    "city": "Raleigh",
+    "times": "Fri. 3pm-7pm; Sat. 10am-6pm; Sun. 10am-5pm",
+    "location": "North Carolina State Fairgrounds-Kerr Scott building",
+    "coordinates": [
+      35.7964165,
+      -78.7141617
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=4285%20Trinity%20Rd.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67d263317fcc52ccbc817847",
+    "name": "Airshow",
+    "cost": "$15",
+    "url": "https://www.visitraleigh.com/event/airshow/95807/",
+    "date": "March 28, 2025",
+    "streetaddr": "14 W. Martin St.",
+    "city": "Raleigh",
+    "times": "Doors, 7:30pm; Show, 8:30pm",
+    "location": "KINGS",
+    "coordinates": [
+      35.7771353,
+      -78.6398083
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=14%20W.%20Martin%20St.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67cc2042da60f28fe2b09428",
+    "name": "Brunch Specials at Bar Louie",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/brunch-specials-at-bar-louie/96276/",
+    "date": "March 28, 2025",
+    "streetaddr": "8401 Brier Creek Pkwy.",
+    "city": "Raleigh",
+    "times": "Fri. - Sun. 10am-3pm",
+    "location": "Bar Louie",
+    "coordinates": [
+      35.907272,
+      -78.7848384
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=8401%20Brier%20Creek%20Pkwy.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67c8f059da60f28fe210e80c",
+    "name": "CCT-Youth Arts Academy Presents The Play That Goes Wrong",
+    "cost": "$12-15",
+    "url": "https://www.visitraleigh.com/event/cct-youth-arts-academy-presents-the-play-that-goes-wrong/96495/",
+    "date": "March 28, 2025",
+    "streetaddr": "123 E. Vance St.",
+    "city": "Fuquay-Varina",
+    "times": "Fri. 7pm; Sat. 1pm&6pm",
+    "location": "Fuquay-Varina Arts Center",
+    "coordinates": [
+      35.5821835,
+      -78.7984389
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=123%20E.%20Vance%20St.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67cb85deda60f28fe23d1e46",
+    "name": "K POP BASH",
+    "cost": "$20",
+    "url": "https://www.visitraleigh.com/event/k-pop-bash/96070/",
+    "date": "March 28, 2025",
+    "streetaddr": "415 Salisbury St.",
+    "city": "Raleigh",
+    "times": "Fri. 8pm",
+    "location": "Ruby Deluxe",
+    "coordinates": [
+      35.7751779,
+      -78.6399009
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=415%20Salisbury%20St.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67d0306fda60f28fe2b07cf0",
+    "name": "Ladies that Rock! Vinyl Night w/ DJ Fat Thor",
+    "cost": "FREE",
+    "url": "https://www.visitraleigh.com/event/ladies-that-rock!-vinyl-night-w-dj-fat-thor/96558/",
+    "date": "March 28, 2025",
+    "streetaddr": "612 West Morgan St.",
+    "city": "Raleigh",
+    "times": "Fri. 8pm-11pm",
+    "location": "Incendiary Brewing Taproom",
+    "coordinates": [
+      35.7800742,
+      -78.6482533
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=612%20West%20Morgan%20St.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67cff826da60f28fe2b74864",
+    "name": "NHL Carolina Hurricanes vs. Montreal Canadiens",
+    "url": "https://www.visitraleigh.com/event/nhl-carolina-hurricanes-vs-montreal-canadiens/93168/",
+    "date": "March 28, 2025",
+    "streetaddr": "1400 Edwards Mill Rd.",
+    "city": "Raleigh",
+    "times": "7pm",
+    "time": "19:00:00",
+    "location": "PNC Arena",
+    "coordinates": [
+      35.803291,
+      -78.7216992
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1400%20Edwards%20Mill%20Rd.&travelmode=driving",
+    "datetime": "March 28, 2025 19:00:00"
+  },
+  {
+    "id": "67ca41e7da60f28fe26e1caf",
+    "name": "R&B Nights at Bar Louie",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/r%26b-nights-at-bar-louie/96277/",
+    "date": "March 28, 2025",
+    "streetaddr": "8401 Brier Creek Pkwy.",
+    "city": "Raleigh",
+    "times": "Fri. 8pm-12am",
+    "location": "Bar Louie",
+    "coordinates": [
+      35.907272,
+      -78.7848384
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=8401%20Brier%20Creek%20Pkwy.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67cce4ceda60f28fe242c8ce",
+    "name": "Rainbow Dance Company",
+    "cost": "$20",
+    "url": "https://www.visitraleigh.com/event/rainbow-dance-company/95677/",
+    "date": "March 28, 2025",
+    "streetaddr": "742 W Garner Rd ",
+    "city": "Garner",
+    "times": "Fri. 7:00PM; Sat. 2PM",
+    "location": "Garner Performing Arts Center",
+    "coordinates": [
+      35.7117933,
+      -78.612032
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=742%20W%20Garner%20Rd%20&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67c9c327da60f28fe2b2a111",
+    "name": "Room 861 at Goodnights: Andrew Orolfo",
+    "cost": "$27-$40",
+    "url": "https://www.visitraleigh.com/event/room-861-at-goodnights%3a-andrew-orolfo/96145/",
+    "date": "March 28, 2025",
+    "streetaddr": "401 Woodburn Rd",
+    "city": "Raleigh",
+    "times": "Fri. & Sat. 7:15pm & 9:45pm",
+    "location": "Goodnights Comedy Club",
+    "coordinates": [
+      35.7896074,
+      -78.6597085
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67cb937dda60f28fe2784b79",
+    "name": "The Egg-Mazing Race",
+    "cost": "Free, 18+yrs of age. Preregistration required",
+    "url": "https://www.visitraleigh.com/event/the-egg-mazing-race/96433/",
+    "date": "March 28, 2025",
+    "streetaddr": "408 Ashe Ave.",
+    "city": "Raleigh",
+    "times": "Fri. 6pm",
+    "location": "Pullen Community Center",
+    "coordinates": [
+      35.7806686,
+      -78.6609733
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=408%20Ashe%20Ave.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67d255307fcc52ccbc57a9b6",
+    "name": "The Friday ComedyWorx Show",
+    "cost": "$11-15",
+    "url": "https://www.visitraleigh.com/event/the-friday-comedyworx-show/96233/",
+    "date": "March 28, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Fri. 7:30pm-9:30pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67d12d6fda60f28fe29225f2",
+    "name": "The Harry Show",
+    "cost": "$10-$12",
+    "url": "https://www.visitraleigh.com/event/the-harry-show/96224/",
+    "date": "March 28, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Fri. 9:30pm-11:15pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67ca6c0cda60f28fe240cb64",
+    "name": "The Hoppiest Egg Hunt Ever",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/the-hoppiest-egg-hunt-ever/96432/",
+    "date": "March 28, 2025",
+    "streetaddr": "408 Ashe Ave.",
+    "city": "Raleigh",
+    "times": "Fri. 10am-11;30am",
+    "location": "Pullen Community Center",
+    "coordinates": [
+      35.7806686,
+      -78.6609733
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=408%20Ashe%20Ave.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67cc4ad5da60f28fe2575d87",
+    "name": "The Piney Woods Boys",
+    "cost": "$15",
+    "url": "https://www.visitraleigh.com/event/the-piney-woods-boys/92824/",
+    "date": "March 28, 2025",
+    "streetaddr": "415 Brooks St.",
+    "city": "Wake Forest",
+    "times": "7:30pm",
+    "time": "19:30:00",
+    "location": "The Wake Forest Listening Room",
+    "coordinates": [
+      42.3278752,
+      -71.797625
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=415%20Brooks%20St.&travelmode=driving",
+    "datetime": "March 28, 2025 19:30:00"
+  },
+  {
+    "id": "67cf25eada60f28fe2a8ceee",
+    "name": "Tim Dillon",
+    "cost": "$45-$121\r\nAges 21+",
+    "url": "https://www.visitraleigh.com/event/tim-dillon/96196/",
+    "date": "March 28, 2025",
+    "streetaddr": "1224 Parkside Main St.",
+    "city": "Cary",
+    "times": "Fri. 7pm & 9:15pm; Sat. 6:30pm & 9pm",
+    "location": "Raleigh Improv",
+    "coordinates": [
+      35.8491034,
+      -78.890939
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1224%20Parkside%20Main%20St.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67d165eada60f28fe261c7c1",
+    "name": "Tony Rock",
+    "cost": "$28-$41",
+    "url": "https://www.visitraleigh.com/event/tony-rock/96144/",
+    "date": "March 28, 2025",
+    "streetaddr": "401 Woodburn Rd",
+    "city": "Raleigh",
+    "times": "Thur. 7:30pm; Fri. & Sat. 7pm & 10pm; Sun. 7pm",
+    "location": "Goodnights Comedy Club",
+    "coordinates": [
+      35.7896074,
+      -78.6597085
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed33e",
+    "name": "Amazing Grace, Confronting the Enduring Legacy",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
+    "date": "March 28, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67c97d71da60f28fe26d4b40",
+    "name": "Burning Coal Presents BEING CHAKA",
+    "cost": "$30 for adults, $5 for minors",
+    "url": "https://www.visitraleigh.com/event/burning-coal-presents-being-chaka/92696/",
+    "date": "March 28, 2025",
+    "streetaddr": "224 Polk St",
+    "city": "Raleigh",
+    "times": "Thurs.-Sat. 7:30pm; Sun. 2pm",
+    "location": "Burning Coal Theatre",
+    "coordinates": [
+      35.7856856,
+      -78.6349564
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=224%20Polk%20St&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67d271807fcc52ccbcadbdae",
+    "name": "David LaChapelle: Picture Show",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
+    "date": "March 28, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 28, 2025 22:00:00"
+  },
+  {
+    "id": "67cace3eda60f28fe2bcbf6e",
+    "name": "Dorothea Dix Asylum: Dark History Tour",
+    "cost": "$14",
+    "url": "https://www.visitraleigh.com/event/dorothea-dix-asylum%3a-dark-history-tour/92880/",
+    "date": "March 28, 2025",
+    "streetaddr": "840 Umstead Dr.",
+    "city": "Raleigh",
+    "times": "5:30-6:45pm",
+    "time": "17:30:00",
+    "location": "Greg Poole All-Faiths Chapel",
+    "coordinates": [
+      35.7707431,
+      -78.6546858
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=840%20Umstead%20Dr.&travelmode=driving",
+    "datetime": "March 28, 2025 17:30:00"
+  },
+  {
+    "id": "67ce2838da60f28fe2179966",
+    "name": "Downtown Raleigh Tasting Tour",
+    "cost": "$95",
+    "url": "https://www.visitraleigh.com/event/downtown-raleigh-tasting-tour/63324/",
+    "date": "March 28, 2025",
+    "streetaddr": "Downtown Raleigh",
+    "city": "Raleigh",
+    "times": "Fri., 12:45pm; Sat., 10:30am",
+    "location": "Taste Carolina Gourmet Food Tours",
+    "coordinates": [
+      35.7822393,
+      -78.6285252
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Downtown%20Raleigh&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67cc03f0da60f28fe23d0f05",
+    "name": "Gifts of Gold Reception 2025",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/gifts-of-gold-reception-2025/96435/",
+    "date": "March 28, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Wednesday through Sunday 10am-5pm",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.80988970000001,
+      -78.70257389999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67ce3674da60f28fe25f949b",
+    "name": "Journey to Space",
+    "cost": "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
+    "url": "https://www.visitraleigh.com/event/journey-to-space/94650/",
+    "date": "March 28, 2025",
+    "streetaddr": "11 W. Jones St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sun., 10am-5pm (last entry, 4pm)",
+    "location": "North Carolina Museum of Natural Sciences",
+    "coordinates": [
+      35.782354,
+      -78.639277
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67cb310cda60f28fe29ba185",
+    "name": "Material Messages: The Tales That Textiles Tell",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
+    "date": "March 28, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67d2c5907fcc52ccbcaba24f",
+    "name": "Morning After Grace",
+    "cost": "Adult: $31\r\nSenior/Student: $27\r\nSeniors are age 62 and up. Students are through college.",
+    "url": "https://www.visitraleigh.com/event/morning-after-grace/92916/",
+    "date": "March 28, 2025",
+    "streetaddr": "301 Pogue St.",
+    "city": "Raleigh",
+    "times": "Thurs., Fri., and Sat. 8pm; Sun. 3pm",
+    "location": "Raleigh Little Theatre",
+    "coordinates": [
+      35.791437,
+      -78.668828
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=301%20Pogue%20St.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67d149acda60f28fe2f2fc71",
+    "name": "Raleigh Self-Guided Scavenger Hunt",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
+    "date": "March 28, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "city": "Raleigh",
+    "times": "10am-6pm",
+    "time": "22:00:00",
+    "location": "Search in the City",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "March 28, 2025 22:00:00"
+  },
+  {
+    "id": "67cbbd48da60f28fe2314d2d",
+    "name": "Raleigh True Crime Tour",
+    "cost": "$14",
+    "url": "https://www.visitraleigh.com/event/raleigh-true-crime-tour/95034/",
+    "date": "March 28, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "times": "Fri. and Sun., 6-7pm",
+    "location": "Moore Square",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d4d7",
+    "name": "Seeing Red",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/seeing-red/95608/",
+    "date": "March 28, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 28, 2025 22:00:00"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3b1d",
+    "name": "The Time Is Always Now: Artists Reframe the Black Figure",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
+    "date": "March 28, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 28, 2025 22:00:00"
+  },
+  {
+    "id": "67cdd3acda60f28fe25c4658",
+    "name": "Your Brain on Art",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/your-brain-on-art/95639/",
+    "date": "March 28, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 28, 2025 undefined"
+  },
+  {
+    "id": "67cf6b89da60f28fe21e73b2",
+    "name": "48th Annual Tar Heel Gem & Mineral Club Annual Show",
+    "cost": "$3 per person over 12\r\n$5 for family of 4\r\n12 and under are free ",
+    "url": "https://www.visitraleigh.com/event/48th-annual-tar-heel-gem-%26-mineral-club-annual-show/95721/",
+    "date": "March 29, 2025",
+    "streetaddr": "4285 Trinity Rd.",
+    "city": "Raleigh",
+    "times": "Fri. 3pm-7pm; Sat. 10am-6pm; Sun. 10am-5pm",
+    "location": "North Carolina State Fairgrounds-Kerr Scott building",
+    "coordinates": [
+      35.7964165,
+      -78.7141617
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=4285%20Trinity%20Rd.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67d2efd57fcc52ccbc5cc450",
+    "name": "Accent Imaging 125-zMAX CARS Tour",
+    "cost": "Advance Tickets: Adults, $25; Seniors/Military/Students, $20; Children 6-12, $17; \r\nChildren 5 & Under, Free\r\nOnline sales will end on March 28th at 11:00 pm\r\nRace Day: All tickets, $30; Children 5 & Under, Free",
+    "url": "https://www.visitraleigh.com/event/accent-imaging-125-zmax-cars-tour/95014/",
+    "date": "March 29, 2025",
+    "streetaddr": "2109 Simpkins Rd.",
+    "city": "Raleigh",
+    "times": "Sat. 5:00 PM to 10:00 PM",
+    "location": "Wake County Speedway",
+    "coordinates": [
+      35.7019739,
+      -78.6753423
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2109%20Simpkins%20Rd.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67cc2042da60f28fe2b0942f",
+    "name": "Brunch Specials at Bar Louie",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/brunch-specials-at-bar-louie/96276/",
+    "date": "March 29, 2025",
+    "streetaddr": "8401 Brier Creek Pkwy.",
+    "city": "Raleigh",
+    "times": "Fri. - Sun. 10am-3pm",
+    "location": "Bar Louie",
+    "coordinates": [
+      35.907272,
+      -78.7848384
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=8401%20Brier%20Creek%20Pkwy.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67c8f059da60f28fe210e85b",
+    "name": "CCT-Youth Arts Academy Presents The Play That Goes Wrong",
+    "cost": "$12-15",
+    "url": "https://www.visitraleigh.com/event/cct-youth-arts-academy-presents-the-play-that-goes-wrong/96495/",
+    "date": "March 29, 2025",
+    "streetaddr": "123 E. Vance St.",
+    "city": "Fuquay-Varina",
+    "times": "Fri. 7pm; Sat. 1pm&6pm",
+    "location": "Fuquay-Varina Arts Center",
+    "coordinates": [
+      35.5821835,
+      -78.7984389
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=123%20E.%20Vance%20St.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67d165eada60f28fe261c73e",
+    "name": "Dinner in the Pines at FigMint Farms",
+    "cost": "$82-$93",
+    "url": "https://www.visitraleigh.com/event/dinner-in-the-pines-at-figmint-farms/95696/",
+    "date": "March 29, 2025",
+    "streetaddr": "1501 Two Pond Ln.",
+    "city": "Apex",
+    "times": "5-8pm",
+    "time": "17:00:00",
+    "location": "FigMint Farms",
+    "coordinates": [
+      35.7432591,
+      -78.9424252
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1501%20Two%20Pond%20Ln.&travelmode=driving",
+    "datetime": "March 29, 2025 17:00:00"
+  },
+  {
+    "id": "67ca5e1fda60f28fe2f99fc9",
+    "name": "Gavin Adcock",
+    "url": "https://www.visitraleigh.com/event/gavin-adcock/94032/",
+    "date": "March 29, 2025",
+    "streetaddr": "2820 Industrial Dr.",
+    "city": "Raleigh",
+    "times": "Sat. & Sun. 7pm",
+    "location": "The Ritz",
+    "coordinates": [
+      35.815896,
+      -78.619991
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2820%20Industrial%20Dr.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67cb14d1da60f28fe20325fc",
+    "name": "Hoppy Paws Eggstravaganza with Triangle Canine Club",
+    "cost": "$7-$35",
+    "url": "https://www.visitraleigh.com/event/hoppy-paws-eggstravaganza-with-triangle-canine-club/96390/",
+    "date": "March 29, 2025",
+    "streetaddr": "21 Fenton Main St.",
+    "city": "Cary",
+    "times": "11am-3pm",
+    "time": "23:00:00",
+    "location": "Fenton Square",
+    "coordinates": [
+      35.7815981,
+      -78.759576
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=21%20Fenton%20Main%20St.&travelmode=driving",
+    "datetime": "March 29, 2025 23:00:00"
+  },
+  {
+    "id": "67d2d39d7fcc52ccbcdb8ca6",
+    "name": "Intro to Improv",
+    "cost": "$200",
+    "url": "https://www.visitraleigh.com/event/intro-to-improv/96237/",
+    "date": "March 29, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Sat. 12pm-3pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67c7ace1da60f28fe28bf328",
+    "name": "KoreaFest 2025",
+    "cost": "Presale $35, $20 Kids(6-12) & Seniors(65+)  \r\nDay of Event $40, $25 Kids(6-12) & Seniors (65+)",
+    "url": "https://www.visitraleigh.com/event/koreafest-2025/95722/",
+    "date": "March 29, 2025",
+    "streetaddr": "4825 Trinity Rd.",
+    "city": "Raleigh",
+    "times": "Sat. 10pm-7pm",
+    "location": "Agri Supply Exposition Center at NC State Fairgrounds",
+    "coordinates": [
+      35.7981935,
+      -78.721152
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=4825%20Trinity%20Rd.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67c8f059da60f28fe210e960",
+    "name": "NC Eat & Play Spring Hootenanny and Foodie Fest",
+    "cost": "$40 adults; kids under 12 free",
+    "url": "https://www.visitraleigh.com/event/nc-eat-%26-play-spring-hootenanny-and-foodie-fest/96509/",
+    "date": "March 29, 2025",
+    "streetaddr": "1025 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Sat. 3pm-7pm",
+    "location": "JB Hunt Horse Complex at the North Carolina State Fairgrounds",
+    "coordinates": [
+      35.7951993,
+      -78.7069746
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1025%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67cce4ceda60f28fe242c8d2",
+    "name": "Rainbow Dance Company",
+    "cost": "$20",
+    "url": "https://www.visitraleigh.com/event/rainbow-dance-company/95677/",
+    "date": "March 29, 2025",
+    "streetaddr": "742 W Garner Rd ",
+    "city": "Garner",
+    "times": "Fri. 7:00PM; Sat. 2PM",
+    "location": "Garner Performing Arts Center",
+    "coordinates": [
+      35.7117933,
+      -78.612032
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=742%20W%20Garner%20Rd%20&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67d0a16cda60f28fe232d47f",
+    "name": "Raleigh Run for Rare 5K",
+    "url": "https://www.visitraleigh.com/event/raleigh-run-for-rare-5k/96387/",
+    "date": "March 29, 2025",
+    "streetaddr": "1400 Aviation Pkwy.",
+    "city": "Morrisville",
+    "times": "Check in, 7:30am; Race begins, 9am",
+    "location": "Lake Crabtree County Park",
+    "coordinates": [
+      35.8450679,
+      -78.7943693
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1400%20Aviation%20Pkwy.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67c9c327da60f28fe2b2a113",
+    "name": "Room 861 at Goodnights: Andrew Orolfo",
+    "cost": "$27-$40",
+    "url": "https://www.visitraleigh.com/event/room-861-at-goodnights%3a-andrew-orolfo/96145/",
+    "date": "March 29, 2025",
+    "streetaddr": "401 Woodburn Rd",
+    "city": "Raleigh",
+    "times": "Fri. & Sat. 7:15pm & 9:45pm",
+    "location": "Goodnights Comedy Club",
+    "coordinates": [
+      35.7896074,
+      -78.6597085
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67cec2e1da60f28fe28915d0",
+    "name": "She/They/Gay Show",
+    "cost": "$11-15",
+    "url": "https://www.visitraleigh.com/event/she-they-gay-show/96230/",
+    "date": "March 29, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Sat. 9pm-10:30pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67ca5009da60f28fe2b3a68d",
+    "name": "Spell Slingers",
+    "cost": "$15-$20",
+    "url": "https://www.visitraleigh.com/event/spell-slingers/96071/",
+    "date": "March 29, 2025",
+    "streetaddr": "415 Salisbury St.",
+    "city": "Raleigh",
+    "times": "Sat. 8pm-2am",
+    "location": "Ruby Deluxe",
+    "coordinates": [
+      35.7751779,
+      -78.6399009
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=415%20Salisbury%20St.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67c5c094da60f28fe2c1cf7c",
+    "name": "Start Your Garden! Summer Garden Seeding Workshop",
+    "cost": "$39",
+    "url": "https://www.visitraleigh.com/event/start-your-garden!-summer-garden-seeding-workshop/95670/",
+    "date": "March 29, 2025",
+    "streetaddr": "5078 Brantley Rd.",
+    "city": "Zebulon",
+    "times": "11am-1pm",
+    "time": "23:00:00",
+    "location": "Wrenn's Farm",
+    "coordinates": [
+      35.8208475,
+      -78.2405312
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=5078%20Brantley%20Rd.&travelmode=driving",
+    "datetime": "March 29, 2025 23:00:00"
+  },
+  {
+    "id": "67cec2e1da60f28fe28915cb",
+    "name": "The ComedyWorx Matinee",
+    "cost": "$9-$11",
+    "url": "https://www.visitraleigh.com/event/the-comedyworx-matinee/96226/",
+    "date": "March 29, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Sat. 3:30pm-5:15pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67cf33c7da60f28fe2f97e7c",
+    "name": "The Saturday ComedyWorx Show",
+    "cost": "$11-15",
+    "url": "https://www.visitraleigh.com/event/the-saturday-comedyworx-show/96223/",
+    "date": "March 29, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Sat. 6:30pm-8:30pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67d092c6da60f28fe2de8817",
+    "name": "The Saturday ComedyWorx Show",
+    "cost": "$11-$15",
+    "url": "https://www.visitraleigh.com/event/the-saturday-comedyworx-show/96234/",
+    "date": "March 29, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Sat. 7pm-8:30pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67cf25eada60f28fe2a8cef8",
+    "name": "Tim Dillon",
+    "cost": "$45-$121\r\nAges 21+",
+    "url": "https://www.visitraleigh.com/event/tim-dillon/96196/",
+    "date": "March 29, 2025",
+    "streetaddr": "1224 Parkside Main St.",
+    "city": "Cary",
+    "times": "Fri. 7pm & 9:15pm; Sat. 6:30pm & 9pm",
+    "location": "Raleigh Improv",
+    "coordinates": [
+      35.8491034,
+      -78.890939
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1224%20Parkside%20Main%20St.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67d165eada60f28fe261c7ca",
+    "name": "Tony Rock",
+    "cost": "$28-$41",
+    "url": "https://www.visitraleigh.com/event/tony-rock/96144/",
+    "date": "March 29, 2025",
+    "streetaddr": "401 Woodburn Rd",
+    "city": "Raleigh",
+    "times": "Thur. 7:30pm; Fri. & Sat. 7pm & 10pm; Sun. 7pm",
+    "location": "Goodnights Comedy Club",
+    "coordinates": [
+      35.7896074,
+      -78.6597085
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67c952fbda60f28fe2cd8498",
+    "name": "Underground Presents - Fringe: A Metal Country Experience",
+    "cost": "$15+. TICKET PRICE GOES UP DAY OF SHOW.",
+    "url": "https://www.visitraleigh.com/event/underground-presents-fringe%3a-a-metal-country-experience/96102/",
+    "date": "March 29, 2025",
+    "streetaddr": "658 Maywood Ave.,",
+    "city": "Raleigh",
+    "times": "Sat. 8pm",
+    "location": "Chapel of Bones",
+    "coordinates": [
+      35.7618674,
+      -78.6576791
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=658%20Maywood%20Ave.%2C&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed347",
+    "name": "Amazing Grace, Confronting the Enduring Legacy",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
+    "date": "March 29, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67c97d71da60f28fe26d4b46",
+    "name": "Burning Coal Presents BEING CHAKA",
+    "cost": "$30 for adults, $5 for minors",
+    "url": "https://www.visitraleigh.com/event/burning-coal-presents-being-chaka/92696/",
+    "date": "March 29, 2025",
+    "streetaddr": "224 Polk St",
+    "city": "Raleigh",
+    "times": "Thurs.-Sat. 7:30pm; Sun. 2pm",
+    "location": "Burning Coal Theatre",
+    "coordinates": [
+      35.7856856,
+      -78.6349564
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=224%20Polk%20St&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67d271807fcc52ccbcadbdb4",
+    "name": "David LaChapelle: Picture Show",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
+    "date": "March 29, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 29, 2025 22:00:00"
+  },
+  {
+    "id": "67ce7ccada60f28fe296fec2",
+    "name": "Downtown Raleigh Dinner & Drinks Tour",
+    "cost": "$115",
+    "url": "https://www.visitraleigh.com/event/downtown-raleigh-dinner-%26-drinks-tour/63323/",
+    "date": "March 29, 2025",
+    "streetaddr": "Downtown Raleigh",
+    "city": "Raleigh",
+    "times": "Sat., 2:30pm; Sat., 3:00pm; Sun., 3:15pm",
+    "location": "Taste Carolina Gourmet Food Tours",
+    "coordinates": [
+      35.7822393,
+      -78.6285252
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Downtown%20Raleigh&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67d238cb7fcc52ccbcf58bc3",
+    "name": "Downtown Raleigh Murals and Public Art Tour",
+    "cost": "Pay-what-you-want",
+    "url": "https://www.visitraleigh.com/event/downtown-raleigh-murals-and-public-art-tour/79777/",
+    "date": "March 29, 2025",
+    "streetaddr": "300 S. Salisbury St.",
+    "city": "Raleigh",
+    "times": "See website for times",
+    "location": "Downtown Raleigh",
+    "coordinates": [
+      35.7765381,
+      -78.6411149
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=300%20S.%20Salisbury%20St.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67ce2838da60f28fe217996b",
+    "name": "Downtown Raleigh Tasting Tour",
+    "cost": "$95",
+    "url": "https://www.visitraleigh.com/event/downtown-raleigh-tasting-tour/63324/",
+    "date": "March 29, 2025",
+    "streetaddr": "Downtown Raleigh",
+    "city": "Raleigh",
+    "times": "Fri., 12:45pm; Sat., 10:30am",
+    "location": "Taste Carolina Gourmet Food Tours",
+    "coordinates": [
+      35.7822393,
+      -78.6285252
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Downtown%20Raleigh&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67ce6154da60f28fe2265abb",
+    "name": "Free Wine Tasting",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/free-wine-tasting/92540/",
+    "date": "March 29, 2025",
+    "streetaddr": "211 E. Franklin St.",
+    "city": "Raleigh",
+    "times": "Noon-3pm",
+    "location": "Wine Authorities",
+    "coordinates": [
+      35.79036,
+      -78.6348299
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=211%20E.%20Franklin%20St.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67cc03f0da60f28fe23d0f0e",
+    "name": "Gifts of Gold Reception 2025",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/gifts-of-gold-reception-2025/96435/",
+    "date": "March 29, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Wednesday through Sunday 10am-5pm",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.80988970000001,
+      -78.70257389999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67d255307fcc52ccbc57a6fd",
+    "name": "Holly Springs Farmers Market",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/holly-springs-farmers-market/83047/",
+    "date": "March 29, 2025",
+    "streetaddr": "300 West Ballentine St.",
+    "city": "Holly Springs",
+    "times": "May-Oct.: Sat, 8am-noon; Nov.-April: 9am-noon",
+    "location": "Holly Springs Farmers Market",
+    "coordinates": [
+      35.6501933,
+      -78.8364802
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=300%20West%20Ballentine%20St.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67ce3674da60f28fe25f94a1",
+    "name": "Journey to Space",
+    "cost": "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
+    "url": "https://www.visitraleigh.com/event/journey-to-space/94650/",
+    "date": "March 29, 2025",
+    "streetaddr": "11 W. Jones St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sun., 10am-5pm (last entry, 4pm)",
+    "location": "North Carolina Museum of Natural Sciences",
+    "coordinates": [
+      35.782354,
+      -78.639277
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67d08555da60f28fe293eaba",
+    "name": "Make Traditional Dumplings From Scratch With Chef Jenny",
+    "cost": "$55.00 per person",
+    "url": "https://www.visitraleigh.com/event/make-traditional-dumplings-from-scratch-with-chef-jenny/95748/",
+    "date": "March 29, 2025",
+    "streetaddr": "300 Glenwood Avenue",
+    "city": "Raleigh",
+    "times": "Varies according to date",
+    "location": "Tin Roof",
+    "coordinates": [
+      35.7843127,
+      -78.64718760000001
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=300%20Glenwood%20Avenue&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67cb310cda60f28fe29ba18b",
+    "name": "Material Messages: The Tales That Textiles Tell",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
+    "date": "March 29, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67d2c5907fcc52ccbcaba258",
+    "name": "Morning After Grace",
+    "cost": "Adult: $31\r\nSenior/Student: $27\r\nSeniors are age 62 and up. Students are through college.",
+    "url": "https://www.visitraleigh.com/event/morning-after-grace/92916/",
+    "date": "March 29, 2025",
+    "streetaddr": "301 Pogue St.",
+    "city": "Raleigh",
+    "times": "Thurs., Fri., and Sat. 8pm; Sun. 3pm",
+    "location": "Raleigh Little Theatre",
+    "coordinates": [
+      35.791437,
+      -78.668828
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=301%20Pogue%20St.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67d149acda60f28fe2f2fc7a",
+    "name": "Raleigh Self-Guided Scavenger Hunt",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
+    "date": "March 29, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "city": "Raleigh",
+    "times": "10am-6pm",
+    "time": "22:00:00",
+    "location": "Search in the City",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "March 29, 2025 22:00:00"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d4de",
+    "name": "Seeing Red",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/seeing-red/95608/",
+    "date": "March 29, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 29, 2025 22:00:00"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3b21",
+    "name": "The Time Is Always Now: Artists Reframe the Black Figure",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
+    "date": "March 29, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 29, 2025 22:00:00"
+  },
+  {
+    "id": "67cdd3acda60f28fe25c4669",
+    "name": "Your Brain on Art",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/your-brain-on-art/95639/",
+    "date": "March 29, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 29, 2025 undefined"
+  },
+  {
+    "id": "67cf6b89da60f28fe21e73c1",
+    "name": "48th Annual Tar Heel Gem & Mineral Club Annual Show",
+    "cost": "$3 per person over 12\r\n$5 for family of 4\r\n12 and under are free ",
+    "url": "https://www.visitraleigh.com/event/48th-annual-tar-heel-gem-%26-mineral-club-annual-show/95721/",
+    "date": "March 30, 2025",
+    "streetaddr": "4285 Trinity Rd.",
+    "city": "Raleigh",
+    "times": "Fri. 3pm-7pm; Sat. 10am-6pm; Sun. 10am-5pm",
+    "location": "North Carolina State Fairgrounds-Kerr Scott building",
+    "coordinates": [
+      35.7964165,
+      -78.7141617
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=4285%20Trinity%20Rd.&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67cc2042da60f28fe2b09437",
+    "name": "Brunch Specials at Bar Louie",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/brunch-specials-at-bar-louie/96276/",
+    "date": "March 30, 2025",
+    "streetaddr": "8401 Brier Creek Pkwy.",
+    "city": "Raleigh",
+    "times": "Fri. - Sun. 10am-3pm",
+    "location": "Bar Louie",
+    "coordinates": [
+      35.907272,
+      -78.7848384
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=8401%20Brier%20Creek%20Pkwy.&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67d2fd8b7fcc52ccbca0d950",
+    "name": "Flavored Hummus Workshop for Kids at FigMINT Farms",
+    "url": "https://www.visitraleigh.com/event/flavored-hummus-workshop-for-kids-at-figmint-farms/95685/",
+    "date": "March 30, 2025",
+    "streetaddr": "1501 Two Pond Lane",
+    "city": "Apex",
+    "times": "Noon to 2pm",
+    "location": "FigMint Farms",
+    "coordinates": [
+      35.7432591,
+      -78.9424252
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1501%20Two%20Pond%20Lane&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67ca5e1fda60f28fe2f99fce",
+    "name": "Gavin Adcock",
+    "url": "https://www.visitraleigh.com/event/gavin-adcock/94032/",
+    "date": "March 30, 2025",
+    "streetaddr": "2820 Industrial Dr.",
+    "city": "Raleigh",
+    "times": "Sat. & Sun. 7pm",
+    "location": "The Ritz",
+    "coordinates": [
+      35.815896,
+      -78.619991
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2820%20Industrial%20Dr.&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67ca5e1fda60f28fe2f99fd1",
+    "name": "Gavin Adcock",
+    "url": "https://www.visitraleigh.com/event/gavin-adcock/94033/",
+    "date": "March 30, 2025",
+    "streetaddr": "2820 Industrial Dr.",
+    "city": "Raleigh",
+    "times": "7pm",
+    "time": "19:00:00",
+    "location": "The Ritz",
+    "coordinates": [
+      35.815896,
+      -78.619991
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2820%20Industrial%20Dr.&travelmode=driving",
+    "datetime": "March 30, 2025 19:00:00"
+  },
+  {
+    "id": "67d263317fcc52ccbc817842",
+    "name": "JazzLive Concert Series: Lenore Raphael",
+    "cost": "ADULT: $17.01\r\nSTUDENT: $11.34\r\nSENIOR: $13.61",
+    "url": "https://www.visitraleigh.com/event/jazzlive-concert-series%3a-lenore-raphael/95767/",
+    "date": "March 30, 2025",
+    "streetaddr": "237 North Salem Street",
+    "city": "Apex",
+    "times": "Sun. 2:30pm",
+    "location": "The Halle Cultural Arts Center",
+    "coordinates": [
+      35.7326485,
+      -78.8504004
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=237%20North%20Salem%20Street&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67cbe7b5da60f28fe2da2430",
+    "name": "NHL Carolina Hurricanes vs. New York Islanders",
+    "url": "https://www.visitraleigh.com/event/nhl-carolina-hurricanes-vs-new-york-islanders/93169/",
+    "date": "March 30, 2025",
+    "streetaddr": "1400 Edwards Mill Rd.",
+    "city": "Raleigh",
+    "times": "5pm",
+    "time": "17:00:00",
+    "location": "PNC Arena",
+    "coordinates": [
+      35.803291,
+      -78.7216992
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1400%20Edwards%20Mill%20Rd.&travelmode=driving",
+    "datetime": "March 30, 2025 17:00:00"
+  },
+  {
+    "id": "67c87fd2da60f28fe2eb92cc",
+    "name": "Rebecca Kleinmann, Ingrid Nora Knight & Courtney Crumpler: Into Brazil",
+    "cost": "$27",
+    "url": "https://www.visitraleigh.com/event/rebecca-kleinmann-ingrid-nora-knight-%26-courtney-crumpler%3a-into-brazil/96265/",
+    "date": "March 30, 2025",
+    "streetaddr": "119 Ambassador Loop",
+    "city": "Cary",
+    "times": "Sun. 4pm-5:30pm",
+    "location": "Page-Walker Arts & History Center",
+    "coordinates": [
+      35.7887463,
+      -78.7793815
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=119%20Ambassador%20Loop&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67d03f2dda60f28fe201f26c",
+    "name": "Shortform 1: Game Mechanics",
+    "cost": "$200",
+    "url": "https://www.visitraleigh.com/event/shortform-1%3a-game-mechanics/96238/",
+    "date": "March 30, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Sun. 1pm-4pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67ce2839da60f28fe2179eec",
+    "name": "Shortform 2: Performance",
+    "cost": "$200",
+    "url": "https://www.visitraleigh.com/event/shortform-2%3a-performance/96239/",
+    "date": "March 30, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Sun. 7pm-7pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67d165eada60f28fe261c7d2",
+    "name": "Tony Rock",
+    "cost": "$28-$41",
+    "url": "https://www.visitraleigh.com/event/tony-rock/96144/",
+    "date": "March 30, 2025",
+    "streetaddr": "401 Woodburn Rd",
+    "city": "Raleigh",
+    "times": "Thur. 7:30pm; Fri. & Sat. 7pm & 10pm; Sun. 7pm",
+    "location": "Goodnights Comedy Club",
+    "coordinates": [
+      35.7896074,
+      -78.6597085
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed350",
+    "name": "Amazing Grace, Confronting the Enduring Legacy",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
+    "date": "March 30, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67c97d71da60f28fe26d4b4f",
+    "name": "Burning Coal Presents BEING CHAKA",
+    "cost": "$30 for adults, $5 for minors",
+    "url": "https://www.visitraleigh.com/event/burning-coal-presents-being-chaka/92696/",
+    "date": "March 30, 2025",
+    "streetaddr": "224 Polk St",
+    "city": "Raleigh",
+    "times": "Thurs.-Sat. 7:30pm; Sun. 2pm",
+    "location": "Burning Coal Theatre",
+    "coordinates": [
+      35.7856856,
+      -78.6349564
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=224%20Polk%20St&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67d271807fcc52ccbcadbdba",
+    "name": "David LaChapelle: Picture Show",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
+    "date": "March 30, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 30, 2025 22:00:00"
+  },
+  {
+    "id": "67d21d237fcc52ccbc9f6e00",
+    "name": "Downtown Cary Historic Walking Tour",
+    "cost": "$14",
+    "url": "https://www.visitraleigh.com/event/downtown-cary-historic-walking-tour/92881/",
+    "date": "March 30, 2025",
+    "streetaddr": "114 S Academy St, Cary, NC 27511",
+    "city": "Cary",
+    "times": "2-3pm",
+    "time": "14:00:00",
+    "location": "Esteamed Coffee",
+    "coordinates": [
+      35.7868655,
+      -78.7814932
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=114%20S%20Academy%20St%2C%20Cary%2C%20NC%2027511&travelmode=driving",
+    "datetime": "March 30, 2025 14:00:00"
+  },
+  {
+    "id": "67ce7ccada60f28fe296fec7",
+    "name": "Downtown Raleigh Dinner & Drinks Tour",
+    "cost": "$115",
+    "url": "https://www.visitraleigh.com/event/downtown-raleigh-dinner-%26-drinks-tour/63323/",
+    "date": "March 30, 2025",
+    "streetaddr": "Downtown Raleigh",
+    "city": "Raleigh",
+    "times": "Sat., 2:30pm; Sat., 3:00pm; Sun., 3:15pm",
+    "location": "Taste Carolina Gourmet Food Tours",
+    "coordinates": [
+      35.7822393,
+      -78.6285252
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Downtown%20Raleigh&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67cc03f0da60f28fe23d0f14",
+    "name": "Gifts of Gold Reception 2025",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/gifts-of-gold-reception-2025/96435/",
+    "date": "March 30, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Wednesday through Sunday 10am-5pm",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.80988970000001,
+      -78.70257389999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67ce3674da60f28fe25f94ad",
+    "name": "Journey to Space",
+    "cost": "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
+    "url": "https://www.visitraleigh.com/event/journey-to-space/94650/",
+    "date": "March 30, 2025",
+    "streetaddr": "11 W. Jones St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sun., 10am-5pm (last entry, 4pm)",
+    "location": "North Carolina Museum of Natural Sciences",
+    "coordinates": [
+      35.782354,
+      -78.639277
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67cb310cda60f28fe29ba192",
+    "name": "Material Messages: The Tales That Textiles Tell",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
+    "date": "March 30, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67d2c5907fcc52ccbcaba25f",
+    "name": "Morning After Grace",
+    "cost": "Adult: $31\r\nSenior/Student: $27\r\nSeniors are age 62 and up. Students are through college.",
+    "url": "https://www.visitraleigh.com/event/morning-after-grace/92916/",
+    "date": "March 30, 2025",
+    "streetaddr": "301 Pogue St.",
+    "city": "Raleigh",
+    "times": "Thurs., Fri., and Sat. 8pm; Sun. 3pm",
+    "location": "Raleigh Little Theatre",
+    "coordinates": [
+      35.791437,
+      -78.668828
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=301%20Pogue%20St.&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67d149acda60f28fe2f2fc82",
+    "name": "Raleigh Self-Guided Scavenger Hunt",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
+    "date": "March 30, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "city": "Raleigh",
+    "times": "10am-6pm",
+    "time": "22:00:00",
+    "location": "Search in the City",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "March 30, 2025 22:00:00"
+  },
+  {
+    "id": "67cbbd48da60f28fe2314d31",
+    "name": "Raleigh True Crime Tour",
+    "cost": "$14",
+    "url": "https://www.visitraleigh.com/event/raleigh-true-crime-tour/95034/",
+    "date": "March 30, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "times": "Fri. and Sun., 6-7pm",
+    "location": "Moore Square",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d4e1",
+    "name": "Seeing Red",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/seeing-red/95608/",
+    "date": "March 30, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 30, 2025 22:00:00"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3b28",
+    "name": "The Time Is Always Now: Artists Reframe the Black Figure",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
+    "date": "March 30, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 30, 2025 22:00:00"
+  },
+  {
+    "id": "67cdd3acda60f28fe25c4670",
+    "name": "Your Brain on Art",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/your-brain-on-art/95639/",
+    "date": "March 30, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 30, 2025 undefined"
+  },
+  {
+    "id": "67d103b7da60f28fe2f4de12",
+    "name": "AMERICA’S REJECTS TOUR: ATTILA PLUS SPECIAL GUESTS",
+    "cost": "$25-$30",
+    "url": "https://www.visitraleigh.com/event/america%e2%80%99s-rejects-tour%3a-attila-plus-special-guests/95792/",
+    "date": "March 31, 2025",
+    "streetaddr": "126 E. Cabarrus St.",
+    "city": "Raleigh",
+    "times": "Doors, 5:30pm; Show, 6pm",
+    "location": "Lincoln Theatre",
+    "coordinates": [
+      35.773854,
+      -78.637416
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=126%20E.%20Cabarrus%20St.&travelmode=driving",
+    "datetime": "March 31, 2025 undefined"
+  },
+  {
+    "id": "67d0306fda60f28fe2b07cca",
+    "name": "Figulina’s special Roman menu on March 31",
+    "url": "https://www.visitraleigh.com/event/figulina%e2%80%99s-special-roman-menu-on-march-31/96556/",
+    "date": "March 31, 2025",
+    "streetaddr": "317 S. Harrington St.",
+    "city": "Raleigh",
+    "times": "Mon. 5pm-10pm",
+    "location": "Figulina",
+    "coordinates": [
+      35.776317,
+      -78.644975
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=317%20S.%20Harrington%20St.&travelmode=driving",
+    "datetime": "March 31, 2025 undefined"
+  },
+  {
+    "id": "67d092c6da60f28fe2de8882",
+    "name": "Intro to Improv",
+    "cost": "$200",
+    "url": "https://www.visitraleigh.com/event/intro-to-improv/96241/",
+    "date": "March 31, 2025",
+    "streetaddr": "3801 Hillsborough Street",
+    "city": "Raleigh",
+    "times": "Mon. 7pm-10pm",
+    "location": "ComedyWorx",
+    "coordinates": [
+      35.7939173,
+      -78.6883692
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3801%20Hillsborough%20Street&travelmode=driving",
+    "datetime": "March 31, 2025 undefined"
+  },
+  {
+    "id": "67d2fd8b7fcc52ccbca0d963",
+    "name": "Renovating & Remodeling the Home Landscape",
+    "cost": "$250.00 for members, $300.00 for nonmembers.",
+    "url": "https://www.visitraleigh.com/event/renovating-%26-remodeling-the-home-landscape/96353/",
+    "date": "March 31, 2025",
+    "streetaddr": "4415 Beryl Rd.",
+    "city": "Raleigh",
+    "times": "Mon. 6:30pm-8:30pm",
+    "location": "JC Raulston Arboretum at North Carolina State University",
+    "coordinates": [
+      35.7934866,
+      -78.6971178
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=4415%20Beryl%20Rd.&travelmode=driving",
+    "datetime": "March 31, 2025 undefined"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed35a",
+    "name": "Amazing Grace, Confronting the Enduring Legacy",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
+    "date": "March 31, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 31, 2025 undefined"
+  },
+  {
+    "id": "67cde26bda60f28fe2a9d656",
+    "name": "Board Game Night",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/board-game-night/92963/",
+    "date": "March 31, 2025",
+    "streetaddr": "123 E. Martin St.",
+    "city": "Raleigh",
+    "times": "From: 5:00 PM to 9:00 PM",
+    "location": "The Hippo Wine Bar",
+    "coordinates": [
+      35.777088,
+      -78.6370759
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=123%20E.%20Martin%20St.&travelmode=driving",
+    "datetime": "March 31, 2025 undefined"
+  },
+  {
+    "id": "67d271807fcc52ccbcadbdbc",
+    "name": "David LaChapelle: Picture Show",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
+    "date": "March 31, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 31, 2025 22:00:00"
+  },
+  {
+    "id": "67cb310cda60f28fe29ba196",
+    "name": "Material Messages: The Tales That Textiles Tell",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
+    "date": "March 31, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 31, 2025 undefined"
+  },
+  {
+    "id": "67d149acda60f28fe2f2fc88",
+    "name": "Raleigh Self-Guided Scavenger Hunt",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
+    "date": "March 31, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "city": "Raleigh",
+    "times": "10am-6pm",
+    "time": "22:00:00",
+    "location": "Search in the City",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "March 31, 2025 22:00:00"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d4ed",
+    "name": "Seeing Red",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/seeing-red/95608/",
+    "date": "March 31, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 31, 2025 22:00:00"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3b32",
+    "name": "The Time Is Always Now: Artists Reframe the Black Figure",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
+    "date": "March 31, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "March 31, 2025 22:00:00"
+  },
+  {
+    "id": "67cdd3acda60f28fe25c467a",
+    "name": "Your Brain on Art",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/your-brain-on-art/95639/",
+    "date": "March 31, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "March 31, 2025 undefined"
+  },
+  {
+    "id": "67d103b7da60f28fe2f4de1a",
+    "name": "Doug Stanhope featuring Andy Andrist",
+    "cost": "$52-$59",
+    "url": "https://www.visitraleigh.com/event/doug-stanhope-featuring-andy-andrist/96146/",
+    "date": "April 1, 2025",
+    "streetaddr": "401 Woodburn Rd",
+    "city": "Raleigh",
+    "times": "Tue. & Wed. 7pm",
+    "location": "Goodnights Comedy Club",
+    "coordinates": [
+      35.7896074,
+      -78.6597085
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd&travelmode=driving",
+    "datetime": "April 1, 2025 undefined"
+  },
+  {
+    "id": "67c98ae7da60f28fe2a0f5d7",
+    "name": "Neal Francis &#8211; Return To Zero Tour With Improvement Movement",
+    "cost": "$32-$38",
+    "url": "https://www.visitraleigh.com/event/neal-francis-%26%238211%3b-return-to-zero-tour-with-improvement-movement/95802/",
+    "date": "April 1, 2025",
+    "streetaddr": "126 E. Cabarrus St.",
+    "city": "Raleigh",
+    "times": "Doors, 7pm; Show, 8pm",
+    "location": "Lincoln Theatre",
+    "coordinates": [
+      35.773854,
+      -78.637416
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=126%20E.%20Cabarrus%20St.&travelmode=driving",
+    "datetime": "April 1, 2025 undefined"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d3f0",
+    "name": "North Carolina State University vs. UNC Greensboro Baseball",
+    "url": "https://www.visitraleigh.com/event/north-carolina-state-university-vs-unc-greensboro-baseball/95381/",
+    "date": "April 1, 2025",
+    "streetaddr": "1081 Varsity Dr.",
+    "city": "Raleigh",
+    "times": "6pm",
+    "time": "18:00:00",
+    "location": "Doak Field (North Carolina State University)",
+    "coordinates": [
+      35.7878444,
+      -78.6799399
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1081%20Varsity%20Dr.&travelmode=driving",
+    "datetime": "April 1, 2025 18:00:00"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed360",
+    "name": "Amazing Grace, Confronting the Enduring Legacy",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
+    "date": "April 1, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "April 1, 2025 undefined"
+  },
+  {
+    "id": "67cf960eda60f28fe2f8e0d2",
+    "name": "Beer and Banjos: A Showcase of Regional Roots Music",
+    "url": "https://www.visitraleigh.com/event/beer-and-banjos%3a-a-showcase-of-regional-roots-music/92982/",
+    "date": "April 1, 2025",
+    "streetaddr": "500 E. Davie St.",
+    "city": "Raleigh",
+    "times": "From: 6:30 PM to 9:00 PM",
+    "location": "Transfer Co. Food Hall",
+    "coordinates": [
+      35.7750934,
+      -78.6321862
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=500%20E.%20Davie%20St.&travelmode=driving",
+    "datetime": "April 1, 2025 undefined"
+  },
+  {
+    "id": "67cb4d2ada60f28fe22c2863",
+    "name": "Comedy Open Mic",
+    "url": "https://www.visitraleigh.com/event/comedy-open-mic/93204/",
+    "date": "April 1, 2025",
+    "streetaddr": "227 S. Wilmington St.",
+    "city": "Raleigh",
+    "times": "10:30pm",
+    "time": "22:30:00",
+    "location": "Slim's Downtown",
+    "coordinates": [
+      35.7774343,
+      -78.6381176
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=227%20S.%20Wilmington%20St.&travelmode=driving",
+    "datetime": "April 1, 2025 22:30:00"
+  },
+  {
+    "id": "67d271807fcc52ccbcadbdc2",
+    "name": "David LaChapelle: Picture Show",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
+    "date": "April 1, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 1, 2025 22:00:00"
+  },
+  {
+    "id": "67ce3674da60f28fe25f94b8",
+    "name": "Journey to Space",
+    "cost": "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
+    "url": "https://www.visitraleigh.com/event/journey-to-space/94650/",
+    "date": "April 1, 2025",
+    "streetaddr": "11 W. Jones St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sun., 10am-5pm (last entry, 4pm)",
+    "location": "North Carolina Museum of Natural Sciences",
+    "coordinates": [
+      35.782354,
+      -78.639277
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
+    "datetime": "April 1, 2025 undefined"
+  },
+  {
+    "id": "67cb310cda60f28fe29ba19b",
+    "name": "Material Messages: The Tales That Textiles Tell",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
+    "date": "April 1, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "April 1, 2025 undefined"
+  },
+  {
+    "id": "67ced1c7da60f28fe2c3ac9a",
+    "name": "Oak City Salsa Social",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/oak-city-salsa-social/92983/",
+    "date": "April 1, 2025",
+    "streetaddr": "500 E. Davie St.",
+    "city": "Raleigh",
+    "times": "From: 6:30 PM to 9:00 PM",
+    "location": "Transfer Co. Ballroom",
+    "coordinates": [
+      35.7750255,
+      -78.6321464
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=500%20E.%20Davie%20St.&travelmode=driving",
+    "datetime": "April 1, 2025 undefined"
+  },
+  {
+    "id": "67d149acda60f28fe2f2fc8e",
+    "name": "Raleigh Self-Guided Scavenger Hunt",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
+    "date": "April 1, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "city": "Raleigh",
+    "times": "10am-6pm",
+    "time": "22:00:00",
+    "location": "Search in the City",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "April 1, 2025 22:00:00"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d4f6",
+    "name": "Seeing Red",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/seeing-red/95608/",
+    "date": "April 1, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 1, 2025 22:00:00"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3b38",
+    "name": "The Time Is Always Now: Artists Reframe the Black Figure",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
+    "date": "April 1, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 1, 2025 22:00:00"
+  },
+  {
+    "id": "67cdd3acda60f28fe25c4688",
+    "name": "Your Brain on Art",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/your-brain-on-art/95639/",
+    "date": "April 1, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "April 1, 2025 undefined"
+  },
+  {
+    "id": "67d103b7da60f28fe2f4de1f",
+    "name": "Doug Stanhope featuring Andy Andrist",
+    "cost": "$52-$59",
+    "url": "https://www.visitraleigh.com/event/doug-stanhope-featuring-andy-andrist/96146/",
+    "date": "April 2, 2025",
+    "streetaddr": "401 Woodburn Rd",
+    "city": "Raleigh",
+    "times": "Tue. & Wed. 7pm",
+    "location": "Goodnights Comedy Club",
+    "coordinates": [
+      35.7896074,
+      -78.6597085
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=401%20Woodburn%20Rd&travelmode=driving",
+    "datetime": "April 2, 2025 undefined"
+  },
+  {
+    "id": "67c9a716da60f28fe224f70d",
+    "name": "MIA Cultural Show",
+    "cost": "Free\r\n\r\n",
+    "url": "https://www.visitraleigh.com/event/mia-cultural-show/96346/",
+    "date": "April 2, 2025",
+    "streetaddr": "3800 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Wed. 6pm",
+    "location": "Jones Auditorium",
+    "coordinates": [
+      35.7972072,
+      -78.689006
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3800%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "April 2, 2025 undefined"
+  },
+  {
+    "id": "67cc58c0da60f28fe294b0f8",
+    "name": "NHL Carolina Hurricanes vs. Washington Capitals",
+    "url": "https://www.visitraleigh.com/event/nhl-carolina-hurricanes-vs-washington-capitals/93170/",
+    "date": "April 2, 2025",
+    "streetaddr": "1400 Edwards Mill Rd.",
+    "city": "Raleigh",
+    "times": "7pm",
+    "time": "19:00:00",
+    "location": "PNC Arena",
+    "coordinates": [
+      35.803291,
+      -78.7216992
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1400%20Edwards%20Mill%20Rd.&travelmode=driving",
+    "datetime": "April 2, 2025 19:00:00"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed36a",
+    "name": "Amazing Grace, Confronting the Enduring Legacy",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
+    "date": "April 2, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "April 2, 2025 undefined"
+  },
+  {
+    "id": "67d0770cda60f28fe24173ef",
+    "name": "Coffee & Crochet",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/coffee-%26-crochet/95251/",
+    "date": "April 2, 2025",
+    "streetaddr": "323 Blake St.",
+    "city": "Raleigh",
+    "times": "4-7pm",
+    "time": "16:00:00",
+    "location": "Blackbird Books & Coffee",
+    "coordinates": [
+      35.7761731,
+      -78.6356293
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=323%20Blake%20St.&travelmode=driving",
+    "datetime": "April 2, 2025 16:00:00"
+  },
+  {
+    "id": "67d271807fcc52ccbcadbdc6",
+    "name": "David LaChapelle: Picture Show",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
+    "date": "April 2, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 2, 2025 22:00:00"
+  },
+  {
+    "id": "67cc03f0da60f28fe23d0f19",
+    "name": "Gifts of Gold Reception 2025",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/gifts-of-gold-reception-2025/96435/",
+    "date": "April 2, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Wednesday through Sunday 10am-5pm",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.80988970000001,
+      -78.70257389999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 2, 2025 undefined"
+  },
+  {
+    "id": "67ce3674da60f28fe25f94bd",
+    "name": "Journey to Space",
+    "cost": "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
+    "url": "https://www.visitraleigh.com/event/journey-to-space/94650/",
+    "date": "April 2, 2025",
+    "streetaddr": "11 W. Jones St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sun., 10am-5pm (last entry, 4pm)",
+    "location": "North Carolina Museum of Natural Sciences",
+    "coordinates": [
+      35.782354,
+      -78.639277
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
+    "datetime": "April 2, 2025 undefined"
+  },
+  {
+    "id": "67ccd6deda60f28fe201987e",
+    "name": "Karaoke!",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/karaoke!/95489/",
+    "date": "April 2, 2025",
+    "streetaddr": "14 W. Martin St.",
+    "city": "Raleigh",
+    "times": "8:00 PM",
+    "time": "08:00:00",
+    "location": "Neptunes Parlour",
+    "coordinates": [
+      35.7771353,
+      -78.6398083
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=14%20W.%20Martin%20St.&travelmode=driving",
+    "datetime": "April 2, 2025 08:00:00"
+  },
+  {
+    "id": "67cb310cda60f28fe29ba1a1",
+    "name": "Material Messages: The Tales That Textiles Tell",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
+    "date": "April 2, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "April 2, 2025 undefined"
+  },
+  {
+    "id": "67d149acda60f28fe2f2fc93",
+    "name": "Raleigh Self-Guided Scavenger Hunt",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
+    "date": "April 2, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "city": "Raleigh",
+    "times": "10am-6pm",
+    "time": "22:00:00",
+    "location": "Search in the City",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "April 2, 2025 22:00:00"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d4fc",
+    "name": "Seeing Red",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/seeing-red/95608/",
+    "date": "April 2, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 2, 2025 22:00:00"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3b3c",
+    "name": "The Time Is Always Now: Artists Reframe the Black Figure",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
+    "date": "April 2, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 2, 2025 22:00:00"
+  },
+  {
+    "id": "67cdd3acda60f28fe25c4694",
+    "name": "Your Brain on Art",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/your-brain-on-art/95639/",
+    "date": "April 2, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "April 2, 2025 undefined"
+  },
+  {
+    "id": "67d2efd57fcc52ccbc5cc47b",
+    "name": "Beer and Cider Stroll Weeknight Happy Hour - Discovering Whitaker Mill’s Watering Holes",
+    "cost": "$52. (ages 21+)",
+    "url": "https://www.visitraleigh.com/event/beer-and-cider-stroll-weeknight-happy-hour-discovering-whitaker-mill%e2%80%99s-watering-holes/96507/",
+    "date": "April 3, 2025",
+    "streetaddr": "1053 E. Whitaker Mill Rd.",
+    "city": "Raleigh",
+    "times": "Thur. 5:30pm-7:15pm",
+    "location": "Lynnwood Brewing Concern",
+    "coordinates": [
+      35.808895,
+      -78.6212968
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1053%20E.%20Whitaker%20Mill%20Rd.&travelmode=driving",
+    "datetime": "April 3, 2025 undefined"
+  },
+  {
+    "id": "67cf25eada60f28fe2a8cbf9",
+    "name": "Chef’s 5-Course Tasting Menu at The Depot",
+    "cost": "$140",
+    "url": "https://www.visitraleigh.com/event/chef%e2%80%99s-5-course-tasting-menu-at-the-depot/95680/",
+    "date": "April 3, 2025",
+    "streetaddr": "608 N. First Ave.",
+    "city": "Knightdale",
+    "times": "6pm-9pm",
+    "time": "18:00:00",
+    "location": "The Depot on First",
+    "coordinates": [
+      35.7933708,
+      -78.47689670000001
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=608%20N.%20First%20Ave.&travelmode=driving",
+    "datetime": "April 3, 2025 18:00:00"
+  },
+  {
+    "id": "67d092c6da60f28fe2de87d8",
+    "name": "Deric Cahill",
+    "cost": "$32-$108\r\nAges 21+",
+    "url": "https://www.visitraleigh.com/event/deric-cahill/96197/",
+    "date": "April 3, 2025",
+    "streetaddr": "1224 Parkside Main St.",
+    "city": "Cary",
+    "times": "Thur. 7pm",
+    "location": "Raleigh Improv",
+    "coordinates": [
+      35.8491034,
+      -78.890939
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1224%20Parkside%20Main%20St.&travelmode=driving",
+    "datetime": "April 3, 2025 undefined"
+  },
+  {
+    "id": "67cf09deda60f28fe2022031",
+    "name": "The Wendell Market",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/the-wendell-market/96552/",
+    "date": "April 3, 2025",
+    "streetaddr": "Campen Street",
+    "city": "Wendell",
+    "times": "6pm to 9pm",
+    "time": "18:00:00",
+    "location": "Town of Wendell",
+    "coordinates": [
+      35.7804474,
+      -78.3775137
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Campen%20Street&travelmode=driving",
+    "datetime": "April 3, 2025 18:00:00"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed374",
+    "name": "Amazing Grace, Confronting the Enduring Legacy",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
+    "date": "April 3, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "April 3, 2025 undefined"
+  },
+  {
+    "id": "67d20ef17fcc52ccbc734d01",
+    "name": "Burger & Brews Thursdays",
+    "cost": "$20",
+    "url": "https://www.visitraleigh.com/event/burger-%26-brews-thursdays/93745/",
+    "date": "April 3, 2025",
+    "streetaddr": "616 S. Salisbury St.",
+    "city": "Raleigh",
+    "times": "5-10pm",
+    "time": "17:00:00",
+    "location": "10th & Terrace at Residence Inn Raleigh Downtown",
+    "coordinates": [
+      35.77288,
+      -78.640775
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=616%20S.%20Salisbury%20St.&travelmode=driving",
+    "datetime": "April 3, 2025 17:00:00"
+  },
+  {
+    "id": "67d271807fcc52ccbcadbdcb",
+    "name": "David LaChapelle: Picture Show",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
+    "date": "April 3, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 3, 2025 22:00:00"
+  },
+  {
+    "id": "67cc03f0da60f28fe23d0f1f",
+    "name": "Gifts of Gold Reception 2025",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/gifts-of-gold-reception-2025/96435/",
+    "date": "April 3, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Wednesday through Sunday 10am-5pm",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.80988970000001,
+      -78.70257389999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 3, 2025 undefined"
+  },
+  {
+    "id": "67ce3674da60f28fe25f94cc",
+    "name": "Journey to Space",
+    "cost": "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
+    "url": "https://www.visitraleigh.com/event/journey-to-space/94650/",
+    "date": "April 3, 2025",
+    "streetaddr": "11 W. Jones St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sun., 10am-5pm (last entry, 4pm)",
+    "location": "North Carolina Museum of Natural Sciences",
+    "coordinates": [
+      35.782354,
+      -78.639277
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
+    "datetime": "April 3, 2025 undefined"
+  },
+  {
+    "id": "67cb310cda60f28fe29ba1a9",
+    "name": "Material Messages: The Tales That Textiles Tell",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
+    "date": "April 3, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "April 3, 2025 undefined"
+  },
+  {
+    "id": "67d2c5907fcc52ccbcaba26b",
+    "name": "Morning After Grace",
+    "cost": "Adult: $31\r\nSenior/Student: $27\r\nSeniors are age 62 and up. Students are through college.",
+    "url": "https://www.visitraleigh.com/event/morning-after-grace/92916/",
+    "date": "April 3, 2025",
+    "streetaddr": "301 Pogue St.",
+    "city": "Raleigh",
+    "times": "Thurs., Fri., and Sat. 8pm; Sun. 3pm",
+    "location": "Raleigh Little Theatre",
+    "coordinates": [
+      35.791437,
+      -78.668828
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=301%20Pogue%20St.&travelmode=driving",
+    "datetime": "April 3, 2025 undefined"
+  },
+  {
+    "id": "67d149acda60f28fe2f2fc9b",
+    "name": "Raleigh Self-Guided Scavenger Hunt",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
+    "date": "April 3, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "city": "Raleigh",
+    "times": "10am-6pm",
+    "time": "22:00:00",
+    "location": "Search in the City",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "April 3, 2025 22:00:00"
+  },
+  {
+    "id": "67ce3674da60f28fe25f92c9",
+    "name": "Science Trivia",
+    "url": "https://www.visitraleigh.com/event/science-trivia/92940/",
+    "date": "April 3, 2025",
+    "streetaddr": "11 W. Jones St.",
+    "city": "Raleigh",
+    "times": "5pm",
+    "time": "17:00:00",
+    "location": "North Carolina Museum of Natural Sciences",
+    "coordinates": [
+      35.7821558,
+      -78.6393356
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
+    "datetime": "April 3, 2025 17:00:00"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d501",
+    "name": "Seeing Red",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/seeing-red/95608/",
+    "date": "April 3, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 3, 2025 22:00:00"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3b42",
+    "name": "The Time Is Always Now: Artists Reframe the Black Figure",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
+    "date": "April 3, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 3, 2025 22:00:00"
+  },
+  {
+    "id": "67cdd3acda60f28fe25c469e",
+    "name": "Your Brain on Art",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/your-brain-on-art/95639/",
+    "date": "April 3, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "April 3, 2025 undefined"
+  },
+  {
+    "id": "67d2efd57fcc52ccbc5cc6df",
+    "name": "2025 NASCAR Regional season - 94.7 QDR 165",
+    "cost": "Adults, $15; seniors/military/students, $12; children 6-12, $5; children 5 & under, free.",
+    "url": "https://www.visitraleigh.com/event/2025-nascar-regional-season-94-7-qdr-165/96586/",
+    "date": "April 4, 2025",
+    "streetaddr": "2109 Simpkins Rd.",
+    "city": "Raleigh",
+    "times": "Fri. 7pm-11pm",
+    "location": "Wake County Speedway",
+    "coordinates": [
+      35.7019739,
+      -78.6753423
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2109%20Simpkins%20Rd.&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67d2d39d7fcc52ccbcdb8c85",
+    "name": "An Evening with Hiroya Tsukamoto",
+    "cost": "$25",
+    "url": "https://www.visitraleigh.com/event/an-evening-with-hiroya-tsukamoto/92825/",
+    "date": "April 4, 2025",
+    "streetaddr": "415 Brooks St.",
+    "city": "Wake Forest",
+    "times": "7:30pm",
+    "time": "19:30:00",
+    "location": "The Wake Forest Listening Room",
+    "coordinates": [
+      42.3278752,
+      -71.797625
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=415%20Brooks%20St.&travelmode=driving",
+    "datetime": "April 4, 2025 19:30:00"
+  },
+  {
+    "id": "67c960e6da60f28fe2006e16",
+    "name": "Bellydance to Bollywood at Sophies Bar and Grill",
+    "cost": "No Cover",
+    "url": "https://www.visitraleigh.com/event/bellydance-to-bollywood-at-sophies-bar-and-grill/96242/",
+    "date": "April 4, 2025",
+    "streetaddr": "2734 NC Hwy. 55",
+    "city": "Cary",
+    "times": "Fri. 7pm",
+    "location": "Sophie's Grill & Bar",
+    "coordinates": [
+      35.7851097,
+      -78.869974
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2734%20NC%20Hwy.%2055&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67ccbaa6da60f28fe26e772d",
+    "name": "Bridgerton-Themed Tea Etiquette & Tastings - an Afternoon Extravaganza of British Elegance!",
+    "cost": "$30",
+    "url": "https://www.visitraleigh.com/event/bridgerton-themed-tea-etiquette-%26-tastings-an-afternoon-extravaganza-of-british-elegance!/96293/",
+    "date": "April 4, 2025",
+    "streetaddr": "2734 NC Hwy. 55",
+    "city": "Cary",
+    "times": "2 to 3:30pm",
+    "time": "14:30:00",
+    "location": "Sophie's Grill & Bar",
+    "coordinates": [
+      35.7851097,
+      -78.869974
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2734%20NC%20Hwy.%2055&travelmode=driving",
+    "datetime": "April 4, 2025 14:30:00"
+  },
+  {
+    "id": "67cc2042da60f28fe2b09440",
+    "name": "Brunch Specials at Bar Louie",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/brunch-specials-at-bar-louie/96276/",
+    "date": "April 4, 2025",
+    "streetaddr": "8401 Brier Creek Pkwy.",
+    "city": "Raleigh",
+    "times": "Fri. - Sun. 10am-3pm",
+    "location": "Bar Louie",
+    "coordinates": [
+      35.907272,
+      -78.7848384
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=8401%20Brier%20Creek%20Pkwy.&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67cdb7ebda60f28fe2cc65b9",
+    "name": "Carolina Mudcats vs. Fredericksburg Nationals",
+    "cost": "See website for tickets",
+    "url": "https://www.visitraleigh.com/event/carolina-mudcats-vs-fredericksburg-nationals/95327/",
+    "date": "April 4, 2025",
+    "streetaddr": "1501 N.C. Hwy. 39",
+    "city": "Zebulon",
+    "times": "See website for game times",
+    "location": "Five County Stadium",
+    "coordinates": [
+      35.8165836,
+      -78.2707193
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1501%20N.C.%20Hwy.%2039&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67c88dadda60f28fe24d3c44",
+    "name": "FIFTY & FINAL (DREAMVILLE FESTIVAL CELEBRATION)",
+    "cost": "$20-$40",
+    "url": "https://www.visitraleigh.com/event/fifty-%26-final-(dreamville-festival-celebration)/96271/",
+    "date": "April 4, 2025",
+    "streetaddr": "133 e hargett st.",
+    "city": "Raleigh",
+    "times": "Fri. 10pm-2am",
+    "location": "Halftime Bar & Lounge",
+    "coordinates": [
+      35.7783855,
+      -78.637
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=133%20e%20hargett%20st.&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3a41",
+    "name": "First Friday Fiber Friends",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/first-friday-fiber-friends/94958/",
+    "date": "April 4, 2025",
+    "streetaddr": "120 S. Wilmington St.",
+    "city": "Raleigh",
+    "times": "Fri. 5-7pm",
+    "location": "Parcero Studio - Yarn & Gifts Shop",
+    "coordinates": [
+      35.7789949,
+      -78.6386325
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=120%20S.%20Wilmington%20St.&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67cfce28da60f28fe29f499f",
+    "name": "Jess Hilarious",
+    "url": "https://www.visitraleigh.com/event/jess-hilarious/94226/",
+    "date": "April 4, 2025",
+    "streetaddr": "1224 Parkside Main St.",
+    "city": "Cary",
+    "times": "Fri. 7pm, 9:15pm; Sat. 6:30pm, 9pm",
+    "location": "Raleigh Improv",
+    "coordinates": [
+      35.8490976,
+      -78.8909556
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1224%20Parkside%20Main%20St.&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67cbb00cda60f28fe2f6b5a9",
+    "name": "Mozart - The Marriage of Figaro",
+    "cost": "General ticket prices range from $42 - $113, while College Student tickets are $15",
+    "url": "https://www.visitraleigh.com/event/mozart-the-marriage-of-figaro/94543/",
+    "date": "April 4, 2025",
+    "streetaddr": "2 E. South St.",
+    "city": "Raleigh",
+    "times": "7:30pm",
+    "time": "19:30:00",
+    "location": "Martin Marietta Center for the Performing Arts",
+    "coordinates": [
+      35.7712601,
+      -78.6396078
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2%20E.%20South%20St.&travelmode=driving",
+    "datetime": "April 4, 2025 19:30:00"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed2b6",
+    "name": "North Carolina State University vs. Virginia Baseball",
+    "url": "https://www.visitraleigh.com/event/north-carolina-state-university-vs-virginia-baseball/95382/",
+    "date": "April 4, 2025",
+    "streetaddr": "1081 Varsity Dr.",
+    "city": "Raleigh",
+    "times": "6pm",
+    "time": "18:00:00",
+    "location": "Doak Field (North Carolina State University)",
+    "coordinates": [
+      35.7878444,
+      -78.6799399
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1081%20Varsity%20Dr.&travelmode=driving",
+    "datetime": "April 4, 2025 18:00:00"
+  },
+  {
+    "id": "67ca41e7da60f28fe26e1cc0",
+    "name": "R&B Nights at Bar Louie",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/r%26b-nights-at-bar-louie/96277/",
+    "date": "April 4, 2025",
+    "streetaddr": "8401 Brier Creek Pkwy.",
+    "city": "Raleigh",
+    "times": "Fri. 8pm-12am",
+    "location": "Bar Louie",
+    "coordinates": [
+      35.907272,
+      -78.7848384
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=8401%20Brier%20Creek%20Pkwy.&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67cba16fda60f28fe2b59856",
+    "name": "You're a Good Man, Charlie Brown!",
+    "cost": "$30",
+    "url": "https://www.visitraleigh.com/event/youre-a-good-man-charlie-brown!/96057/",
+    "date": "April 4, 2025",
+    "streetaddr": "3000 Wake Crossing Dr.",
+    "city": "Raleigh",
+    "times": "Fri. 7pm; Sat. & Sun. 2pm",
+    "location": "Stars Auditorium at Imagine",
+    "coordinates": [
+      35.884751,
+      -78.51115539999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=3000%20Wake%20Crossing%20Dr.&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67cd5519da60f28fe21ed37e",
+    "name": "Amazing Grace, Confronting the Enduring Legacy",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/amazing-grace-confronting-the-enduring-legacy/95636/",
+    "date": "April 4, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67d271807fcc52ccbcadbdd0",
+    "name": "David LaChapelle: Picture Show",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/david-lachapelle%3a-picture-show/95609/",
+    "date": "April 4, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 4, 2025 22:00:00"
+  },
+  {
+    "id": "67cace3eda60f28fe2bcbf6f",
+    "name": "Dorothea Dix Asylum: Dark History Tour",
+    "cost": "$14",
+    "url": "https://www.visitraleigh.com/event/dorothea-dix-asylum%3a-dark-history-tour/92880/",
+    "date": "April 4, 2025",
+    "streetaddr": "840 Umstead Dr.",
+    "city": "Raleigh",
+    "times": "5:30-6:45pm",
+    "time": "17:30:00",
+    "location": "Greg Poole All-Faiths Chapel",
+    "coordinates": [
+      35.7707431,
+      -78.6546858
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=840%20Umstead%20Dr.&travelmode=driving",
+    "datetime": "April 4, 2025 17:30:00"
+  },
+  {
+    "id": "67ce2838da60f28fe2179972",
+    "name": "Downtown Raleigh Tasting Tour",
+    "cost": "$95",
+    "url": "https://www.visitraleigh.com/event/downtown-raleigh-tasting-tour/63324/",
+    "date": "April 4, 2025",
+    "streetaddr": "Downtown Raleigh",
+    "city": "Raleigh",
+    "times": "Fri., 12:45pm; Sat., 10:30am",
+    "location": "Taste Carolina Gourmet Food Tours",
+    "coordinates": [
+      35.7822393,
+      -78.6285252
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Downtown%20Raleigh&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67d0306fda60f28fe2b07b99",
+    "name": "First Friday's at the City of Raleigh Museum",
+    "url": "https://www.visitraleigh.com/event/first-fridays-at-the-city-of-raleigh-museum/93004/",
+    "date": "April 4, 2025",
+    "streetaddr": "220 Fayetteville St., Ste. 100",
+    "city": "Raleigh",
+    "times": "6-9pm",
+    "time": "18:00:00",
+    "location": "City of Raleigh Museum (COR Museum)",
+    "coordinates": [
+      35.77766,
+      -78.639762
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=220%20Fayetteville%20St.%2C%20Ste.%20100&travelmode=driving",
+    "datetime": "April 4, 2025 18:00:00"
+  },
+  {
+    "id": "67cc03f0da60f28fe23d0f21",
+    "name": "Gifts of Gold Reception 2025",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/gifts-of-gold-reception-2025/96435/",
+    "date": "April 4, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "Wednesday through Sunday 10am-5pm",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.80988970000001,
+      -78.70257389999999
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67cd7164da60f28fe288f93f",
+    "name": "Greek Night at Taverna Agora",
+    "url": "https://www.visitraleigh.com/event/greek-night-at-taverna-agora/95195/",
+    "date": "April 4, 2025",
+    "streetaddr": "326 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "From: 7:00 PM to 10:00 PM",
+    "location": "Taverna Agora",
+    "coordinates": [
+      35.7808358,
+      -78.644441
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=326%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67ce3674da60f28fe25f94d5",
+    "name": "Journey to Space",
+    "cost": "Free for Museum Members; Adults, $16; Seniors, Students (13+), and Military (with ID), $14; Children ages 3-12, $12; Children ages 2 and younger, Free",
+    "url": "https://www.visitraleigh.com/event/journey-to-space/94650/",
+    "date": "April 4, 2025",
+    "streetaddr": "11 W. Jones St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sun., 10am-5pm (last entry, 4pm)",
+    "location": "North Carolina Museum of Natural Sciences",
+    "coordinates": [
+      35.782354,
+      -78.639277
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=11%20W.%20Jones%20St.&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67cb310cda60f28fe29ba1ae",
+    "name": "Material Messages: The Tales That Textiles Tell",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/material-messages%3a-the-tales-that-textiles-tell/95635/",
+    "date": "April 4, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67d2c5907fcc52ccbcaba276",
+    "name": "Morning After Grace",
+    "cost": "Adult: $31\r\nSenior/Student: $27\r\nSeniors are age 62 and up. Students are through college.",
+    "url": "https://www.visitraleigh.com/event/morning-after-grace/92916/",
+    "date": "April 4, 2025",
+    "streetaddr": "301 Pogue St.",
+    "city": "Raleigh",
+    "times": "Thurs., Fri., and Sat. 8pm; Sun. 3pm",
+    "location": "Raleigh Little Theatre",
+    "coordinates": [
+      35.791437,
+      -78.668828
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=301%20Pogue%20St.&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67d149acda60f28fe2f2fca0",
+    "name": "Raleigh Self-Guided Scavenger Hunt",
+    "cost": "$10",
+    "url": "https://www.visitraleigh.com/event/raleigh-self-guided-scavenger-hunt/95248/",
+    "date": "April 4, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "city": "Raleigh",
+    "times": "10am-6pm",
+    "time": "22:00:00",
+    "location": "Search in the City",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "April 4, 2025 22:00:00"
+  },
+  {
+    "id": "67cbbd48da60f28fe2314d39",
+    "name": "Raleigh True Crime Tour",
+    "cost": "$14",
+    "url": "https://www.visitraleigh.com/event/raleigh-true-crime-tour/95034/",
+    "date": "April 4, 2025",
+    "streetaddr": "Around Raleigh and Wake County",
+    "times": "Fri. and Sun., 6-7pm",
+    "location": "Moore Square",
+    "coordinates": [
+      35.7795897,
+      -78.6381787
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  },
+  {
+    "id": "67cfa3c7da60f28fe264d509",
+    "name": "Seeing Red",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/seeing-red/95608/",
+    "date": "April 4, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 4, 2025 22:00:00"
+  },
+  {
+    "id": "67cb7806da60f28fe2fc3b4b",
+    "name": "The Time Is Always Now: Artists Reframe the Black Figure",
+    "cost": "Tickets at the museum",
+    "url": "https://www.visitraleigh.com/event/the-time-is-always-now%3a-artists-reframe-the-black-figure/95611/",
+    "date": "April 4, 2025",
+    "streetaddr": "2110 Blue Ridge Rd.",
+    "city": "Raleigh",
+    "times": "10am-5pm",
+    "time": "22:00:00",
+    "location": "North Carolina Museum of Art",
+    "coordinates": [
+      35.8098897,
+      -78.7025739
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=2110%20Blue%20Ridge%20Rd.&travelmode=driving",
+    "datetime": "April 4, 2025 22:00:00"
+  },
+  {
+    "id": "67cdd3acda60f28fe25c46a7",
+    "name": "Your Brain on Art",
+    "cost": "Free",
+    "url": "https://www.visitraleigh.com/event/your-brain-on-art/95639/",
+    "date": "April 4, 2025",
+    "streetaddr": "1903 Hillsborough St.",
+    "city": "Raleigh",
+    "times": "Tues.-Sat. 10am-5pm",
+    "location": "Gregg Museum of Art & Design",
+    "coordinates": [
+      35.7847621,
+      -78.6616363
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=1903%20Hillsborough%20St.&travelmode=driving",
+    "datetime": "April 4, 2025 undefined"
+  }
 ];

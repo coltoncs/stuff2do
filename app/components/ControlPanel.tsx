@@ -149,8 +149,10 @@ export function ControlPanel() {
               bg-slate-600 
               hover:bg-slate-400
               rounded 
-              px-5 
-              py-3 
+              px-3
+              py-1
+              sm:px-5 
+              sm:py-3 
               border 
               font-black
               text-md

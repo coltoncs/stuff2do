@@ -76,7 +76,7 @@ export default function List() {
       { Object.entries(weeklyEvents).filter((group) => {
         const yesterdaysDate = new Date();
         yesterdaysDate.setDate(yesterdaysDate.getDate() - 1);
-        const eventDate = new Date(group[1][group[1].length-1].date)
+        const eventDate = new Date(group[0].split('to')[1]);
         return eventDate >= yesterdaysDate
       }).map(week => <div key={week[1][0].id}><WeeklyEvents dateRange={week[0]} events={week[1]} /></div>) }
     </main>
