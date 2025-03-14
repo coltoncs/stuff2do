@@ -6,3 +6,6 @@
 /build/
 
 .vercel
+
+# Local Netlify folder
+.netlify

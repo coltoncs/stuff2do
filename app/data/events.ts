@@ -2011,21 +2011,6 @@ export const events = [
     datetime: "March 15, 2025 undefined",
   },
   {
-    id: "67baa83fda60f28fe23dafe5",
-    name: "Fenton Maker's Market",
-    url: "https://www.visitraleigh.com/event/fenton-makers-market/95900/",
-    date: "March 15, 2025",
-    streetaddr: "Fenton Square",
-    city: "Cary",
-    times: "11am to 4pm",
-    time: "23:00:00",
-    location: "Fenton",
-    coordinates: [35.7782659, -78.7560784],
-    googleMapsUrl:
-      "https://www.google.com/maps/dir/?api=1&destination=Fenton%20Square&travelmode=driving",
-    datetime: "March 15, 2025 23:00:00",
-  },
-  {
     id: "67be807fda60f28fe29cebeb",
     name: "Fenton Maker's Market",
     cost: "Free",
