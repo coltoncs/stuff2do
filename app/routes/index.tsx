@@ -1,9 +1,9 @@
 import type { Route } from "./+types/index";
-import Map, { Source, Layer, GeolocateControl, useMap } from 'react-map-gl/mapbox';
+import Map, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
 import { type Feature, type FeatureCollection, type GeoJsonProperties, type Geometry } from "geojson";
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useMemo } from "react";
 import type { MapRef } from 'react-map-gl/mapbox';
-import type { CircleLayerSpecification, SymbolLayerSpecification, GeoJSONSource, MapMouseEvent, LngLatLike } from "mapbox-gl";
+import type { CircleLayerSpecification, SymbolLayerSpecification, GeoJSONSource, MapMouseEvent } from "mapbox-gl";
 import { ControlPanel } from "~/components/ControlPanel";
 import { EventViewer } from "~/components/EventViewer";
 import useMapStore from "~/store";
@@ -82,14 +82,14 @@ export default function Index() {
     zoom: 10
   });
 
-  const eventsGeoJson: FeatureCollection = {
+  const eventsGeoJson: FeatureCollection = useMemo(() => ({
     type: 'FeatureCollection',
     features: events.map((event) => ({
       type: 'Feature',
       geometry: { type: 'Point', coordinates: [event.coordinates[1], event.coordinates[0]] },
       properties: event
     } as Feature)),
-  };
+  }), [events]);
 
   const onClick = useCallback((event: MapMouseEvent) => {
     event.originalEvent.stopPropagation();
@@ -206,7 +206,7 @@ export default function Index() {
               type: 'LineString',
               coordinates: route.geometry.coordinates,
             }}>
-              <Layer id="route" type="line" source={`route-${idx}`} layout={{
+              <Layer id="route" type="line" source={`route-${idx}`} minzoom={8} layout={{
                 "line-join": 'round',
                 "line-cap": 'round'
               }} paint={{
