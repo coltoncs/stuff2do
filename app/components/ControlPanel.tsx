@@ -97,7 +97,7 @@ export function ControlPanel() {
           <button className="bg-slate-600 border-2 border-slate-400 p-1 sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md pointer-events-auto h-fit self-end" onClick={handleMenuToggle}><MdFormatListBulleted size="50px" /></button>
         </div>
         <div className="fixed top-20 sm:top-5 w-full pointer-events-none flex justify-center gap-5">
-          <button disabled={date.toISOString().split('T')[0] === '2025-03-07'} onClick={handleDayPrevious} className={`
+          <button disabled={date.toISOString().split('T')[0] === '2025-03-15'} onClick={handleDayPrevious} className={`
               pointer-events-auto
               cursor-pointer
               w-fit
@@ -124,7 +124,7 @@ export function ControlPanel() {
             type="date"
             defaultValue={date.toISOString().split('T')[0]}
             value={date.toISOString().split('T')[0]}
-            min={"2025-03-07"}
+            min={"2025-03-15"}
             className={`
               pointer-events-auto
               cursor-pointer
