@@ -108,7 +108,7 @@ export default function Index() {
               duration: 500
             });
           });
-        } else if (feature.layer.id.includes('route')) {
+        } else if (feature.layer?.id.includes('route')) {
           // TODO: DO SOMETHING WITH THE ROUTE
           console.log(feature);
         } else if (feature.layer?.id === 'unclustered-point') {
