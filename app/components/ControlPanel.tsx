@@ -18,18 +18,24 @@ export function ControlPanel() {
   const date = useMapStore((state) => state.date);
   const setDate = useMapStore((state) => state.setDate);
   const setSelectedEvents = useMapStore((state) => state.setSelectedEvents);
+
   useGSAP(() => {
     gsap.set(btnsRef.current!.children, { x: -1000 })
   });
+
   const handleShowControls = ctxSafe(() => {
     gsap.to(btnsRef.current!.children, {
-      x: !showBtns ? 0 : -200, stagger: {
+      x: !showBtns ? 0 : -200,
+      stagger: {
         from: 'end',
         amount: 0.25
-      }, duration: 0.87, ease: 'power3.inOut'
+      },
+      duration: 0.5,
+      ease: 'power2.inOut'
     });
     setShowBtns(!showBtns);
   });
+
   const handleResetZoom = useCallback(() => {
     map?.easeTo({
       center: [-78.6382, 35.7796],
@@ -39,18 +45,20 @@ export function ControlPanel() {
       duration: 2000
     });
   }, []);
+
   const handleChangePitch = useCallback(() => {
     map?.easeTo({
       pitch: map?.getPitch() !== 45 ? 45 : 0,
     })
   }, []);
+
   const handleChangeBearing = useCallback(() => {
     map?.easeTo({
       bearing: map?.getBearing() !== -45 ? -45 : 0,
     })
   }, []);
+
   const handleDateChange = (e: ChangeEvent<HTMLInputElement>) => {
-    // if user selects "Clear", reset date to today (same as "Today" button)
     if (e.target.value) {
       const selectedDate = new Date(e.target.value);
       selectedDate.setUTCHours(8)
@@ -63,10 +71,16 @@ export function ControlPanel() {
       setSelectedEvents(null);
     }
   }
+
   const handleMenuToggle = () => {
     setShowMenu(!showMenu);
-    gsap.to(menuRef.current, { y: showMenu ? 600 : 0, duration: 1, ease: 'power2.inOut' });
+    gsap.to(menuRef.current, { 
+      y: showMenu ? 600 : 0, 
+      duration: 0.5, 
+      ease: 'power2.inOut' 
+    });
   };
+
   const handleDayPrevious = () => {
     const currentDate = new Date(date);
     currentDate.setDate(currentDate.getDate() - 1);
@@ -74,6 +88,7 @@ export function ControlPanel() {
     setDate(currentDate);
     setSelectedEvents(null);
   }
+
   const handleDayNext = () => {
     const currentDate = new Date(date);
     currentDate.setDate(currentDate.getDate() + 1);
@@ -81,91 +96,112 @@ export function ControlPanel() {
     setDate(currentDate);
     setSelectedEvents(null);
   }
+
   return (
     <>
       <EventList ref={menuRef} toggle={handleMenuToggle} />
-      <div ref={btnsRef} className="flex flex-col fixed bottom-7/50 sm:bottom-9/50 left-5 gap-5">
-        <button className="bg-slate-600 test border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleResetZoom}><MdOutlineZoomOutMap size="50px" /></button>
-        <button className="bg-slate-600 test border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleChangePitch}><BsArrowsVertical size="50px" /></button>
-        <button className="bg-slate-600 test border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleChangeBearing}><BsArrows size="50px" /></button>
+      
+      {/* Map Control Buttons */}
+      <div ref={btnsRef} className="fixed bottom-24 left-6 flex flex-col gap-4">
+        <button 
+          onClick={handleResetZoom}
+          className="group flex items-center justify-center w-14 h-14 bg-slate-800/80 backdrop-blur-sm 
+                   border border-slate-700/50 rounded-xl cursor-pointer transition-all duration-200
+                   hover:bg-slate-700/80 hover:border-orange-500/50 hover:scale-105
+                   focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+          aria-label="Reset map view"
+        >
+          <MdOutlineZoomOutMap className="text-slate-300 group-hover:text-orange-400" size={28} />
+        </button>
+
+        <button 
+          onClick={handleChangePitch}
+          className="group flex items-center justify-center w-14 h-14 bg-slate-800/80 backdrop-blur-sm 
+                   border border-slate-700/50 rounded-xl cursor-pointer transition-all duration-200
+                   hover:bg-slate-700/80 hover:border-orange-500/50 hover:scale-105
+                   focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+          aria-label="Toggle map pitch"
+        >
+          <BsArrowsVertical className="text-slate-300 group-hover:text-orange-400" size={28} />
+        </button>
+
+        <button 
+          onClick={handleChangeBearing}
+          className="group flex items-center justify-center w-14 h-14 bg-slate-800/80 backdrop-blur-sm 
+                   border border-slate-700/50 rounded-xl cursor-pointer transition-all duration-200
+                   hover:bg-slate-700/80 hover:border-orange-500/50 hover:scale-105
+                   focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+          aria-label="Toggle map bearing"
+        >
+          <BsArrows className="text-slate-300 group-hover:text-orange-400" size={28} />
+        </button>
       </div>
-      <div>
-        <div className="pointer-events-none fixed bottom-7 w-full flex justify-between px-5">
-          <div className="pointer-events-auto">
-            <button className="bg-slate-600 border-2 border-slate-400 p-1 w-fit sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md" onClick={handleShowControls}><FaSliders size="50px" /></button>
-          </div>
-          <button className="bg-slate-600 border-2 border-slate-400 p-1 sm:p-5 rounded-lg cursor-pointer hover:bg-slate-400 shadow-md pointer-events-auto h-fit self-end" onClick={handleMenuToggle}><MdFormatListBulleted size="50px" /></button>
+
+      {/* Bottom Controls */}
+      <div className="fixed bottom-6 left-0 right-0 px-6">
+        <div className="flex justify-between items-center">
+          <button 
+            onClick={handleShowControls}
+            className="group flex items-center justify-center w-14 h-14 bg-slate-800/80 backdrop-blur-sm 
+                     border border-slate-700/50 rounded-xl cursor-pointer transition-all duration-200
+                     hover:bg-slate-700/80 hover:border-orange-500/50 hover:scale-105
+                     focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+            aria-label="Toggle map controls"
+          >
+            <FaSliders className="text-slate-300 group-hover:text-orange-400" size={28} />
+          </button>
+
+          <button 
+            onClick={handleMenuToggle}
+            className="group flex items-center justify-center w-14 h-14 bg-slate-800/80 backdrop-blur-sm 
+                     border border-slate-700/50 rounded-xl cursor-pointer transition-all duration-200
+                     hover:bg-slate-700/80 hover:border-orange-500/50 hover:scale-105
+                     focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+            aria-label="Toggle event list"
+          >
+            <MdFormatListBulleted className="text-slate-300 group-hover:text-orange-400" size={28} />
+          </button>
         </div>
-        <div className="fixed top-20 sm:top-5 w-full pointer-events-none flex justify-center gap-5">
-          <button disabled={date.toISOString().split('T')[0] === '2025-03-15'} onClick={handleDayPrevious} className={`
-              pointer-events-auto
-              cursor-pointer
-              w-fit
-              bg-slate-600 
-              hover:bg-slate-400
-              rounded 
-              px-3
-              py-1
-              sm:px-5 
-              sm:py-3 
-              border 
-              font-black
-              text-md
-              border-blue-200 
-              text-slate-200 
-              shadow-md 
-              shadow-slate-600
-              disabled:border-gray-600
-              disabled:text-gray-600
-              disabled:bg-slate-700
-              disabled:cursor-not-allowed
-              `}><MdOutlineChevronLeft size={35} /></button>
-          <input
-            type="date"
-            defaultValue={date.toISOString().split('T')[0]}
-            value={date.toISOString().split('T')[0]}
-            min={"2025-03-15"}
-            className={`
-              pointer-events-auto
-              cursor-pointer
-              w-4xs
-              sm:w-3xs 
-              bg-slate-600 
-              hover:bg-slate-400
-              rounded 
-              px-3
-              py-1
-              sm:px-5 
-              sm:py-3 
-              border 
-              font-black
-              text-md
-              border-blue-200 
-              text-slate-200 
-              shadow-md 
-              shadow-slate-600
-              `}
-            onChange={handleDateChange}></input>
-          <button onClick={handleDayNext} className={`
-              pointer-events-auto
-              w-fit
-              cursor-pointer
-              bg-slate-600 
-              hover:bg-slate-400
-              rounded 
-              px-3
-              py-1
-              sm:px-5 
-              sm:py-3 
-              border 
-              font-black
-              text-md
-              border-blue-200 
-              text-slate-200 
-              shadow-md 
-              shadow-slate-600
-              `}><MdOutlineChevronRight size={35} /></button>
-        </div>
+      </div>
+
+      {/* Date Controls */}
+      <div className="fixed top-6 left-1/2 -translate-x-1/2 flex items-center gap-3">
+        <button 
+          disabled={date.toISOString().split('T')[0] === '2025-03-15'} 
+          onClick={handleDayPrevious}
+          className="group flex items-center justify-center w-14 h-14 bg-slate-800/80 backdrop-blur-sm 
+                   border border-slate-700/50 rounded-xl cursor-pointer transition-all duration-200
+                   hover:bg-slate-700/80 hover:border-orange-500/50 hover:scale-105
+                   focus:outline-none focus:ring-2 focus:ring-orange-500/50
+                   disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100
+                   disabled:hover:border-slate-700/50"
+          aria-label="Previous day"
+        >
+          <MdOutlineChevronLeft className="text-slate-300 group-hover:text-orange-400" size={28} />
+        </button>
+
+        <input
+          type="date"
+          defaultValue={date.toISOString().split('T')[0]}
+          value={date.toISOString().split('T')[0]}
+          min="2025-03-15"
+          className="h-14 px-6 bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 
+                   rounded-xl text-slate-300 placeholder-slate-500 focus:outline-none 
+                   focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50
+                   transition-all duration-200 text-lg"
+          onChange={handleDateChange}
+        />
+
+        <button 
+          onClick={handleDayNext}
+          className="group flex items-center justify-center w-14 h-14 bg-slate-800/80 backdrop-blur-sm 
+                   border border-slate-700/50 rounded-xl cursor-pointer transition-all duration-200
+                   hover:bg-slate-700/80 hover:border-orange-500/50 hover:scale-105
+                   focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+          aria-label="Next day"
+        >
+          <MdOutlineChevronRight className="text-slate-300 group-hover:text-orange-400" size={28} />
+        </button>
       </div>
     </>
   );
