@@ -40,38 +40,98 @@ export const EventViewer = () => {
   }
 
   return selectedEvents && (
-    <div className="fixed rounded border bottom-3/20 left-0 w-dvw sm:bottom-1/10 sm:left-25/100 sm:w-1/2 bg-gray-800 border-slate-600 p-5 h-fit shadow-lg shadow-slate-950">
-      {selectedEvents.map(e => (
-        <div className='bg-gray-700 rounded p-2 my-2 shadow-lg shadow-gray-800'>
-          <h2 className='text-base font-bold text-blue-200 hover:text-blue-500'><a href={e.url} className='flex justify-center items-center gap-2 text-center' target="_blank">{e.name}<FiExternalLink size="10px" /></a></h2>
-          <p className='text-sm font-bold text-blue-200 hover:text-blue-500'><a className='flex justify-center items-center gap-2 text-center' href={e.googleMapsUrl} target="_blank">{e.location}<FiExternalLink size="10px" /></a></p>
-          { e.description && <p className='w-full text-center'>{e.description}</p> }
-          <p className='w-full text-center'>
-            {e.date}
-            {
-              !e.datetime.includes('undefined') &&
-              ` @ ${Intl.DateTimeFormat('us-EN', { timeStyle: 'short' }).format(new Date(e.datetime))}`
-            }
-          </p>
-          <p className='w-full text-center'>{e.cost}</p>
+    <div className="fixed bottom-30 sm:bottom-10 left-0 w-full sm:left-1/4 sm:w-1/2 bg-slate-900/95 backdrop-blur-md 
+                    border-t border-slate-800/50 p-6 shadow-2xl transform transition-transform duration-300
+                    rounded-2xl">
+      {selectedEvents.map((event, index) => (
+        <div key={event.id} className="bg-slate-800/50 rounded-xl p-4 mb-4 last:mb-0 border border-slate-700/50">
+          <div className="space-y-3">
+            {/* Event Name */}
+            <h2 className="text-xl font-semibold text-slate-100">
+              <a 
+                href={event.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-orange-400 transition-colors duration-200"
+              >
+                {event.name}
+                <FiExternalLink className="text-orange-400" size={16} />
+              </a>
+            </h2>
+
+            {/* Location */}
+            <p className="text-slate-300">
+              <a 
+                href={event.googleMapsUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-orange-400 transition-colors duration-200"
+              >
+                {event.location}
+                <FiExternalLink className="text-orange-400" size={14} />
+              </a>
+            </p>
+
+            {/* Description */}
+            {event.description && (
+              <p className="text-slate-400 text-sm">{event.description}</p>
+            )}
+
+            {/* Date and Time */}
+            <div className="flex items-center gap-2 text-slate-300">
+              <span>{event.date}</span>
+              {!event.datetime.includes('undefined') && (
+                <>
+                  <span>•</span>
+                  <span>
+                    {Intl.DateTimeFormat('us-EN', { timeStyle: 'short' }).format(new Date(event.datetime))}
+                  </span>
+                </>
+              )}
+            </div>
+
+            {/* Cost */}
+            {event.cost && (
+              <p className="text-orange-400 font-medium">{event.cost}</p>
+            )}
+          </div>
         </div>
       ))}
+
+      {/* Directions Buttons */}
       {geolocation && (
-        <div className='w-full flex justify-center gap-5 my-5'>
+        <div className="flex justify-center gap-4 mt-6">
           <button
             onClick={handleDriveDirections}
-            className='bg-slate-600 hover:bg-slate-300 px-5 py-2 rounded-md border-2 border-slate-400 cursor-pointer'>
-            <IoMdCar size='25px' />
+            className="flex cursor-pointer items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 
+                     text-slate-300 rounded-lg transition-all duration-200 
+                     border border-slate-700/50 hover:border-orange-500/50
+                     focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+          >
+            <IoMdCar size={20} />
+            <span>Drive</span>
           </button>
+          
           <button
             onClick={handleCycleDirections}
-            className='bg-slate-600 hover:bg-slate-300 px-5 py-2 rounded-md border-2 border-slate-400 cursor-pointer'>
-            <IoMdBicycle size='25px' />
+            className="flex cursor-pointer items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 
+                     text-slate-300 rounded-lg transition-all duration-200 
+                     border border-slate-700/50 hover:border-orange-500/50
+                     focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+          >
+            <IoMdBicycle size={20} />
+            <span>Bike</span>
           </button>
+          
           <button
             onClick={handleWalkDirections}
-            className='bg-slate-600 hover:bg-slate-300 px-5 py-2 rounded-md border-2 border-slate-400 cursor-pointer'>
-            <IoMdWalk size='25px' />
+            className="flex cursor-pointer items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 
+                     text-slate-300 rounded-lg transition-all duration-200 
+                     border border-slate-700/50 hover:border-orange-500/50
+                     focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+          >
+            <IoMdWalk size={20} />
+            <span>Walk</span>
           </button>
         </div>
       )}
