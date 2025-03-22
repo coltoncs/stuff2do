@@ -1,6 +1,6 @@
 import type { Route } from "./+types/index";
-import Map, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
-import { type Feature, type FeatureCollection, type GeoJsonProperties, type Geometry } from "geojson";
+import Map, { Source, Layer, GeolocateControl, Marker, Popup } from 'react-map-gl/mapbox';
+import { type Feature, type FeatureCollection, type GeoJsonProperties } from "geojson";
 import { useState, useRef, useCallback, useMemo } from "react";
 import type { MapRef } from 'react-map-gl/mapbox';
 import type { CircleLayerSpecification, SymbolLayerSpecification, GeoJSONSource, MapMouseEvent } from "mapbox-gl";
@@ -73,6 +73,7 @@ export default function Index() {
   const [showSource, setShowSource] = useState(false);
   const events = useMapStore((state) => state.events);
   const routes = useMapStore((state) => state.routes);
+  const poi = useMapStore((state) => state.poi);
   const setSelectedEvents = useMapStore((state) => state.setSelectedEvents);
   const setEventsForGeolocation = useMapStore((state) => state.setEventsForGeolocation);
   const mapRef = useRef<MapRef>(null);
@@ -195,6 +196,7 @@ export default function Index() {
         interactiveLayerIds={['clusters', 'unclustered-point', 'route']}
         onLoad={handleStyleLoad}
       >
+        {poi && <Marker longitude={poi.geometry.coordinates[0]} latitude={poi.geometry.coordinates[1]} anchor="bottom" popup={<Popup>hello world</Popup>} />}
         {showSource && <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50} generateId>
           <Layer {...clustersLayerStyle} />
           <Layer {...clusterCountLayerStyle} />

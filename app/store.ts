@@ -25,10 +25,12 @@ interface MapState {
   date: Date;
   geolocation: GeolocationCoordinates | null;
   routes: any[] | null;
+  poi: any;
   setEventsForGeolocation: (coords: GeolocationCoordinates) => void;
   setDate: (date: Date) => void;
   setSelectedEvents: (event: Event[] | null) => void;
   setRoutes: (route: any[] | null) => void;
+  setPoi: (poi: any) => void;
 }
 
 const useMapStore = create<MapState>()((set) => ({
@@ -37,6 +39,7 @@ const useMapStore = create<MapState>()((set) => ({
   date: new Date(),
   geolocation: null,
   routes: null,
+  poi: null,
   setEventsForGeolocation: (coords) => {
     set((state) => {
       const filteredEvents = jsonEvents
@@ -91,6 +94,9 @@ const useMapStore = create<MapState>()((set) => ({
   },
   setRoutes: (routes: any[] | null) => {
     set({ routes });
+  },
+  setPoi: (poi: any) => {
+    set({ poi });
   },
 }));
 
