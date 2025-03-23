@@ -93,9 +93,8 @@ export default function List() {
           {Object.entries(weeklyEvents)
             .filter((group) => {
               const yesterdaysDate = new Date();
-              yesterdaysDate.setDate(yesterdaysDate.getDate() - 1);
               const eventDate = new Date(group[0].split('to')[1]);
-              return eventDate >= yesterdaysDate;
+              return eventDate > yesterdaysDate;
             })
             .map(week => (
               <WeeklyEvents 
