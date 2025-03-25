@@ -1,12 +1,13 @@
 import type { Route } from "./+types/index";
 import Map, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
-import { type Feature, type FeatureCollection, type GeoJsonProperties, type Geometry } from "geojson";
+import { type Feature, type FeatureCollection, type GeoJsonProperties } from "geojson";
 import { useState, useRef, useCallback, useMemo } from "react";
-import type { MapRef } from 'react-map-gl/mapbox';
+import type { MapRef, ViewState } from 'react-map-gl/mapbox';
 import type { CircleLayerSpecification, SymbolLayerSpecification, GeoJSONSource, MapMouseEvent } from "mapbox-gl";
 import { ControlPanel } from "~/components/ControlPanel";
 import { EventViewer } from "~/components/EventViewer";
 import useMapStore from "~/store";
+import locations from "~/data/locations";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -76,10 +77,18 @@ export default function Index() {
   const setSelectedEvents = useMapStore((state) => state.setSelectedEvents);
   const setEventsForGeolocation = useMapStore((state) => state.setEventsForGeolocation);
   const mapRef = useRef<MapRef>(null);
-  const [viewState, setViewState] = useState({
+  const [viewState, setViewState] = useState<ViewState>({
     longitude: -78.6382,
     latitude: 35.7796,
-    zoom: 10
+    zoom: 12,
+    bearing: 0,
+    pitch: 0,
+    padding: {
+      top: 0,
+      right: 0,
+      bottom: 0,
+      left: 0
+    }
   });
 
   const eventsGeoJson: FeatureCollection = useMemo(() => ({
@@ -135,14 +144,21 @@ export default function Index() {
     if (nearestPoint) {
       const pointType = nearestPoint.layer?.id;
       let mapCanvas;
+      const showPointer = () => {
+        mapCanvas = mapRef.current?.getCanvas();
+        if (mapCanvas) {
+          mapCanvas.style.cursor = 'pointer';
+        }
+      }
       switch (pointType) {
         case 'clusters':
+          showPointer();
+          break;
         case 'route':
+          showPointer();
+          break;
         case 'unclustered-point':
-          mapCanvas = mapRef.current?.getCanvas();
-          if (mapCanvas) {
-            mapCanvas.style.cursor = 'pointer';
-          }
+          showPointer();
           break;
         default:
           break;
@@ -154,14 +170,21 @@ export default function Index() {
     if (nearestPoint) {
       const pointType = nearestPoint.layer?.id;
       let mapCanvas;
+      const hidePointer = () => {
+        mapCanvas = mapRef.current?.getCanvas();
+        if (mapCanvas) {
+          mapCanvas.style.cursor = '';
+        }
+      }
       switch (pointType) {
         case 'clusters':
+          hidePointer();
+          break;
         case 'route':
+          hidePointer();
+          break;
         case 'unclustered-point':
-          mapCanvas = mapRef.current?.getCanvas();
-          if (mapCanvas) {
-            mapCanvas.style.cursor = '';
-          }
+          hidePointer();
           break;
         default:
           break;
