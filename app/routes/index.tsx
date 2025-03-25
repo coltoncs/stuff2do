@@ -3,11 +3,20 @@ import Map, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
 import { type Feature, type FeatureCollection, type GeoJsonProperties } from "geojson";
 import { useState, useRef, useCallback, useMemo } from "react";
 import type { MapRef, ViewState } from 'react-map-gl/mapbox';
-import type { CircleLayerSpecification, SymbolLayerSpecification, GeoJSONSource, MapMouseEvent } from "mapbox-gl";
+import type { GeoJSONSource, MapMouseEvent } from "mapbox-gl";
 import { ControlPanel } from "~/components/ControlPanel";
 import { EventViewer } from "~/components/EventViewer";
 import useMapStore from "~/store";
 import locations from "~/data/locations";
+import {
+  areasFillLayerStyle,
+  areasFillOutlineLayerStyle,
+  clusterCountLayerStyle,
+  clustersLayerStyle,
+  routesLineLayerStyle,
+  routesLineSourceSpec,
+  unclusteredLayerStyle
+} from "~/data/layerStyles";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -15,60 +24,6 @@ export function meta({ }: Route.MetaArgs) {
     { name: "description", content: "A map plot of events in the Raleigh area." },
   ];
 }
-
-const clustersLayerStyle: CircleLayerSpecification = {
-  id: 'clusters',
-  type: 'circle',
-  source: 'events',
-  filter: ['has', 'point_count'],
-  paint: {
-    "circle-emissive-strength": 1,
-    'circle-color': [
-      'step',
-      ['get', 'point_count'],
-      '#51bbd6',
-      10,
-      '#f1f075',
-      20,
-      '#f28cb1'
-    ],
-    'circle-radius': [
-      'step',
-      ['get', 'point_count'],
-      20,
-      100,
-      30,
-      750,
-      40
-    ]
-  }
-};
-
-const clusterCountLayerStyle: SymbolLayerSpecification = {
-  id: 'cluster-count',
-  type: 'symbol',
-  source: 'events',
-  filter: ['has', 'point_count'],
-  layout: {
-    'text-field': '{point_count_abbreviated}',
-    'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
-    'text-size': 12
-  }
-}
-
-const unclusteredLayerStyle: CircleLayerSpecification = {
-  id: 'unclustered-point',
-  type: 'circle',
-  source: 'events',
-  filter: ['!', ['has', 'point_count']],
-  paint: {
-    'circle-color': '#22c55e',
-    'circle-radius': 12,
-    'circle-stroke-color': '#bbf7d0',
-    'circle-stroke-width': 4,
-    'circle-emissive-strength': 1,
-  }
-};
 
 export default function Index() {
   const [showSource, setShowSource] = useState(false);
@@ -154,7 +109,19 @@ export default function Index() {
         case 'clusters':
           showPointer();
           break;
-        case 'route':
+        case 'route-line-0':
+          showPointer();
+          break;
+        case 'route-line-1':
+          showPointer();
+          break;
+        case 'route-line-2':
+          showPointer();
+          break;
+        case 'route-line-3':
+          showPointer();
+          break;
+        case 'areas-fill':
           showPointer();
           break;
         case 'unclustered-point':
@@ -180,7 +147,19 @@ export default function Index() {
         case 'clusters':
           hidePointer();
           break;
-        case 'route':
+        case 'route-line-0':
+          hidePointer();
+          break;
+        case 'route-line-1':
+          hidePointer();
+          break;
+        case 'route-line-2':
+          hidePointer();
+          break;
+        case 'route-line-3':
+          hidePointer();
+          break;
+        case 'areas-fill':
           hidePointer();
           break;
         case 'unclustered-point':
@@ -215,43 +194,24 @@ export default function Index() {
         onClick={onClick}
         onMouseEnter={handleMapEnter}
         onMouseLeave={handleMapLeave}
-        interactiveLayerIds={['clusters', 'unclustered-point', 'route']}
+        interactiveLayerIds={['clusters', 'unclustered-point', 'route', 'areas-fill', 'route-line-0', 'route-line-1', 'route-line-2', 'route-line-3']}
         onLoad={handleStyleLoad}
       >
-        {showSource && <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50} generateId>
-          <Layer {...clustersLayerStyle} />
-          <Layer {...clusterCountLayerStyle} />
-          <Layer {...unclusteredLayerStyle} />
-        </Source>}
+        {showSource && <>
+          <Source id="events" type="geojson" data={eventsGeoJson} cluster={true} clusterMaxZoom={14} clusterRadius={50} generateId>
+            <Layer {...clustersLayerStyle} />
+            <Layer {...clusterCountLayerStyle} />
+            <Layer {...unclusteredLayerStyle} />
+          </Source>
+          {/* <Source id='areas' type="geojson" data={locations}>
+            <Layer {...areasFillLayerStyle} />
+            <Layer {...areasFillOutlineLayerStyle} />
+          </Source> */}
+        </>}
         {routes && routes.map((route, idx) => {
           return (
-            <Source key={idx} id={`route-${idx}`} type='geojson' lineMetrics data={{
-              type: 'LineString',
-              coordinates: route.geometry.coordinates,
-            }}>
-              <Layer id="route" type="line" source={`route-${idx}`} minzoom={8} layout={{
-                "line-join": 'round',
-                "line-cap": 'round'
-              }} paint={{
-                "line-gradient": [
-                  "interpolate",
-                  [
-                    "linear"
-                  ],
-                  [
-                    "line-progress"
-                  ],
-                  0,
-                  "#3b82f6",
-                  1,
-                  "#22c55e",
-                ],
-                "line-occlusion-opacity": 0,
-                "line-opacity": 0.8,
-                "line-width": 8,
-                "line-blur": 1,
-                "line-emissive-strength": 1,
-              }} />
+            <Source key={idx} {...routesLineSourceSpec(idx, route)}>
+              <Layer {...routesLineLayerStyle(idx)} />
             </Source>
           )
         })}

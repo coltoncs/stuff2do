@@ -4,6 +4,40 @@ const locations = {
     {
       "type": "Feature",
       "properties": {
+        "name": "Moore Square",
+        "city": "Raleigh"
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -78.6365503621983,
+              35.778151408807304
+            ],
+            [
+              -78.63661988809592,
+              35.776866268978
+            ],
+            [
+              -78.63505085771473,
+              35.77681443609406
+            ],
+            [
+              -78.63497381550434,
+              35.77809347887076
+            ],
+            [
+              -78.6365503621983,
+              35.778151408807304
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Fayetteville Street",
         "city": "Raleigh"
       },
@@ -153,7 +187,8 @@ const locations = {
         ],
       },
       properties: {
-        name: 'Dreamville 2025'
+        name: 'The Big Field @ Dorothea Dix',
+        city: 'Raleigh'
       }
     }
   ]
