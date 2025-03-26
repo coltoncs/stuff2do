@@ -4,6 +4,40 @@ const locations = {
     {
       "type": "Feature",
       "properties": {
+        name: 'CAM Street Party',
+        city: 'Raleigh'
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -78.64529562255835,
+              35.777099119540864
+            ],
+            [
+              -78.64534538633616,
+              35.775939372952266
+            ],
+            [
+              -78.64513634255775,
+              35.77593339201752
+            ],
+            [
+              -78.64507387852389,
+              35.77709153430837
+            ],
+            [
+              -78.64529562255835,
+              35.777099119540864
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Moore Square",
         "city": "Raleigh"
       },

@@ -1,4 +1,4 @@
-import type { CircleLayerSpecification, GeoJSONSourceSpecification, LineLayerSpecification, SymbolLayerSpecification } from "mapbox-gl";
+import type { AmbientLightSpecification, CircleLayerSpecification, GeoJSONSourceSpecification, LightsSpecification, LineLayerSpecification, SymbolLayerSpecification } from "mapbox-gl";
 import type { FillLayerSpecification } from "mapbox-gl";
 
 const MIN_ZOOM = 10;
@@ -23,13 +23,21 @@ export const areasFillLayerStyle: FillLayerSpecification = {
       ["linear"],
       ["zoom"],
       MIN_ZOOM,
-      0,
-      21,
+      0.25,
+      18,
       0.75,
     ],
     "fill-emissive-strength": 1,
   },
 };
+
+export const lightSourceStyle: AmbientLightSpecification = {
+  id: 'test-lights',
+  type: 'ambient',
+  properties: {
+    intensity: 1
+  }
+}
 
 export const areasFillOutlineLayerStyle: LineLayerSpecification = {
   id: "areas-outline",

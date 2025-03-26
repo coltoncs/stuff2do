@@ -864,7 +864,7 @@ export const events = [
     streetaddr: "Around Raleigh and Wake County",
     times: "Fri. and Sun., 6-7pm",
     location: "Moore Square",
-    coordinates: [35.7795897, -78.6381787],
+    coordinates: [35.77746226465775, -78.63578342374483],
     googleMapsUrl:
       "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
     datetime: "March 16, 2025 undefined",
@@ -4145,7 +4145,7 @@ export const events = [
     streetaddr: "Around Raleigh and Wake County",
     times: "Fri. and Sun., 6-7pm",
     location: "Moore Square",
-    coordinates: [35.7795897, -78.6381787],
+    coordinates: [35.77746226465775, -78.63578342374483],
     googleMapsUrl:
       "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
     datetime: "March 23, 2025 undefined",
@@ -5671,7 +5671,7 @@ export const events = [
     streetaddr: "Around Raleigh and Wake County",
     times: "Fri. and Sun., 6-7pm",
     location: "Moore Square",
-    coordinates: [35.7795897, -78.6381787],
+    coordinates: [35.77746226465775, -78.63578342374483],
     googleMapsUrl:
       "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
     datetime: "March 28, 2025 undefined",
@@ -6638,7 +6638,7 @@ export const events = [
     streetaddr: "Around Raleigh and Wake County",
     times: "Fri. and Sun., 6-7pm",
     location: "Moore Square",
-    coordinates: [35.7795897, -78.6381787],
+    coordinates: [35.77746226465775, -78.63578342374483],
     googleMapsUrl:
       "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
     datetime: "March 30, 2025 undefined",
@@ -7922,7 +7922,7 @@ export const events = [
     streetaddr: "Around Raleigh and Wake County",
     times: "Fri. and Sun., 6-7pm",
     location: "Moore Square",
-    coordinates: [35.7795897, -78.6381787],
+    coordinates: [35.77746226465775, -78.63578342374483],
     googleMapsUrl:
       "https://www.google.com/maps/dir/?api=1&destination=Around%20Raleigh%20and%20Wake%20County&travelmode=driving",
     datetime: "April 4, 2025 undefined",
@@ -8340,5 +8340,21 @@ export const events = [
     googleMapsUrl:
       "https://www.google.com/maps/dir/?api=1&destination=101%20Blair%20Drive&travelmode=driving",
     datetime: "April 6, 2025 12:00:00",
+  },
+  {
+    id: "dreamville3",
+    name: "Gold Mouf Garage with Lute",
+    cost: "Free",
+    description: 'Free street party outside CAM on Harrington Street.',
+    url: "https://dreamvillefest.com/home/",
+    date: "April 4, 2025",
+    streetaddr: "409 W Martin Street",
+    city: "Raleigh",
+    times: "1:00 PM",
+    location: "CAM Street Party",
+    coordinates: [35.776817134372074, -78.64520357724831],
+    googleMapsUrl:
+      "https://www.google.com/maps/dir/?api=1&destination=409%20W%20Martin%20Street&travelmode=driving",
+    datetime: "April 4, 2025 13:00:00",
   },
 ];

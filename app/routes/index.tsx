@@ -1,5 +1,5 @@
 import type { Route } from "./+types/index";
-import Map, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
+import ReactMap, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
 import { type Feature, type FeatureCollection, type GeoJsonProperties } from "geojson";
 import { useState, useRef, useCallback, useMemo } from "react";
 import type { MapRef, ViewState } from 'react-map-gl/mapbox';
@@ -46,6 +46,7 @@ export default function Index() {
     }
   });
 
+  const wideAreaLocationNames = useMemo(() => locations.features.map((location) => location.properties.name), [locations]);
   const eventsGeoJson: FeatureCollection = useMemo(() => ({
     type: 'FeatureCollection',
     features: events.map((event) => ({
@@ -54,6 +55,16 @@ export default function Index() {
       properties: event
     } as Feature)),
   }), [events]);
+  const areaEventsGeoJson: FeatureCollection = useMemo(() => ({
+    type: 'FeatureCollection',
+    features: events.filter(event => wideAreaLocationNames.includes(event.location)).map((event) => ({
+      type: 'Feature',
+      geometry: { type: 'Polygon', coordinates: [locations.features.find(
+        feature => feature.properties.name === event.location)?.geometry.coordinates[0].map(coord => coord.reverse()
+      )] },
+      properties: event
+    }))
+  } as FeatureCollection), [events])
 
   const onClick = useCallback((event: MapMouseEvent) => {
     event.originalEvent.stopPropagation();
@@ -77,10 +88,18 @@ export default function Index() {
           console.log(feature);
         } else if (feature.layer?.id === 'unclustered-point') {
           eventInformation.push(feature.properties)
+        } else if (feature.layer?.id.includes('area')) {
+          eventInformation.push(feature.properties)
+          mapRef.current?.easeTo({
+            center: event.lngLat,
+            zoom: 17,
+            duration: 500
+          });
         }
       })
       if (eventInformation.length > 0) {
-        setSelectedEvents(eventInformation);
+        const uniqueEvents = [...new Map(eventInformation.map((event: any) => [event['name'], event])).values()]
+        setSelectedEvents(uniqueEvents);
         mapRef.current?.easeTo({
           center: JSON.parse(eventInformation[0].coordinates).reverse(),
           zoom: 16,
@@ -183,7 +202,7 @@ export default function Index() {
 
   return (
     <main className="w-dvw h-dvh">
-      <Map
+      <ReactMap
         ref={mapRef}
         mapboxAccessToken='pk.eyJ1IjoiY2Nzd2VlbmV5IiwiYSI6ImNsdXVtem5zcDBiZ3AyanNmZGwzamt4d2oifQ.j98Apz4tCtnO2SnlgpntJw'
         {...viewState}
@@ -203,10 +222,10 @@ export default function Index() {
             <Layer {...clusterCountLayerStyle} />
             <Layer {...unclusteredLayerStyle} />
           </Source>
-          {/* <Source id='areas' type="geojson" data={locations}>
+          <Source id='areas' type="geojson" data={areaEventsGeoJson}>
             <Layer {...areasFillLayerStyle} />
             <Layer {...areasFillOutlineLayerStyle} />
-          </Source> */}
+          </Source>
         </>}
         {routes && routes.map((route, idx) => {
           return (
@@ -218,7 +237,7 @@ export default function Index() {
         <GeolocateControl onGeolocate={handleGeolocation} position="top-left" />
         <ControlPanel />
         <EventViewer />
-      </Map>
+      </ReactMap>
     </main>
   );
 }
