@@ -182,7 +182,6 @@ export function ControlPanel() {
 
         <input
           type="date"
-          defaultValue={date.toISOString().split('T')[0]}
           value={date.toISOString().split('T')[0]}
           min="2025-03-15"
           className="h-14 px-6 bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 
