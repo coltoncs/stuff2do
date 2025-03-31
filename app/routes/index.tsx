@@ -1,5 +1,5 @@
 import type { Route } from "./+types/index";
-import ReactMap, { Source, Layer, GeolocateControl } from 'react-map-gl/mapbox';
+import ReactMap, { Source, Layer, GeolocateControl, useMap } from 'react-map-gl/mapbox';
 import { type Feature, type FeatureCollection, type GeoJsonProperties } from "geojson";
 import { useState, useRef, useCallback, useMemo } from "react";
 import type { MapRef, ViewState } from 'react-map-gl/mapbox';
@@ -28,6 +28,7 @@ export function meta({ }: Route.MetaArgs) {
 export default function Index() {
   const [showSource, setShowSource] = useState(false);
   const events = useMapStore((state) => state.events);
+  const date = useMapStore((state) => state.date);
   const routes = useMapStore((state) => state.routes);
   const setSelectedEvents = useMapStore((state) => state.setSelectedEvents);
   const setEventsForGeolocation = useMapStore((state) => state.setEventsForGeolocation);
@@ -55,16 +56,19 @@ export default function Index() {
       properties: event
     } as Feature)),
   }), [events]);
-  const areaEventsGeoJson: FeatureCollection = useMemo(() => ({
-    type: 'FeatureCollection',
-    features: events.filter(event => wideAreaLocationNames.includes(event.location)).map((event) => ({
+  const areaEventsGeoJson: FeatureCollection = useMemo(() => {
+    const filteredFeatures = events.filter(event => wideAreaLocationNames.includes(event.location)).map((event) => ({
       type: 'Feature',
       geometry: { type: 'Polygon', coordinates: [locations.features.find(
         feature => feature.properties.name === event.location)?.geometry.coordinates[0].map(coord => coord.reverse()
       )] },
       properties: event
-    }))
-  } as FeatureCollection), [events])
+    }));
+    return ({
+      type: 'FeatureCollection',
+      features: filteredFeatures,
+    } as FeatureCollection);
+  }, [events, date])
 
   const onClick = useCallback((event: MapMouseEvent) => {
     event.originalEvent.stopPropagation();
@@ -98,7 +102,7 @@ export default function Index() {
         }
       })
       if (eventInformation.length > 0) {
-        const uniqueEvents = [...new Map(eventInformation.map((event: any) => [event['name'], event])).values()]
+        const uniqueEvents = [...new Map(eventInformation.map((event: any) => [event['name'], event])).values()];
         setSelectedEvents(uniqueEvents);
         mapRef.current?.easeTo({
           center: JSON.parse(eventInformation[0].coordinates).reverse(),
