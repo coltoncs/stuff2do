@@ -138,13 +138,13 @@ export function ControlPanel() {
       </div>
 
       {/* Bottom Controls */}
-      <div className="fixed bottom-6 left-0 right-0 px-6">
+      <div className="fixed bottom-6 left-0 right-0 px-6 pointer-events-none">
         <div className="flex justify-between items-center">
           <button 
             onClick={handleShowControls}
             className="group flex items-center justify-center w-14 h-14 bg-slate-800/80 backdrop-blur-sm 
                      border border-slate-700/50 rounded-xl cursor-pointer transition-all duration-200
-                     hover:bg-slate-700/80 hover:border-orange-500/50 hover:scale-105
+                     pointer-events-auto hover:bg-slate-700/80 hover:border-orange-500/50 hover:scale-105
                      focus:outline-none focus:ring-2 focus:ring-orange-500/50"
             aria-label="Toggle map controls"
           >
@@ -155,7 +155,7 @@ export function ControlPanel() {
             onClick={handleMenuToggle}
             className="group flex items-center justify-center w-14 h-14 bg-slate-800/80 backdrop-blur-sm 
                      border border-slate-700/50 rounded-xl cursor-pointer transition-all duration-200
-                     hover:bg-slate-700/80 hover:border-orange-500/50 hover:scale-105
+                     pointer-events-auto hover:bg-slate-700/80 hover:border-orange-500/50 hover:scale-105
                      focus:outline-none focus:ring-2 focus:ring-orange-500/50"
             aria-label="Toggle event list"
           >

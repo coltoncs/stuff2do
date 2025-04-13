@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { FiExternalLink, FiChevronDown } from 'react-icons/fi';
 import { events } from '~/data/events';
 import type { Route } from './+types';
+import { Navbar } from '~/components/Navbar/Navbar';
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -87,6 +88,7 @@ export default function List() {
 
   return (
     <main className="min-h-screen bg-slate-900 py-8 px-4 sm:px-6 lg:px-8">
+      <Navbar />
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-slate-100 mb-8 text-center">Upcoming Events</h1>
         <div className="space-y-4">

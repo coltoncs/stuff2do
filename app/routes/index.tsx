@@ -17,6 +17,7 @@ import {
   routesLineSourceSpec,
   unclusteredLayerStyle
 } from "~/data/layerStyles";
+import { Navbar } from "~/components/Navbar/Navbar";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -206,6 +207,7 @@ export default function Index() {
 
   return (
     <main className="w-dvw h-dvh">
+      <Navbar />
       <ReactMap
         ref={mapRef}
         mapboxAccessToken='pk.eyJ1IjoiY2Nzd2VlbmV5IiwiYSI6ImNsdXVtem5zcDBiZ3AyanNmZGwzamt4d2oifQ.j98Apz4tCtnO2SnlgpntJw'
