@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { NavLink } from "react-router";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { IoSettingsSharp } from "react-icons/io5";
+import { IoCafeOutline, IoSettingsSharp } from "react-icons/io5";
 import './Navbar.css';
 import useMapStore from "~/store";
 
@@ -90,6 +90,11 @@ export function Navbar() {
             >
               List View
             </NavLink>
+          </div>
+          <div className="flex justify-around align-middle pb-5 text-xs">
+            <a href="https://cash.app/$coltoncs" rel="noopener noreferrer" target="_blank" className="hover:text-orange-400 transition-colors flex justify-center items-center gap-2">
+              buy me bean water <IoCafeOutline />
+            </a>
           </div>
         </div>
       </nav>

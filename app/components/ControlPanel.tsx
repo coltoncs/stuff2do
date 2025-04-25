@@ -167,7 +167,7 @@ export function ControlPanel() {
       {/* Date Controls */}
       <div className="fixed top-6 left-1/2 -translate-x-1/2 flex items-center gap-3">
         <button 
-          disabled={date.toISOString().split('T')[0] === '2025-03-20'} 
+          disabled={date.toISOString().split('T')[0] === '2025-04-25'} 
           onClick={handleDayPrevious}
           className="group flex items-center justify-center w-14 h-14 bg-slate-800/80 backdrop-blur-sm 
                    border border-slate-700/50 rounded-xl cursor-pointer transition-all duration-200
@@ -183,8 +183,8 @@ export function ControlPanel() {
         <input
           type="date"
           value={date.toISOString().split('T')[0]}
-          min="2025-03-20"
-          max="2025-04-18"
+          min="2025-04-25"
+          max="2025-05-07"
           className="h-14 px-6 bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 
                    rounded-xl text-slate-300 placeholder-slate-500 focus:outline-none 
                    focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50
@@ -193,7 +193,7 @@ export function ControlPanel() {
         />
 
         <button 
-          disabled={date.toISOString().split('T')[0] === '2025-04-18'}
+          disabled={date.toISOString().split('T')[0] === '2025-05-07'}
           onClick={handleDayNext}
           className="group flex items-center justify-center w-14 h-14 bg-slate-800/80 backdrop-blur-sm 
                    border border-slate-700/50 rounded-xl cursor-pointer transition-all duration-200

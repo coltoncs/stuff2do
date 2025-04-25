@@ -8,7 +8,7 @@ import gsap from 'gsap';
 
 export const EventViewer = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [collapsedEvents, setCollapsedEvents] = useState<Record<string, boolean>>({});
   const selectedEvents = useMapStore((state) => state.selectedEvents);
   const geolocation = useMapStore((state) => state.geolocation);
   const setRoutes = useMapStore((state) => state.setRoutes);
@@ -19,21 +19,28 @@ export const EventViewer = () => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 640);
     };
-    
+
     checkMobile();
     window.addEventListener('resize', checkMobile);
-    
+
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  const toggleCollapse = contextSafe(() => {
-    setIsCollapsed(!isCollapsed);
-    gsap.to(containerRef.current, {
-      height: isCollapsed ? 'auto' : 0,
-      duration: 0.3,
-      ease: 'power2.inOut'
-    });
-  });
+  const toggleEvent = (eventId: string) => {
+    setCollapsedEvents(prev => ({
+      ...prev,
+      [eventId]: !prev[eventId]
+    }));
+
+    const contentElement = document.getElementById(`event-content-${eventId}`);
+    if (contentElement) {
+      gsap.to(contentElement, {
+        height: collapsedEvents[eventId] ? 'auto' : 0,
+        duration: 0.3,
+        ease: 'power2.inOut'
+      });
+    }
+  };
 
   const handleDriveDirections = () => {
     const profile = 'mapbox/driving';
@@ -71,68 +78,67 @@ export const EventViewer = () => {
     <div className="fixed bottom-20 sm:bottom-10 left-0 w-full sm:left-1/4 sm:w-1/2 bg-slate-900/95 backdrop-blur-md 
                     border-t border-slate-800/50 shadow-2xl transform transition-transform duration-300
                     rounded-2xl overflow-hidden">
-      {isMobile && (
-        <button
-          onClick={toggleCollapse}
-          className="w-full p-4 flex items-center justify-between bg-slate-800/50 hover:bg-slate-700/50
-                   transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500/50"
-        >
-          <span className="text-slate-100 font-medium">Selected Event</span>
-          {isCollapsed ? <IoChevronUp size={20} className="text-slate-300" /> : <IoChevronDown size={20} className="text-slate-300" />}
-        </button>
-      )}
       <div ref={containerRef} className="p-6">
-        {selectedEvents.map((event, index) => (
-          <div key={event.id} className="bg-slate-800/50 rounded-xl p-4 mb-4 last:mb-0 border border-slate-700/50">
-            <div className="space-y-3">
-              {/* Event Name */}
-              <h2 className="text-xl font-semibold text-slate-100">
-                <a 
-                  href={event.url} 
-                  target="_blank" 
+        {selectedEvents.map((event) => (
+          <div key={event.id} className="bg-slate-800/50 rounded-xl mb-4 last:mb-0 border border-slate-700/50 overflow-hidden">
+            <button
+              type="button"
+              onClick={() => toggleEvent(event.id)}
+              className="w-full p-4 flex items-center justify-between hover:bg-slate-700/50
+                       transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+            >
+              <h2 className="text-lg font-semibold text-slate-100">
+                <a
+                  href={event.url}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-orange-400 transition-colors duration-200"
+                  onClick={(e) => e.stopPropagation()}
                 >
                   {event.name}
                   <FiExternalLink className="text-orange-400" size={16} />
                 </a>
               </h2>
+              {collapsedEvents[event.id] ? <IoChevronUp size={20} className="text-slate-300" /> : <IoChevronDown size={20} className="text-slate-300" />}
+            </button>
+            
+            <div 
+              id={`event-content-${event.id}`} 
+              className={`px-4 pb-4 ${collapsedEvents[event.id] ? 'h-0' : 'h-auto'} overflow-hidden`}
+            >
+              <div className="space-y-3">
+                {/* Location */}
+                <p className="text-slate-300">
+                  <a
+                    href={event.googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:text-orange-400 transition-colors duration-200"
+                  >
+                    {event.location}
+                    <FiExternalLink className="text-orange-400" size={14} />
+                  </a>
+                </p>
 
-              {/* Location */}
-              <p className="text-slate-300">
-                <a 
-                  href={event.googleMapsUrl} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 hover:text-orange-400 transition-colors duration-200"
-                >
-                  {event.location}
-                  <FiExternalLink className="text-orange-400" size={14} />
-                </a>
-              </p>
+                {/* Description */}
+                {event.description && (
+                  <p className="text-slate-400 text-sm">{event.description}</p>
+                )}
 
-              {/* Description */}
-              {event.description && (
-                <p className="text-slate-400 text-sm">{event.description}</p>
-              )}
+                {/* Date and Time */}
+                <div className="flex items-center gap-2 text-slate-300">
+                  <span>{Intl.DateTimeFormat('us-EN', { dateStyle: 'full' }).format(new Date(event.date))}</span>
+                  <span>•</span>
+                  <span>
+                    {event.times}
+                  </span>
+                </div>
 
-              {/* Date and Time */}
-              <div className="flex items-center gap-2 text-slate-300">
-                <span>{event.date}</span>
-                {!event.datetime.includes('undefined') && (
-                  <>
-                    <span>•</span>
-                    <span>
-                      {Intl.DateTimeFormat('us-EN', { timeStyle: 'short' }).format(new Date(event.datetime))}
-                    </span>
-                  </>
+                {/* Cost */}
+                {event.cost && (
+                  <p className="text-orange-400 font-medium">{event.cost}</p>
                 )}
               </div>
-
-              {/* Cost */}
-              {event.cost && (
-                <p className="text-orange-400 font-medium">{event.cost}</p>
-              )}
             </div>
           </div>
         ))}
@@ -150,7 +156,7 @@ export const EventViewer = () => {
               <IoMdCar size={20} />
               <span>Drive</span>
             </button>
-            
+
             <button
               onClick={handleCycleDirections}
               className="flex cursor-pointer items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 
@@ -161,7 +167,7 @@ export const EventViewer = () => {
               <IoMdBicycle size={20} />
               <span>Bike</span>
             </button>
-            
+
             <button
               onClick={handleWalkDirections}
               className="flex cursor-pointer items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 
@@ -176,5 +182,5 @@ export const EventViewer = () => {
         )}
       </div>
     </div>
-  )
+  );
 }

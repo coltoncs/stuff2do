@@ -54,7 +54,7 @@ export default function Index() {
     features: events.map((event) => ({
       type: 'Feature',
       geometry: { type: 'Point', coordinates: [event.coordinates[1], event.coordinates[0]] },
-      properties: event
+      properties: event,
     } as Feature)),
   }), [events]);
   const areaEventsGeoJson: FeatureCollection = useMemo(() => {
@@ -90,7 +90,6 @@ export default function Index() {
           });
         } else if (feature.layer?.id.includes('route')) {
           // TODO: DO SOMETHING WITH THE ROUTE
-          console.log(feature);
         } else if (feature.layer?.id === 'unclustered-point') {
           eventInformation.push(feature.properties)
         } else if (feature.layer?.id.includes('area')) {
