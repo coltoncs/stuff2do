@@ -23,6 +23,7 @@ interface MapState {
   selectedEvents: Event[] | null;
   events: any[];
   date: Date;
+  dateRange: any;
   geolocation: GeolocationCoordinates | null;
   routes: any[] | null;
   setEventsForGeolocation: (coords: GeolocationCoordinates) => void;
@@ -35,6 +36,16 @@ const useMapStore = create<MapState>()((set) => ({
   selectedEvents: null,
   events: jsonEvents.filter(matchesTodaysDate),
   date: new Date(),
+  dateRange: jsonEvents.reduce((range, event) => {
+    const eventDate = new Date(event.date);
+    if (eventDate < range.start) {
+      range.start = eventDate;
+    }
+    if (eventDate > range.end) {
+      range.end = eventDate;
+    }
+    return range;
+  }, { start: new Date(jsonEvents[0].date), end: new Date(jsonEvents[0].date) }),
   geolocation: null,
   routes: null,
   setEventsForGeolocation: (coords) => {

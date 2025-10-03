@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { NavLink } from "react-router";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { IoCafeOutline, IoSettingsSharp } from "react-icons/io5";
+import { IoCafeOutline, IoSettingsSharp, IoCloseSharp } from "react-icons/io5";
 import './Navbar.css';
 import useMapStore from "~/store";
 
@@ -58,8 +58,19 @@ export function Navbar() {
                 transform translate-x-full"
       >
         <div className="flex flex-col h-full">
-          <div className="p-6 border-b border-slate-800/50">
+          <div className="p-6 border-b border-slate-800/50 flex justify-between items-center">
             <h2 className="text-2xl font-bold text-slate-100">919 Events</h2>
+            <button onClick={(e) => {
+              gsap.to(navRef.current, {
+                x: '100%',
+                duration: 0.5,
+                ease: 'power2.inOut',
+                onComplete: () => {
+                  setSelectedEvents(null);
+                  setRoutes(null);
+                }
+              });
+            }} className="p-4 rounded-4xl bg-slate-700 hover:bg-slate-800 cursor-pointer"><IoCloseSharp /></button>
           </div>
 
           <div className="flex-1 flex flex-col">

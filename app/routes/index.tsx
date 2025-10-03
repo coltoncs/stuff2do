@@ -155,6 +155,7 @@ export default function Index() {
       }
     }
   }, []);
+
   const handleMapLeave = useCallback((event: MapMouseEvent) => {
     const nearestPoint = event.features?.at(0);
     if (nearestPoint) {

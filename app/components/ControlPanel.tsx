@@ -5,7 +5,7 @@ import useMapStore from "~/store";
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
 import EventList from "./EventList";
-import { BsArrows, BsArrowsVertical, BsBadge3D } from "react-icons/bs";
+import { BsArrows, BsArrowsVertical } from "react-icons/bs";
 import { FaSliders } from "react-icons/fa6";
 
 export function ControlPanel() {
@@ -16,6 +16,7 @@ export function ControlPanel() {
   const { contextSafe: ctxSafe } = useGSAP({ scope: btnsRef });
   const { current: map } = useMap();
   const date = useMapStore((state) => state.date);
+  const dateRange = useMapStore((state) => state.dateRange); // get min and max date from events
   const setDate = useMapStore((state) => state.setDate);
   const setSelectedEvents = useMapStore((state) => state.setSelectedEvents);
 
@@ -167,7 +168,7 @@ export function ControlPanel() {
       {/* Date Controls */}
       <div className="fixed top-6 left-1/2 -translate-x-1/2 flex items-center gap-3">
         <button 
-          disabled={date.toISOString().split('T')[0] === '2025-04-25'} 
+          disabled={date.toISOString().split('T')[0] === dateRange.start.toISOString().split('T')[0]} 
           onClick={handleDayPrevious}
           className="group flex items-center justify-center w-14 h-14 bg-slate-800/80 backdrop-blur-sm 
                    border border-slate-700/50 rounded-xl cursor-pointer transition-all duration-200
@@ -183,8 +184,8 @@ export function ControlPanel() {
         <input
           type="date"
           value={date.toISOString().split('T')[0]}
-          min="2025-04-25"
-          max="2025-05-07"
+          min={dateRange.start.toISOString().split('T')[0]}
+          max={dateRange.end.toISOString().split('T')[0]}
           className="h-14 px-6 bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 
                    rounded-xl text-slate-300 placeholder-slate-500 focus:outline-none 
                    focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50
@@ -193,7 +194,7 @@ export function ControlPanel() {
         />
 
         <button 
-          disabled={date.toISOString().split('T')[0] === '2025-05-07'}
+          disabled={date.toISOString().split('T')[0] === dateRange.end.toISOString().split('T')[0]}
           onClick={handleDayNext}
           className="group flex items-center justify-center w-14 h-14 bg-slate-800/80 backdrop-blur-sm 
                    border border-slate-700/50 rounded-xl cursor-pointer transition-all duration-200
