@@ -31,14 +31,6 @@ export const areasFillLayerStyle: FillLayerSpecification = {
   },
 };
 
-export const lightSourceStyle: AmbientLightSpecification = {
-  id: 'test-lights',
-  type: 'ambient',
-  properties: {
-    intensity: 1
-  }
-}
-
 export const areasFillOutlineLayerStyle: LineLayerSpecification = {
   id: "areas-outline",
   type: "line",
