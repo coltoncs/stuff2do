@@ -14,9 +14,16 @@ export function meta({ }: Route.MetaArgs) {
 function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] }) {
   const [isOpen, setIsOpen] = useState(false);
   const accordionRef = useRef<HTMLDivElement>(null);
+  const [filteredEvents, setFilteredEvents] = useState(events);
   
   const handleAccordionClick = () => {
     setIsOpen(!isOpen);
+  }
+
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const searchTerm = e.target.value.toLowerCase();
+    const newFilteredEvents = events.filter(event => event.name.toLowerCase().includes(searchTerm));
+    setFilteredEvents(newFilteredEvents);
   }
   
   return (
@@ -34,8 +41,9 @@ function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] 
       </button>
       
       <div className={`overflow-hidden transition-all duration-200 ${isOpen ? 'max-h-[2000px] opacity-100 overflow-y-auto' : 'max-h-0 opacity-0'}`}>
+        <input type="text" placeholder='Search' onChange={handleSearch} className='w-1/2 px-4 py-2 rounded-lg ml-5 mt-2 bg-slate-700/50 border border-slate-700/50 focus:outline-none focus:ring-2 focus:ring-orange-400' />
         <ol className='px-6 py-4 space-y-2'>
-          {events.map(event => {
+          {filteredEvents.map(event => {
             const formatter = Intl.DateTimeFormat('en-US', { dateStyle: 'short' });
             const todaysDate = new Date(formatter.format(new Date()));
             const eventsDate = new Date(formatter.format(new Date(event.date)));
