@@ -24,9 +24,9 @@ export function haversineDistanceKM(coord1: number[], coord2: number[]) {
   return d; // distance in km
 }
 
-export const matchesTodaysDate = (event) => {
+export const matchesTodaysDate = (event: any) => {
   const eventDate = new Date(event.date);
   const todaysDate = new Date();
-  todaysDate.setUTCHours(8)
+  todaysDate.setUTCHours(8);
   return eventDate.toDateString() === todaysDate.toDateString();
 }

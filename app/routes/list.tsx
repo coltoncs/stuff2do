@@ -15,7 +15,7 @@ function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] 
   const [isOpen, setIsOpen] = useState(false);
   const accordionRef = useRef<HTMLDivElement>(null);
   const [filteredEvents, setFilteredEvents] = useState(events);
-  
+
   const handleAccordionClick = () => {
     setIsOpen(!isOpen);
   }
@@ -25,21 +25,21 @@ function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] 
     const newFilteredEvents = events.filter(event => event.name.toLowerCase().includes(searchTerm));
     setFilteredEvents(newFilteredEvents);
   }
-  
+
   return (
     <div ref={accordionRef} className='w-full max-w-4xl mx-auto rounded-lg mb-4 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50'>
-      <button 
-        className='flex items-center justify-between w-full px-6 py-4 cursor-pointer transition-colors duration-200 hover:bg-slate-700/50' 
-        onClick={handleAccordionClick} 
+      <button
+        className='flex items-center justify-between w-full px-6 py-4 cursor-pointer transition-colors duration-200 hover:bg-slate-700/50'
+        onClick={handleAccordionClick}
         aria-expanded={isOpen}
       >
         <h2 className='text-orange-400 font-semibold text-lg md:text-xl'>{dateRange}</h2>
-        <FiChevronDown 
-          className={`text-slate-400 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} 
+        <FiChevronDown
+          className={`text-slate-400 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
           size={24}
         />
       </button>
-      
+
       <div className={`overflow-hidden transition-all duration-200 ${isOpen ? 'max-h-[2000px] opacity-100 overflow-y-auto' : 'max-h-0 opacity-0'}`}>
         <input type="text" placeholder='Search' onChange={handleSearch} className='w-1/2 px-4 py-2 rounded-lg ml-5 mt-2 bg-slate-700/50 border border-slate-700/50 focus:outline-none focus:ring-2 focus:ring-orange-400' />
         <ol className='px-6 py-4 space-y-2'>
@@ -49,10 +49,10 @@ function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] 
             const eventsDate = new Date(formatter.format(new Date(event.date)));
             if (eventsDate < todaysDate) return null;
             return (
-              <a 
-                href={event.url} 
-                target='_blank' 
-                rel='noreferrer' 
+              <a
+                href={event.url}
+                target='_blank'
+                rel='noreferrer'
                 key={event.id}
                 className='block transition-colors duration-200 hover:bg-slate-700/30 rounded-lg'
               >
@@ -82,7 +82,10 @@ function WeeklyEvents({ dateRange, events }: { dateRange: string, events: any[] 
 }
 
 export default function List() {
-  const weeklyEvents = events.reduce((acc, event) => {
+  const weeklyEvents = events.filter(
+    (value, index, self) =>
+      index === self.findIndex((obj) => obj.name === value.name)
+  ).reduce((acc, event) => {
     const dateFormatter = Intl.DateTimeFormat('en-US', {
       dateStyle: 'long',
     });
@@ -107,10 +110,10 @@ export default function List() {
               return eventDate > yesterdaysDate;
             })
             .map(week => (
-              <WeeklyEvents 
-                key={week[1][0].id} 
-                dateRange={week[0]} 
-                events={week[1]} 
+              <WeeklyEvents
+                key={week[1][0].id}
+                dateRange={week[0]}
+                events={week[1]}
               />
             ))
           }

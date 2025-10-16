@@ -34,18 +34,26 @@ interface MapState {
 
 const useMapStore = create<MapState>()((set) => ({
   selectedEvents: null,
-  events: jsonEvents.filter(matchesTodaysDate),
+  events: jsonEvents
+    .filter(matchesTodaysDate)
+    .filter(
+      (value, index, self) =>
+        index === self.findIndex((obj) => obj.name === value.name)
+    ),
   date: new Date(),
-  dateRange: jsonEvents.reduce((range, event) => {
-    const eventDate = new Date(event.date);
-    if (eventDate < range.start) {
-      range.start = eventDate;
-    }
-    if (eventDate > range.end) {
-      range.end = eventDate;
-    }
-    return range;
-  }, { start: new Date(jsonEvents[0].date), end: new Date(jsonEvents[0].date) }),
+  dateRange: jsonEvents.reduce(
+    (range, event) => {
+      const eventDate = new Date(event.date);
+      if (eventDate < range.start) {
+        range.start = eventDate;
+      }
+      if (eventDate > range.end) {
+        range.end = eventDate;
+      }
+      return range;
+    },
+    { start: new Date(jsonEvents[0].date), end: new Date(jsonEvents[0].date) }
+  ),
   geolocation: null,
   routes: null,
   setEventsForGeolocation: (coords) => {
@@ -55,7 +63,8 @@ const useMapStore = create<MapState>()((set) => ({
           const eventDate = new Date(event.date);
           return eventDate.toDateString() === state.date.toDateString();
         })
-        .sort( // sort by proximity using haversine formula
+        .sort(
+          // sort by proximity using haversine formula
           (event1, event2) =>
             haversineDistanceKM(event1.coordinates, [
               coords.latitude,
@@ -65,7 +74,11 @@ const useMapStore = create<MapState>()((set) => ({
               coords.latitude,
               coords.longitude,
             ])
-        );
+        )
+        .filter(
+          (value, index, self) =>
+            index === self.findIndex((obj) => obj.name === value.name)
+        )
       return { events: filteredEvents, geolocation: coords };
     });
   },
